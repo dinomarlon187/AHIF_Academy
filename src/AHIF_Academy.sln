@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.9.34728.123
+VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AHIF_Academy", "AHIF_Academy.csproj", "{17C07019-A02E-494A-A2B0-0DB847B356B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ahif_academy", "ahif_academy.csproj", "{FEB46F8B-065F-4B26-BB0C-4813D4D4C399}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{17C07019-A02E-494A-A2B0-0DB847B356B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17C07019-A02E-494A-A2B0-0DB847B356B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17C07019-A02E-494A-A2B0-0DB847B356B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{17C07019-A02E-494A-A2B0-0DB847B356B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17C07019-A02E-494A-A2B0-0DB847B356B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{17C07019-A02E-494A-A2B0-0DB847B356B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FEB46F8B-065F-4B26-BB0C-4813D4D4C399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB46F8B-065F-4B26-BB0C-4813D4D4C399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB46F8B-065F-4B26-BB0C-4813D4D4C399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB46F8B-065F-4B26-BB0C-4813D4D4C399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C708A499-69F9-40EA-8C2A-6914E4BDEDD4}
+		SolutionGuid = {EC934F69-F61D-41F1-AF60-8A3138E1743F}
 	EndGlobalSection
 EndGlobal
