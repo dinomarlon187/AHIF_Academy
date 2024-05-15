@@ -9,10 +9,35 @@ namespace ahif_academy
 {
     public abstract class Question
     {
-        public abstract string Text { get; set; }
-        public abstract string Subject { get; set; }
+        protected string subject;
+        protected string[] subjects = { "mathe", "englisch", "deutsch" };
+        public string Text { get; set; }
+        public string Subject 
+        {
+            get
+            {
+                return subject;
+            }
+            set
+            {
+                if (subjects.Contains<string>(value.ToLower()))
+                {
+                    subject = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Subject must be either 'mathe', 'englisch' or 'deutsch'");
+                }
+                    
+            }
+        }
+
+        public  string CorrectAnswer { get; set; }
         public abstract void Draw(Grid grid);
-        public abstract bool CheckAnswer(string  answer);
+        public bool CheckAnswer(string answer)
+        {
+            return answer == CorrectAnswer;
+        }
         
 
 

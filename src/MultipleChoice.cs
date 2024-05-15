@@ -10,10 +10,7 @@ namespace ahif_academy
 {
     class MultipleChoice : Question
     {
-        public override string Text { get; set; }
-        public override string Subject { get; set; }
         public string[] Answers { get; set; }
-        public string CorrectAnswer { get; set; }
 
         public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject)
         {
@@ -25,10 +22,6 @@ namespace ahif_academy
         public override void Draw(Grid grid)
         {
             if (grid == null) return;
-        }
-        public override bool CheckAnswer(string answer)
-        {
-            throw new NotImplementedException();
         }
     }
 }

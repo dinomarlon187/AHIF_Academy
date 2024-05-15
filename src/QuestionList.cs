@@ -11,6 +11,8 @@ namespace ahif_academy
     {
         private List<Question> questions = new List<Question>();
 
+        public string CurrentSubject { get; set; }
+
         public void DeserializeFromJSON()
         {
             string jsonString = System.IO.File.ReadAllText("Questions.json");

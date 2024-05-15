@@ -29,6 +29,7 @@ Eine Lernapp für verschiedene Fächer mit angepassten Fragen und Aufgaben.
   - Mit "Geld" Avatar bearbeiten/Minispiele spielen
 - AHIF Pass (Battle Pass)
 - Vorbereitete Lerndokumente
+- Minigames
 
 ## Wont-Have
 

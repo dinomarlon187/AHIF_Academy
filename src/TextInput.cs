@@ -9,9 +9,6 @@ namespace ahif_academy
 {
     public class TextInput : Question
     {
-        public override string Text { get; set; }
-        public override string Subject { get; set; }
-        public string CorrectAnswer { get; set; }
         public string FalseAnswer { get; set; }
 
         
@@ -25,10 +22,6 @@ namespace ahif_academy
         public override void Draw(Grid grid)
         {
             
-        }
-        public override bool CheckAnswer(string answer)
-        {
-            return false;
         }
     }
 }
