@@ -148,8 +148,8 @@ class User{
 ### QuestionCollection
 ```
 @startuml
-class QuestionCollection{
-+ Questions: List<Object>
+class QuestionList{
+- questions: List<Object>
 + GetAllQuestionsFromJSON(): void
 + GetRandomQuestion(): object
 }
