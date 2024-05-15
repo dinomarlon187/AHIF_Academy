@@ -9,12 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="pictures\moon.png" />
     <None Remove="pictures\night.png" />
     <None Remove="pictures\profile.jpeg" />
     <None Remove="pictures\sun.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="pictures\moon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="pictures\night.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

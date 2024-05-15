@@ -16,7 +16,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ToggleButton x:Name="ThemeToggleButton" Width="120" Height="60" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked">
+        <ToggleButton x:Name="ThemeToggleButton" Width="120" Height="60" Cursor="Hand" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked">
             <ToggleButton.Template>
                 <ControlTemplate TargetType="ToggleButton">
                     <Border Background="Transparent" >
@@ -30,14 +30,14 @@
                         </Grid>
                     </Border>
                     <ControlTemplate.Triggers>
+                        
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="SwitchBackground" Property="Fill" Value="#1c1b21"/>
                             <Setter TargetName="SwitchThumb"  Property="HorizontalAlignment" Value="Right" />
-                            
                             <Setter TargetName="SwitchThumb"  Property="Fill" >
                                 <Setter.Value>
-                                    <ImageBrush ImageSource="../pictures/night.png" Stretch="UniformToFill"/>
-                                    
+                                    <ImageBrush ImageSource="../pictures/moon.png" />
+
                                 </Setter.Value>
                             </Setter>
                             
