@@ -24,7 +24,7 @@ namespace ahif_academy
         private void sidebar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selected = sidebar.SelectedItem as NavButton;
-
+            string subject = selected.ToolTip.ToString();
             navframe.Navigate(selected.Navlink);
         }
     }

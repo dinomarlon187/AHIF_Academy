@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:ahif_academy"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="Themes/WhiteMode.xaml"/>
+
     </Application.Resources>
 </Application>
