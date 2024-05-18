@@ -38,11 +38,20 @@ namespace ahif_academy
             }   
             
         }
+        public void SerializeToJSON()
+        {
+            string jsonString = JsonConvert.SerializeObject(questions);
+            System.IO.File.WriteAllText("Questions.json", jsonString);
+        }
         public Question GetRandomQuestion()
         {
             Random random = new Random();
             int index = random.Next(questions.Count);
             return questions[index];
+        }
+        public void FilterBySubject(string subject)
+        {
+            questions = questions.Where(q => q.Subject == subject).ToList();
         }
 
     }

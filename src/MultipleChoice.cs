@@ -21,7 +21,42 @@ namespace ahif_academy
         }
         public override void Draw(Grid grid)
         {
-            if (grid == null) return;
+            grid.Children.Clear();
+            Button ans1 = new Button()
+            {
+                Height = 50,
+                Width = 100,
+                Content = Answers[0]
+            };
+            Button ans2 = new Button()
+            {
+                Height = 50,
+                Width = 100,
+                Content = Answers[1]
+            };
+            Button ans3 = new Button()
+            {
+                Height = 50,
+                Width = 100,
+                Content = Answers[2]
+            };
+            Button ans4 = new Button()
+            {
+                Height = 50,
+                Width = 100,
+                Content = Answers[3]
+            };
+            TextBlock textBlock = new TextBlock()
+            {
+                Text = Text,
+                FontSize = 20,
+                TextWrapping = System.Windows.TextWrapping.Wrap
+            };
+            grid.Children.Add(textBlock);
+            grid.Children.Add(ans1);
+            grid.Children.Add(ans2);
+            grid.Children.Add(ans3);
+            grid.Children.Add(ans4);
         }
     }
 }

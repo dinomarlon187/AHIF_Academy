@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageDeutsch">
 
-    <Grid >
+    <Grid x:Name="grid" >
         <Label Content="Deutsch" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
     </Grid>
 </Page>

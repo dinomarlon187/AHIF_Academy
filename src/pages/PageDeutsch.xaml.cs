@@ -24,5 +24,6 @@ namespace ahif_academy.pages
         {
             InitializeComponent();
         }
+        
     }
 }
