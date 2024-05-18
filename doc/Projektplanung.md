@@ -67,8 +67,22 @@ Eine Lernapp für verschiedene Fächer mit angepassten Fragen und Aufgaben.
 - User
 - ChangeTheme
 
+### Klassenhierarchie
+
+Alle Frage-Klassen (MultipleChoice, YesNo, TextInput) haben eine Parent-Klasse "Question" von welcher sie einige Properties und Methoden erben.
+
 ### MultipleChoice
 
+```
+@startuml
+class Question{
+  + Subject: string
+  + Text: string
+  + string[4]: subjects
+  + Draw(Grid grid): void
+  + CheckAnswer(string answer): void
+@enduml
+}
 ```
 @startuml
 class MultipleChoice{
@@ -80,7 +94,7 @@ class MultipleChoice{
 + MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, char correctAnswer, string Subject)
 + Draw(Grid grid): void
 + ShuffleAnswers(): void
-+ CheckAnswer(int index): void
++ CheckAnswer(string answer): void
 }
 @enduml
 ```
@@ -156,4 +170,3 @@ class QuestionList{
 }
 @enduml
 ```
-
