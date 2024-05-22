@@ -5,27 +5,69 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ahif_academy.pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="575" d:DesignWidth="1080"
       Title="PageHome">
 
-    <Grid >
+    <Grid Background="White" ClipToBounds="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="3*" />
+
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2">
-            <Label Content="AHIF ACADEMY"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontFamily="Microsoft JhengHei" />
-        </Border>
-        <Label Content="Hallo und herzlich willkommen an der AHIF ACADEMY." Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="15" />
-        <Label Content="In dieser App kannst du deine Fähigkeiten in Mathe, Deutsch und " Grid.Row="2" HorizontalAlignment="Center"  Grid.Column="1" Padding="0,25,0,0" FontSize="15"  />
-        <Label Content="Englisch verbessern. Mit den Icons an der Seite in Bar kannst du loslegen" Grid.Row="2" Grid.Column="1" Padding="0,40,0,0" FontSize="15" />
-        
+
+        <StackPanel Margin="54,200,410,0" Grid.ColumnSpan="2"  Panel.ZIndex="1" VerticalAlignment="Top">
+            <TextBlock Text="AHIF ACADEMY"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontFamily="Century Gothic" />
+            <TextBlock Margin="0,20,0,0" TextWrapping="Wrap"  FontFamily="Century Gothic" Text="Hallo und herzlich willkommen an der AHIF ACADEMY. In dieser App kannst du deine Fähigkeiten in Mathe, Deutsch und Englisch verbessern. Mit den Icons an der Seite in Bar kannst du loslegen " Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="15" />
+        </StackPanel>
+
+        <Grid Margin="160,-365,-610,85" Grid.Column="1">
+
+            <Grid.RenderTransform>
+                <RotateTransform Angle="50"/>
+            </Grid.RenderTransform>
+
+            <StackPanel Orientation="Horizontal" Margin="-350,250,-255,-250">
+                <StackPanel >
+                    <Border Width="700"
+                            Height="35"
+                            Background="#FFCDE8E5"
+                            CornerRadius="20"
+                            Margin="150,0,0,0"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#FFEEF7FF"
+                            CornerRadius="20"
+                            Margin="0,15,0,0"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#FF7AB2B2"
+                            CornerRadius="20"
+                            Margin="75,15,0,0"/>
+                </StackPanel>
+
+                <StackPanel  >
+                    <Border Width="700"
+                            Height="35"
+                            Background="#FFCDE8E5"
+                            CornerRadius="20"
+                            Margin="150,0,0,0"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#FFEEF7FF"
+                            CornerRadius="20"
+                            Margin="0,15,0,0"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#FF7AB2B2"
+                            CornerRadius="20"
+                            Margin="75,15,0,0"/>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+
+
+
+
     </Grid>
 </Page>
