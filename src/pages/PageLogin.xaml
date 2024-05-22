@@ -1,0 +1,30 @@
+﻿<Page x:Class="ahif_academy.pages.PageLogin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ahif_academy.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageLogin" Background="{DynamicResource Background}">
+
+    <Grid Background="White" Margin="270,50,270,50">
+        <Grid.Effect>
+            <DropShadowEffect Color="Gray" BlurRadius="10" ShadowDepth="7" Direction="320" Opacity="0.5"/>
+        </Grid.Effect>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="5,0,0,0">
+            <TextBlock Text="Hallo " FontSize="30" FontWeight="Bold" FontFamily="Calibri"/>
+            <TextBlock Text="Benutzer!" Foreground="#FF00A5D8" FontSize="30" FontWeight="Bold" FontFamily="Calibri"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Margin="5,0,0,0" Grid.Row="1">
+            
+        </StackPanel>
+
+    </Grid>
+</Page>

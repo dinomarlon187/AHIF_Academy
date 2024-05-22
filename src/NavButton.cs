@@ -39,6 +39,8 @@ namespace ahif_academy
         }
 
         public static readonly DependencyProperty IconProperty = 
-            DependencyProperty.Register("Icon", typeof(Geometry), typeof(NavButton), new PropertyMetadata(null));   
+            DependencyProperty.Register("Icon", typeof(Geometry), typeof(NavButton), new PropertyMetadata(null));  
+        
+        
     }
 }
