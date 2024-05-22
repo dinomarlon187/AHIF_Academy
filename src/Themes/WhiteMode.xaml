@@ -13,4 +13,23 @@
     <Style TargetType="Label">
         <Setter Property="Foreground" Value="Black"/>
     </Style>
+    <Style x:Key="ThemeToggleButtonStyle" TargetType="ToggleButton">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Border Background="Transparent" >
+                        <Grid>
+                            <Rectangle x:Name="SwitchBackground" Fill="#e9ecef" RadiusX="25" RadiusY="25"/>
+                            <Ellipse x:Name="SwitchThumb" Width="30" Height="30" HorizontalAlignment="Left" Margin="10">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="../pictures/sun.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Grid>
+                    </Border>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

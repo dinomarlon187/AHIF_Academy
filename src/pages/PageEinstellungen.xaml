@@ -16,35 +16,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ToggleButton x:Name="ThemeToggleButton" Width="120" Height="60" Cursor="Hand" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked">
-            <ToggleButton.Template>
-                <ControlTemplate TargetType="ToggleButton">
-                    <Border Background="Transparent" >
-                        <Grid>
-                            <Rectangle x:Name="SwitchBackground" Fill="#e9ecef" RadiusX="25" RadiusY="25"/>
-                            <Ellipse x:Name="SwitchThumb" Width="30" Height="30" HorizontalAlignment="Left" Margin="10">
-                                <Ellipse.Fill>
-                                    <ImageBrush ImageSource="../pictures/sun.png"/>
-                                </Ellipse.Fill>
-                            </Ellipse>
-                        </Grid>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        
-                        <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="SwitchBackground" Property="Fill" Value="#1c1b21"/>
-                            <Setter TargetName="SwitchThumb"  Property="HorizontalAlignment" Value="Right" />
-                            <Setter TargetName="SwitchThumb"  Property="Fill" >
-                                <Setter.Value>
-                                    <ImageBrush ImageSource="../pictures/moon.png" />
-
-                                </Setter.Value>
-                            </Setter>
-                            
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </ToggleButton.Template>
+        <ToggleButton x:Name="ThemeToggleButton" Width="120" Height="60" Cursor="Hand" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked" Style="{DynamicResource ThemeToggleButtonStyle}">
+            
         </ToggleButton>
     </Grid>
 </Page>
