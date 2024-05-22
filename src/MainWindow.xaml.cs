@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using ahif_academy.pages;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -25,7 +26,20 @@ namespace ahif_academy
         {
             var selected = sidebar.SelectedItem as NavButton;
             string subject = selected.ToolTip.ToString();
-            navframe.Navigate(selected.Navlink);
+           /* navframe.Navigate(selected.Navlink);*/
+            if(subject == "Mathe" || subject == "Deutsch" || subject == "Englisch")
+            {
+                navframe.Navigate(new PageAufgabe());
+            }
+            else if (subject == "Einstellungen")
+            {
+                navframe.Navigate(new PageEinstellungen());
+
+            }
+            else if (subject == "Home")
+            {
+                navframe.Navigate(new PageHome());
+            }
         }
     }
 }
