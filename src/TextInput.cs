@@ -79,63 +79,100 @@ namespace ahif_academy
                 textBox.Document.ContentStart,
                 textBox.Document.ContentEnd
                 );
-
                 string userAnswer = textRange.Text.Trim();
-
-
-
-
-                button.IsEnabled = false;
-                textBox.IsReadOnly = true;
-                if (CheckAnswer(userAnswer))
+                if (userAnswer == "")
                 {
-                    textBox.Background = System.Windows.Media.Brushes.Green;
+                    userAnswer = "²";
+                    textBox.AppendText(" ");
+                }
+                if (CorrectAnswer.Length - userAnswer.Length > 10 || userAnswer.Length - CorrectAnswer.Length > 10)
+                {
+                    MessageBox.Show("Hör auf reinzutrollen.");
                 }
                 else
                 {
-                    TextPointer target = textBox.Document.ContentStart;
-                    target = target.GetPositionAtOffset(2, LogicalDirection.Forward);
-                    TextRange range;
-                    int idx = 0;
-                    char letter = '²';
-                    while (true)
+                    button.IsEnabled = false;
+                    textBox.IsReadOnly = true;
+                    if (CheckAnswer(userAnswer))
+                    {
+                        textBox.Background = System.Windows.Media.Brushes.Green;
+                    }
+                    else
                     {
 
 
-                        try
+                        TextPointer target = textBox.Document.ContentStart;
+                        target = target.GetPositionAtOffset(2, LogicalDirection.Forward);
+                        TextRange range;
+                        int idx = 0;
+                        char letter = '²';
+                        if (CorrectAnswer.Length > userAnswer.Length)
                         {
-                            range = new TextRange(target, target.GetPositionAtOffset(1, LogicalDirection.Forward));
+                            for (int i = 0; i < CorrectAnswer.Length - userAnswer.Length; i++)
+                            {
+                                textBox.AppendText(" ");
+                            }
                         }
-                        catch (Exception)
+                        else if (CorrectAnswer.Length < userAnswer.Length)
                         {
-                            break;
+                            int length = CorrectAnswer.Length;
+                            for (int i = 0; i < length - 1; i++)
+                            {
+                                CorrectAnswer += " ";
+                            }
+
                         }
-
-
-
-                        if (range.IsEmpty == false)
                         {
+
+                        }
+                        while (true)
+                        {
+
+
                             try
                             {
-                                letter = Convert.ToChar(range.Text);
+                                range = new TextRange(target, target.GetPositionAtOffset(1, LogicalDirection.Forward));
                             }
-                            catch
+                            catch (Exception)
                             {
                                 break;
                             }
-                            if (letter != CorrectAnswer[idx])
+
+
+
+                            if (range.IsEmpty == false)
                             {
-                                range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Red);
-                                
+                                try
+                                {
+                                    letter = Convert.ToChar(range.Text);
+                                }
+                                catch
+                                {
+                                    break;
+                                }
+                                if (letter != CorrectAnswer[idx])
+                                {
+                                    range.ApplyPropertyValue(TextElement.BackgroundProperty, Brushes.Red);
+
+                                }
+                                idx++;
+
                             }
-                            idx++;
+                            target = target.GetPositionAtOffset(1, LogicalDirection.Forward);
 
                         }
-                        target = target.GetPositionAtOffset(1, LogicalDirection.Forward);
-                    }
 
-                    
+
+
+                    }
                 }
+
+
+
+
+
+
+                
                     
 
                         
