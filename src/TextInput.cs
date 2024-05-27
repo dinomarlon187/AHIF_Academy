@@ -16,74 +16,62 @@ namespace ahif_academy
     {
         public string FalseAnswer { get; set; }
 
+        Button submit = new Button()
+        {
+            Height = 50,
+            Width = 100,
+            Content = "Submit"
+        };
 
+        RichTextBox textBoxAnswer = new RichTextBox()
+        {
+            Width = 400,
+            HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
+            VerticalAlignment = System.Windows.VerticalAlignment.Center
+        };
         public TextInput(string text, string subject, string answer, string falseAnswer)
         {
             Text = text;
             Subject = subject;
             CorrectAnswer = answer.Trim();
             FalseAnswer = falseAnswer;
+            textblockQuestion.Text = Text;
         }
         public override void Draw(Grid grid)
         {
-            grid.Children.Clear();
-            TextBlock textBlock = new TextBlock()
-            {
-                Text = Text,
-                FontSize = 20,
-                TextWrapping = System.Windows.TextWrapping.Wrap,
-                HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
-                VerticalAlignment = System.Windows.VerticalAlignment.Center
-            };
-            Grid.SetColumn(textBlock, 0);
-            Grid.SetRow(textBlock, 0);
-            Grid.SetColumnSpan(textBlock, 3);
-
-
-            RichTextBox textBox = new RichTextBox()
-            {
-                Width = 400,
-                HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
-                VerticalAlignment = System.Windows.VerticalAlignment.Center
-            };
-            textBox.Document.Blocks.Clear();
-            textBox.Document.Blocks.Add(new Paragraph(new Run(FalseAnswer)));
-            Grid.SetColumn(textBox, 0);
-            Grid.SetRow(textBox, 1);
-            Grid.SetColumnSpan(textBox, 3);
-
-
-            Button submit = new Button()
-            {
-                Height = 50,
-                Width = 100,
-                Content = "Submit"
-            };
+            Grid.SetColumn(textblockQuestion, 0);
+            Grid.SetRow(textblockQuestion, 0);
+            Grid.SetColumnSpan(textblockQuestion, 3);
+            textBoxAnswer.Document.Blocks.Clear();
+            textBoxAnswer.Document.Blocks.Add(new Paragraph(new Run(FalseAnswer)));
+            Grid.SetColumn(textBoxAnswer, 0);
+            Grid.SetRow(textBoxAnswer, 1);
+            Grid.SetColumnSpan(textBoxAnswer, 3);
             Grid.SetColumn(submit, 1);
             Grid.SetRow(submit, 2);
-
             submit.Click += Submit_Click;
-            grid.Children.Add(textBlock);
-            grid.Children.Add(textBox);
+            grid.Children.Add(textblockQuestion);
+            grid.Children.Add(textBoxAnswer);
             grid.Children.Add(submit);
+            
         }
 
         private void Submit_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
             if (sender is Button button)
             {
                 Grid grid = (Grid)button.Parent;
-                RichTextBox textBox = (RichTextBox)grid.Children[1];
+                Button b = (Button)grid.Children[0];
+                
                 TextRange textRange = new TextRange(
-                textBox.Document.ContentStart,
-                textBox.Document.ContentEnd
+                textBoxAnswer.Document.ContentStart,
+                textBoxAnswer.Document.ContentEnd
                 );
                 string userAnswer = textRange.Text.Trim();
                 if (userAnswer == "")
                 {
                     userAnswer = "²";
-                    textBox.AppendText(" ");
+                    textBoxAnswer.AppendText(" ");
                 }
                 if (CorrectAnswer.Length - userAnswer.Length > 10 || userAnswer.Length - CorrectAnswer.Length > 10)
                 {
@@ -92,16 +80,16 @@ namespace ahif_academy
                 else
                 {
                     button.IsEnabled = false;
-                    textBox.IsReadOnly = true;
+                    textBoxAnswer.IsReadOnly = true;
                     if (CheckAnswer(userAnswer))
                     {
-                        textBox.Background = System.Windows.Media.Brushes.Green;
+                        textBoxAnswer.Background = System.Windows.Media.Brushes.Green;
                     }
                     else
                     {
 
 
-                        TextPointer target = textBox.Document.ContentStart;
+                        TextPointer target = textBoxAnswer.Document.ContentStart;
                         target = target.GetPositionAtOffset(2, LogicalDirection.Forward);
                         TextRange range;
                         int idx = 0;
@@ -110,7 +98,7 @@ namespace ahif_academy
                         {
                             for (int i = 0; i < CorrectAnswer.Length - userAnswer.Length; i++)
                             {
-                                textBox.AppendText(" ");
+                                textBoxAnswer.AppendText(" ");
                             }
                         }
                         else if (CorrectAnswer.Length < userAnswer.Length)
@@ -160,28 +148,12 @@ namespace ahif_academy
                             }
                             target = target.GetPositionAtOffset(1, LogicalDirection.Forward);
 
+                      
                         }
-
-
-
+                        b.Visibility = Visibility.Visible;
                     }
+                    
                 }
-
-
-
-
-
-
-                
-                    
-
-                        
-                    
-                    
-
-                
-
-
             }
 
             

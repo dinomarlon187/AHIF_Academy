@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace ahif_academy
 {
-    class QuestionList
+    public class QuestionList
     {
         private List<Question> questions = new List<Question>();
 
