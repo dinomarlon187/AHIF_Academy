@@ -61,7 +61,6 @@ namespace ahif_academy
             if (sender is Button button)
             {
                 Grid grid = (Grid)button.Parent;
-                Button b = (Button)grid.Children[0];
                 
                 TextRange textRange = new TextRange(
                 textBoxAnswer.Document.ContentStart,
@@ -150,7 +149,6 @@ namespace ahif_academy
 
                       
                         }
-                        b.Visibility = Visibility.Visible;
                     }
                     
                 }
