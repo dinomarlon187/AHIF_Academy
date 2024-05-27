@@ -10,57 +10,59 @@ namespace ahif_academy
 {
     public class YesNo : Question
     {
+        Button yes = new Button()
+        {
+            Height = 50,
+            Width = 100,
+            Content = "Yes"
+        };
+        Button no = new Button()
+        {
+            Height = 50,
+            Width = 100,
+            Content = "No"
+        };
         public YesNo(string text, string subject, string correctAnswer) 
         {
             Text = text;
             Subject = subject;
-            if (correctAnswer.ToLower() == "true" || correctAnswer.ToLower() == "false")
+            if (correctAnswer.ToLower() == "yes" || correctAnswer.ToLower() == "no")
             {
                 CorrectAnswer = correctAnswer;
             }
             else
             {
-                throw new ArgumentException("Correct answer must be either 'true' or 'false'");
+                throw new ArgumentException("Correct answer must be either 'yes' or 'no'");
             }
+
+            textblockQuestion.Text = Text;
 
         }
 
+        
+
         public override void Draw(Grid grid)
         {
-            grid.Children.Clear();
-            TextBlock textBlock = new TextBlock()
-            {
-                Text = Text,
-                FontSize = 20,
-                TextWrapping = System.Windows.TextWrapping.Wrap
-            };
-            Grid.SetColumn(textBlock, 0);
-            Grid.SetRow(textBlock, 0);
-            Grid.SetColumnSpan(textBlock, 3);
+
+            Grid.SetColumn(textblockQuestion, 0);
+            Grid.SetRow(textblockQuestion, 0);
+            Grid.SetColumnSpan(textblockQuestion, 3);
 
 
-            Button yes = new Button()
-            {
-                Height = 50,
-                Width = 100,
-                Content = "Yes"
-            };
+            
             Grid.SetColumn(yes, 0);
             Grid.SetRow(yes, 1);
             yes.Click += Click;
 
-            Button no = new Button()
-            {
-                Height = 50,
-                Width = 100,
-                Content = "No"
-            };
+            
             no.Click += Click;
             Grid.SetColumn(no, 2);
             Grid.SetRow(no, 1);
-            grid.Children.Add(textBlock);
+
+            grid.Children.Add(textblockQuestion);
             grid.Children.Add(yes);
             grid.Children.Add(no);
+
 
         }
 
@@ -91,14 +93,13 @@ namespace ahif_academy
                     textBlock.Text = "Incorrect";
                 }
                 Grid grid = (Grid)button.Parent;
-                Button button1 = (Button)grid.Children[1];
-                Button button2 = (Button)grid.Children[2];
-                button1.IsEnabled = false;
-                button2.IsEnabled = false;
+                yes.IsEnabled = false;
+                no.IsEnabled = false;
                 grid.Children.Add(textBlock);
-                
-                
             }
+            
         }
+
+
     }
 }
