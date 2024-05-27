@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,6 +54,9 @@ namespace ahif_academy
         {
             questions = questions.Where(q => q.Subject.ToLower() == subject).ToList();
         }
-
+        public IEnumerator GetEnumerator()
+        {
+            return questions.GetEnumerator();
+        }
     }
 }

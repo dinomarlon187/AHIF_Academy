@@ -9,6 +9,7 @@ namespace ahif_academy
 {
     public abstract class Question
     {
+        public Button btnNextQuestion = new Button();
         protected TextBlock textblockQuestion = new TextBlock()
         {
             FontSize = 20,

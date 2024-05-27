@@ -75,6 +75,7 @@ namespace ahif_academy
             grid.Children.Add(ans2);
             grid.Children.Add(ans3);
             grid.Children.Add(ans4);
+            grid.Children.Add(btnNextQuestion);
 
         }
 
