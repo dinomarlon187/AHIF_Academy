@@ -9,6 +9,11 @@ namespace ahif_academy
 {
     public abstract class Question
     {
+        protected TextBlock textblockQuestion = new TextBlock()
+        {
+            FontSize = 20,
+            TextWrapping = System.Windows.TextWrapping.Wrap
+        };
         protected string subject;
         protected string[] subjects = { "mathe", "englisch", "deutsch" };
         public string Text { get; set; }
@@ -38,6 +43,7 @@ namespace ahif_academy
         {
             return answer == CorrectAnswer;
         }
+
         
 
 

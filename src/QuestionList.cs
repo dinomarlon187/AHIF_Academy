@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace ahif_academy
 {
-    class QuestionList
+    public class QuestionList
     {
         private List<Question> questions = new List<Question>();
 
@@ -51,7 +51,7 @@ namespace ahif_academy
         }
         public void FilterBySubject(string subject)
         {
-            questions = questions.Where(q => q.Subject == subject).ToList();
+            questions = questions.Where(q => q.Subject.ToLower() == subject).ToList();
         }
 
     }
