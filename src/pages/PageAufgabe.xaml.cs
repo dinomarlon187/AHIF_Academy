@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ahif_academy.pages
 {
     /// <summary>
-    /// Interaction logic for PageMathe.xaml
+    /// Interaction logic for PageAufgabe.xaml
     /// </summary>
-    public partial class PageMathe : Page
+    public partial class PageAufgabe : Page
     {
-        public PageMathe()
+        public PageAufgabe()
         {
             InitializeComponent();
         }
