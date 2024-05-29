@@ -33,5 +33,12 @@ namespace ahif_academy.pages
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow.NavigateToPage(pageLogin);
         }
+
+        private void ButtonRegistrieren_Click(object sender, RoutedEventArgs e)
+        {
+            PageSign pageSign = new PageSign();
+            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow.NavigateToPage(pageSign);
+        }
     }
 }

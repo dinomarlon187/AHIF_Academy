@@ -7,9 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="680" d:DesignWidth="1075"
       Title="PageHome">
-    
 
-    <Grid Background="White" ClipToBounds="True">
+
+    <Grid Background="{DynamicResource FrameBackground}" ClipToBounds="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
 
@@ -18,7 +18,7 @@
 
         <StackPanel Margin="54,200,410,0" Grid.ColumnSpan="2"  Panel.ZIndex="1" VerticalAlignment="Top">
             <TextBlock Text="AHIF ACADEMY"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontFamily="Century Gothic" />
-            <TextBlock Margin="0,20,0,0" TextWrapping="Wrap"  FontFamily="Century Gothic" Text="Hallo und herzlich willkommen an der AHIF ACADEMY. In dieser App kannst du deine Fähigkeiten in Mathe, Deutsch und Englisch verbessern. Mit den Icons an der Seite in Bar kannst du loslegen " Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="15" />
+            <TextBlock Margin="0,20,0,0" TextWrapping="Wrap"  FontFamily="Century Gothic" Text="Herzlich willkommen an der AHIF ACADEMY! Diese App bietet dir eine großartige Gelegenheit, deine Fähigkeiten in den Bereichen Mathematik, Deutsch und Englisch zu verbessern. Nutze einfach die intuitiven Symbole an der Seitenleiste, um mit deinem Lernabenteuer zu beginnen." Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="15" />
         </StackPanel>
 
         <Grid Margin="160,-365,-610,85" Grid.Column="1">
@@ -68,7 +68,7 @@
         </Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="70,0,0,180">
             <Button x:Name="ButtonAnmelden" Content="Anmelden" Width="150" Height="50" Click="ButtonAnmelden_Click"  />
-            <Button x:Name="ButtonRegistrieren" Margin="30,0,0,0" Content="Registrieren" Width="150" Height="50" />
+            <Button x:Name="ButtonRegistrieren" Margin="30,0,0,0" Content="Registrieren" Width="150" Height="50" Click="ButtonRegistrieren_Click" />
         </StackPanel>
         
 

@@ -33,5 +33,19 @@ namespace ahif_academy
             List<User> users = LoadUsers();
             return users.Find(u => u.Username == username && u.Password == password);
         }
+        public static bool RegisterUser(string username, string password)
+        {
+            List<User> users = LoadUsers();
+
+            if (users.Exists(u => u.Username == username))
+            {
+                return false; 
+            }
+
+            
+            users.Add(new User { Username = username, Password = password });
+            SavedUsers(users);
+            return true; 
+        }
     }
 }
