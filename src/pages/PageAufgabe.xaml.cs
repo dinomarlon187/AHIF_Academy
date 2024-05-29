@@ -31,12 +31,14 @@ namespace ahif_academy.pages
                 question.btnNextQuestion = btnNextQuestion;
             }
             CurrentQuestion = QuestionList.GetRandomQuestion();
+            CurrentQuestion = (Question)CurrentQuestion.Copy();
             CurrentQuestion.Draw(grid);
         }
 
         private void btnNextQuestion_Click(object sender, RoutedEventArgs e)
         {
             CurrentQuestion = QuestionList.GetRandomQuestion();
+            CurrentQuestion = (Question)CurrentQuestion.Copy();
             CurrentQuestion.Draw(grid);
             btnNextQuestion.Visibility = Visibility.Hidden;
         }

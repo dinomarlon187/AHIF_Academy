@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace ahif_academy
 {
@@ -59,13 +60,13 @@ namespace ahif_academy
             ans2.Click += Click;
 
             
-            Grid.SetRow(ans3, 1);
-            Grid.SetColumn(ans3, 2);
+            Grid.SetRow(ans3, 2);
+            Grid.SetColumn(ans3, 0);
             ans3.Click += Click;
 
             
-            Grid.SetRow(ans4, 1);
-            Grid.SetColumn(ans4, 3);
+            Grid.SetRow(ans4, 2);
+            Grid.SetColumn(ans4, 1);
             ans4.Click += Click;
 
             textblockQuestion.Text = Text;
@@ -78,7 +79,7 @@ namespace ahif_academy
             grid.Children.Add(btnNextQuestion);
 
         }
-
+        
         private void Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && AnswerPressed == false)
@@ -108,8 +109,20 @@ namespace ahif_academy
                 }
                 btnNextQuestion.IsEnabled = true;
                 btnNextQuestion.Visibility = Visibility.Visible;
-            
+
+            }
+
+
+
+
         }
 
+        public override object Copy()
+        {
+            MultipleChoice question = new MultipleChoice(Text, Answers[0], Answers[1], Answers[2], Answers[3], CorrectAnswer, Subject);
+            question.btnNextQuestion = btnNextQuestion;
+            question.textblockQuestion = textblockQuestion;
+            return question;
+        }
     }
 }

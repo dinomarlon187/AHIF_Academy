@@ -46,6 +46,7 @@ namespace ahif_academy
         }
         public Question GetRandomQuestion()
         {
+            
             Random random = new Random();
             int index = random.Next(questions.Count);
             return questions[index];

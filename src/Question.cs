@@ -9,6 +9,7 @@ namespace ahif_academy
 {
     public abstract class Question
     {
+        protected bool AnswerPressed = false;
         public Button btnNextQuestion = new Button();
         protected TextBlock textblockQuestion = new TextBlock()
         {
@@ -44,8 +45,7 @@ namespace ahif_academy
         {
             return answer == CorrectAnswer;
         }
-
-        
+        public abstract object Copy(); 
 
 
     }

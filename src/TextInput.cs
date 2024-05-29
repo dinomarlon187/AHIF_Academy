@@ -58,7 +58,13 @@ namespace ahif_academy
             grid.Children.Add(btnNextQuestion);
             
         }
-
+        public override object Copy()
+        {
+            TextInput question = new TextInput(Text, Subject, CorrectAnswer, FalseAnswer);
+            question.btnNextQuestion = btnNextQuestion;
+            question.textblockQuestion = textblockQuestion;
+            return question;
+        }
         private void Submit_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             if (sender is Button button)
@@ -152,10 +158,11 @@ namespace ahif_academy
 
                       
                         }
-                        btnNextQuestion.IsEnabled = true;
-                        btnNextQuestion.Visibility = Visibility.Visible;
+                        
                     }
-                    
+                    btnNextQuestion.IsEnabled = true;
+                    btnNextQuestion.Visibility = Visibility.Visible;
+
                 }
             }
 

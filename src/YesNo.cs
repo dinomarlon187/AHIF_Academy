@@ -67,7 +67,13 @@ namespace ahif_academy
 
 
         }
-
+        public override object Copy()
+        {
+            YesNo question = new YesNo(Text,Subject,CorrectAnswer);
+            question.btnNextQuestion = btnNextQuestion;
+            question.textblockQuestion = textblockQuestion;
+            return question;
+        }
         private void Click(object sender, RoutedEventArgs e)
         {
             
