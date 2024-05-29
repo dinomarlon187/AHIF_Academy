@@ -27,9 +27,17 @@ namespace ahif_academy
             var selected = sidebar.SelectedItem as NavButton;
             string subject = selected.ToolTip.ToString();
            /* navframe.Navigate(selected.Navlink);*/
-            if(subject == "Mathe" || subject == "Deutsch" || subject == "Englisch")
+            if(subject == "Mathe")
             {
-                navframe.Navigate(new PageAufgabe());
+                navframe.Navigate(new PageAufgabe("Mathe"));
+            }
+            else if(subject == "Deutsch")
+            {
+                navframe.Navigate(new PageAufgabe("Deutsch"));
+            }
+            else if(subject == "Englisch")
+            {
+                navframe.Navigate(new PageEnglisch());
             }
             else if (subject == "Einstellungen")
             {
