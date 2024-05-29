@@ -16,7 +16,7 @@ namespace ahif_academy
 
         public void DeserializeFromJSON()
         {
-            string jsonString = System.IO.File.ReadAllText("Questions.json");
+            string jsonString = System.IO.File.ReadAllText("../../../JSONFiles/Questions.json");
             dynamic jsonObj = JsonConvert.DeserializeObject(jsonString);
             foreach (var question in jsonObj)
             {

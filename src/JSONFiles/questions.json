@@ -1,0 +1,45 @@
+[
+    {
+        "Text": "What is the capital of France?",
+        "Answers": [
+            "Paris",
+            "Berlin",
+            "Madrid",
+            "Rome"
+        ],
+        "CorrectAnswer": "Paris",
+        "Subject": "Englisch",
+        "Type": "MultipleChoice"
+    },
+    {
+        "Text": "Is the Earth flat?",
+        "CorrectAnswer": "No",
+        "Subject": "Deutsch",
+        "Type": "YesNo"
+    },
+    {
+        "Text": "What is 2 + 2?",
+        "Answers": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "CorrectAnswer": "4",
+        "Subject": "Mathe",
+        "Type": "MultipleChoice"
+    },
+    {
+        "Text": "Is the sky blue?",
+        "CorrectAnswer": "Yes",
+        "Subject": "Englisch",
+        "Type": "YesNo"
+    },
+    {
+        "Text": "Verbessere folgenden Satz:",
+        "WrongAnswer": "Ich Bin Der Marlon.",
+        "CorrectAnswer": "Ich bin der Marlon.",
+        "Subject": "Deutsch",
+        "Type": "TextInput"
+    }
+]
