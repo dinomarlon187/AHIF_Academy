@@ -20,9 +20,18 @@ namespace ahif_academy.pages
     /// </summary>
     public partial class PageHome : Page
     {
+        
         public PageHome()
         {
             InitializeComponent();
+            
+        }
+
+        private void ButtonAnmelden_Click(object sender, RoutedEventArgs e)
+        {
+            PageLogin pageLogin = new PageLogin();
+            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow.NavigateToPage(pageLogin);
         }
     }
 }

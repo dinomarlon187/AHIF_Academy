@@ -24,5 +24,27 @@ namespace ahif_academy.pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string username = UsernameBox.Text;
+            string password = PasswordBox.Text;
+
+            User user = UserManager.AuthenticateUser(username, password);
+            if (user != null)
+            {
+                // Erfolgreiche Login-Nachricht anzeigen
+                MessageBox.Show("Login successful!");
+                // Hier kannst du die Logik nach erfolgreichem Login hinzufügen, z.B. Fenster wechseln
+                PageHome pageHome = new PageHome();
+                MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+                mainWindow.NavigateToPage(pageHome);
+            }
+            else
+            {
+                // Fehlermeldung anzeigen, wenn die Authentifizierung fehlschlägt
+                MessageBox.Show("Invalid username or password.");
+            }
+        }
     }
 }

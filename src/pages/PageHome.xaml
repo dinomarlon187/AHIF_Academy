@@ -5,8 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ahif_academy.pages"
       mc:Ignorable="d" 
-      d:DesignHeight="575" d:DesignWidth="1080"
+      d:DesignHeight="680" d:DesignWidth="1075"
       Title="PageHome">
+    
 
     <Grid Background="White" ClipToBounds="True">
         <Grid.ColumnDefinitions>
@@ -65,8 +66,11 @@
             </StackPanel>
 
         </Grid>
-
-
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="70,0,0,180">
+            <Button x:Name="ButtonAnmelden" Content="Anmelden" Width="150" Height="50" Click="ButtonAnmelden_Click"  />
+            <Button x:Name="ButtonRegistrieren" Margin="30,0,0,0" Content="Registrieren" Width="150" Height="50" />
+        </StackPanel>
+        
 
 
     </Grid>

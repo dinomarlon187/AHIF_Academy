@@ -22,11 +22,17 @@ namespace ahif_academy
             InitializeComponent();
         }
 
+        public void NavigateToPage(Page page)
+        {
+            // Navigate to the given page
+            navframe.Navigate(page);
+        }
+
         private void sidebar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selected = sidebar.SelectedItem as NavButton;
             string subject = selected.ToolTip.ToString();
-           /* navframe.Navigate(selected.Navlink);*/
+           
             if(subject == "Mathe")
             {
                 navframe.Navigate(new PageAufgabe("Mathe"));
