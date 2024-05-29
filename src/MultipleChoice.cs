@@ -81,6 +81,33 @@ namespace ahif_academy
 
         private void Click(object sender, RoutedEventArgs e)
         {
+            if (sender is Button button && AnswerPressed == false)
+            {
+                AnswerPressed = true;
+                if (Answers[0] == CorrectAnswer)
+                {
+                    ans1.Background = Brushes.Green; 
+                }
+                else if (Answers[1] == CorrectAnswer)
+                {
+                    ans2.Background = Brushes.Green;
+                }
+                else if (Answers[2] == CorrectAnswer)
+                {
+                    ans3.Background = Brushes.Green;
+                }
+                else
+                {
+                    ans4.Background = Brushes.Green;
+                }
+
+            
+                if (button.Content.ToString() != CorrectAnswer)
+                {
+                    button.Background = Brushes.Red;
+                }
+                btnNextQuestion.IsEnabled = true;
+                btnNextQuestion.Visibility = Visibility.Visible;
             
         }
 
