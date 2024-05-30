@@ -12,6 +12,8 @@ namespace ahif_academy
     internal class UserManager
     {
         private static string filePath = "../../../JSONFiles/profiles.json";
+
+        public static User CurrentUser { get; private set; }
         public static void SavedUsers(List<User> users)
         {
             string json = JsonConvert.SerializeObject(users, Formatting.Indented);
@@ -28,10 +30,17 @@ namespace ahif_academy
             return JsonConvert.DeserializeObject<List<User>>(json);
         }
 
+        
+
         public static User AuthenticateUser(string username, string password)
         {
             List<User> users = LoadUsers();
-            return users.Find(u => u.Username == username && u.Password == password);
+            User user = users.Find(u => u.Username == username && u.Password == password);
+            if (user != null)
+            {
+                CurrentUser = user; // Setzen des aktuellen Benutzers
+            }
+            return user;
         }
         public static bool RegisterUser(string username, string password)
         {

@@ -20,11 +20,20 @@ namespace ahif_academy.pages
     /// </summary>
     public partial class PageHome : Page
     {
-        
+
         public PageHome()
         {
             InitializeComponent();
+
             
+            if (UserManager.CurrentUser != null)
+            {
+                benutzer.Text = UserManager.CurrentUser.Username;
+            }
+            else
+            {
+                benutzer.Text = "Nicht angemeldet";
+            }
         }
 
         private void ButtonAnmelden_Click(object sender, RoutedEventArgs e)
