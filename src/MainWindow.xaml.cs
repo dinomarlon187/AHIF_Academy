@@ -20,6 +20,7 @@ namespace ahif_academy
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         public void NavigateToPage(Page page)

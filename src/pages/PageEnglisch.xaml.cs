@@ -66,5 +66,30 @@ namespace ahif_academy.pages
                 DisplayFlashcard();
             }
         }
+
+        private void AddVocabulary_Click(object sender, RoutedEventArgs e)
+        {
+            // Neue Vokabel aus den TextBoxen erstellen
+            var newEnglish = NewEnglishTextBox.Text;
+            var newGerman = NewGermanTextBox.Text;
+
+            if (!string.IsNullOrWhiteSpace(newEnglish) && !string.IsNullOrWhiteSpace(newGerman))
+            {
+                var newFlashcard = new Flashcard { English = newEnglish, German = newGerman };
+                _flashcards.Add(newFlashcard);
+
+                // Speichern der aktualisierten Liste der Karteikarten
+                _flashcardService.SaveFlashcards(_flashcards);
+
+                // Leeren der TextBoxen
+                NewEnglishTextBox.Text = string.Empty;
+                NewGermanTextBox.Text = string.Empty;
+
+                // Zeige die neue Karteikarte an
+                _currentIndex = _flashcards.Count - 1;
+                DisplayFlashcard();
+            }
+            
+        }
     }
 }

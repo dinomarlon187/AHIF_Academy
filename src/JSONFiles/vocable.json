@@ -1,10 +1,14 @@
 [
-    {
-        "English": "eat",
-        "German": "essen"
-    },
-    {
-        "English": "Football",
-        "German": "Fußball"
-    }
+  {
+    "English": "eat",
+    "German": "essen"
+  },
+  {
+    "English": "Football",
+    "German": "Fußball"
+  },
+  {
+    "English": "example",
+    "German": "Beispiel"
+  }
 ]

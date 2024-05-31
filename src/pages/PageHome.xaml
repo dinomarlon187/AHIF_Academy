@@ -71,7 +71,7 @@
             <Button x:Name="ButtonAnmelden" Content="Anmelden" Width="150" Height="50" Click="ButtonAnmelden_Click"  />
             <Button x:Name="ButtonRegistrieren" Margin="30,0,0,0" Content="Registrieren" Width="150" Height="50" Click="ButtonRegistrieren_Click" />
         </StackPanel>
-        <TextBlock x:Name="benutzer" TextWrapping="Wrap" Text="" Margin="0,0,228,625"/>
+        <TextBlock x:Name="benutzer" TextWrapping="Wrap" Text="" Margin="0,25,228,598"/>
         
 
 
