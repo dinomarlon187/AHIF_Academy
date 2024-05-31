@@ -20,18 +20,18 @@ namespace ahif_academy.pages
     /// </summary>
     public partial class PageEnglisch : Page
     {
-        private List<Flashcard> _flashcards;
-        private int _currentIndex;
-        private FlashcardService _flashcardService;
+        private List<Flashcard> flashcards;
+        private int currentIndex;
+        private FlashcardService flashcardService;
 
         public PageEnglisch()
         {
             InitializeComponent();
-            _flashcardService = new FlashcardService();
-            _flashcards = _flashcardService.LoadFlashcards();
-            if (_flashcards.Count > 0)
+            flashcardService = new FlashcardService();
+            flashcards = flashcardService.LoadFlashcards();
+            if (flashcards.Count > 0)
             {
-                _currentIndex = 0;
+                currentIndex = 0;
                 DisplayFlashcard();
                 UpdateVocabularyList();
             }
@@ -39,7 +39,7 @@ namespace ahif_academy.pages
 
         private void DisplayFlashcard()
         {
-            var flashcard = _flashcards[_currentIndex];
+            var flashcard = flashcards[currentIndex];
             EnglishTextBlock.Text = flashcard.English;
             GermanTextBlock.Text = flashcard.German;
             GermanTextBlock.Visibility = Visibility.Collapsed;
@@ -52,42 +52,42 @@ namespace ahif_academy.pages
 
         private void Previous_Click(object sender, RoutedEventArgs e)
         {
-            if (_currentIndex > 0)
+            if (currentIndex > 0)
             {
-                _currentIndex--;
+                currentIndex--;
                 DisplayFlashcard();
             }
         }
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            if (_currentIndex < _flashcards.Count - 1)
+            if (currentIndex < flashcards.Count - 1)
             {
-                _currentIndex++;
+                currentIndex++;
                 DisplayFlashcard();
             }
         }
 
         private void AddVocabulary_Click(object sender, RoutedEventArgs e)
         {
-            // Neue Vokabel aus den TextBoxen erstellen
+            
             var newEnglish = NewEnglishTextBox.Text;
             var newGerman = NewGermanTextBox.Text;
 
             if (!string.IsNullOrWhiteSpace(newEnglish) && !string.IsNullOrWhiteSpace(newGerman))
             {
                 var newFlashcard = new Flashcard { English = newEnglish, German = newGerman };
-                _flashcards.Add(newFlashcard);
+                flashcards.Add(newFlashcard);
 
-                // Speichern der aktualisierten Liste der Karteikarten
-                _flashcardService.SaveFlashcards(_flashcards);
+                
+                flashcardService.SaveFlashcards(flashcards);
 
-                // Leeren der TextBoxen
+                
                 NewEnglishTextBox.Text = string.Empty;
                 NewGermanTextBox.Text = string.Empty;
 
-                // Zeige die neue Karteikarte an
-                _currentIndex = _flashcards.Count - 1;
+                
+                currentIndex = flashcards.Count - 1;
                 DisplayFlashcard();
                 UpdateVocabularyList();
 
@@ -98,7 +98,7 @@ namespace ahif_academy.pages
         private void UpdateVocabularyList()
         {
             VocabularyListBox.Items.Clear();
-            foreach (var flashcard in _flashcards)
+            foreach (var flashcard in flashcards)
             {
                 VocabularyListBox.Items.Add($"{flashcard.English} - {flashcard.German}");
             }
@@ -109,8 +109,8 @@ namespace ahif_academy.pages
             int selected = VocabularyListBox.SelectedIndex;
             if(selected  != null)
             {
-                _flashcards.RemoveAt(selected);
-                _flashcardService.SaveFlashcards(_flashcards);
+                flashcards.RemoveAt(selected);
+                flashcardService.SaveFlashcards(flashcards);
                 DisplayFlashcard();
                 UpdateVocabularyList();
             }
