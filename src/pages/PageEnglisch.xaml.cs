@@ -33,6 +33,7 @@ namespace ahif_academy.pages
             {
                 _currentIndex = 0;
                 DisplayFlashcard();
+                UpdateVocabularyList();
             }
         }
 
@@ -88,8 +89,31 @@ namespace ahif_academy.pages
                 // Zeige die neue Karteikarte an
                 _currentIndex = _flashcards.Count - 1;
                 DisplayFlashcard();
+                UpdateVocabularyList();
+
+
             }
             
+        }
+        private void UpdateVocabularyList()
+        {
+            VocabularyListBox.Items.Clear();
+            foreach (var flashcard in _flashcards)
+            {
+                VocabularyListBox.Items.Add($"{flashcard.English} - {flashcard.German}");
+            }
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            int selected = VocabularyListBox.SelectedIndex;
+            if(selected  != null)
+            {
+                _flashcards.RemoveAt(selected);
+                _flashcardService.SaveFlashcards(_flashcards);
+                DisplayFlashcard();
+                UpdateVocabularyList();
+            }
         }
     }
 }

@@ -9,21 +9,23 @@
       Title="PageEnglisch">
 
     <Grid Background="{DynamicResource FrameBackground}">
-        <StackPanel>
+        <StackPanel VerticalAlignment="Center">
             <TextBlock Name="EnglishTextBlock" FontSize="24" TextAlignment="Center" Margin="10" Foreground="Black"/>
-            <Button Content="Lösung" Click="ShowAnswer_Click" Margin="10" FontSize="20"/>
+            <Button Content="Übersetzung" Click="ShowAnswer_Click" Margin="10" FontSize="20" Height="50"/>
             <TextBlock Name="GermanTextBlock" FontSize="24" TextAlignment="Center" Margin="10" Visibility="Collapsed"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="Vorherige" Click="Previous_Click" Margin="10" />
-                <Button Content="Nächste" Click="Next_Click" Margin="10"/>
+                <Button Content="Vorherige" Click="Previous_Click" Margin="10" Width="150" Height="50"/>
+                <Button Content="Nächste" Click="Next_Click" Margin="10" Width="150"/>
             </StackPanel>
             <StackPanel Orientation="Vertical" Margin="10">
                 <TextBlock Text="Englisch"/>
                 <TextBox Name="NewEnglishTextBox"  Margin="5"/>
                 <TextBlock Text="Deutsch"/>
                 <TextBox Name="NewGermanTextBox"  Margin="5"/>
-                <Button Content="Add Vocabulary" Click="AddVocabulary_Click" Margin="5"/>
+                <Button Content="Vokabel hinzufügen" Click="AddVocabulary_Click" Margin="5" Height="50"/>
             </StackPanel>
+            <ListBox Name="VocabularyListBox" Margin="10" Height="200" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Button Content="Löschen" Click="Delete_Click" Margin="10" Width="150" Height="50"/>
         </StackPanel>
     </Grid>
 </Page>
