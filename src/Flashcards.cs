@@ -9,6 +9,8 @@ namespace ahif_academy
 {
     public class Flashcard
     {
-        
+        public string English { get; set; }
+        public string German { get; set; }
+
     }
 }

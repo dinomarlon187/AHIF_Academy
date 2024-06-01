@@ -20,16 +20,31 @@ namespace ahif_academy
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        public void NavigateToPage(Page page)
+        {
+            // Navigate to the given page
+            navframe.Navigate(page);
         }
 
         private void sidebar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selected = sidebar.SelectedItem as NavButton;
             string subject = selected.ToolTip.ToString();
-           /* navframe.Navigate(selected.Navlink);*/
-            if(subject == "Mathe" || subject == "Deutsch" || subject == "Englisch")
+           
+            if(subject == "Mathe")
             {
-                navframe.Navigate(new PageAufgabe());
+                navframe.Navigate(new PageAufgabe("Mathe"));
+            }
+            else if(subject == "Deutsch")
+            {
+                navframe.Navigate(new PageAufgabe("Deutsch"));
+            }
+            else if(subject == "Englisch")
+            {
+                navframe.Navigate(new PageEnglisch());
             }
             else if (subject == "Einstellungen")
             {

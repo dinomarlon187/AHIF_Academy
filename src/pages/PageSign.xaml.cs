@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ahif_academy.pages
 {
     /// <summary>
-    /// Interaction logic for PageLogin.xaml
+    /// Interaction logic for PageSign.xaml
     /// </summary>
-    public partial class PageLogin : Page
+    public partial class PageSign : Page
     {
-        public PageLogin()
+        public PageSign()
         {
             InitializeComponent();
         }
@@ -30,18 +30,18 @@ namespace ahif_academy.pages
             string username = UsernameBox.Text;
             string password = PasswordBox.Password;
 
-            User user = UserManager.AuthenticateUser(username, password);
-            if (user != null)
-            {
-                MessageBox.Show("Login successful!");
+            bool success  = UserManager.RegisterUser(username, password);
 
+            if (success)
+            {
+                MessageBox.Show("Registration successful!");
                 PageHome pageHome = new PageHome();
                 MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
                 mainWindow.NavigateToPage(pageHome);
             }
             else
             {
-                MessageBox.Show("Invalid username or password.");
+                MessageBox.Show("Username already exists.");
             }
         }
     }
