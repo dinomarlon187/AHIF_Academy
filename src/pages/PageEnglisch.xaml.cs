@@ -24,7 +24,7 @@ namespace ahif_academy.pages
         private int currentIndex;
         private FlashcardService flashcardService;
 
-        public PageEnglisch()
+        public PageEnglisch(QuestionList questions)
         {
             InitializeComponent();
             flashcardService = new FlashcardService();

@@ -22,10 +22,10 @@ namespace ahif_academy.pages
     {
         QuestionList QuestionList = new QuestionList();
         Question CurrentQuestion;
-        public PageAufgabe(string subject)
+        public PageAufgabe(QuestionList questions)
         {
             InitializeComponent();
-            QuestionList.DeserializeFromJSON();
+            QuestionList = questions;
             foreach (Question question in QuestionList)
             {
                 question.btnNextQuestion = btnNextQuestion;

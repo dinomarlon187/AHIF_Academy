@@ -32,6 +32,7 @@ namespace ahif_academy
 
         private void sidebar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            questions.SerializeToJSON();
             var selected = sidebar.SelectedItem as NavButton;
             string subject = selected.ToolTip.ToString();
             if(subject == "Mathe")
