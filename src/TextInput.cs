@@ -29,13 +29,15 @@ namespace ahif_academy
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
             VerticalAlignment = System.Windows.VerticalAlignment.Center
         };
-        public TextInput(string text, string subject, string answer, string falseAnswer)
+        public TextInput(string text, string subject, string answer, string falseAnswer, int counter, DateTime lastUsed)
         {
             Text = text;
             Subject = subject;
             CorrectAnswer = answer.Trim();
             FalseAnswer = falseAnswer;
             textblockQuestion.Text = Text;
+            Counter = counter;
+            LastUsed = lastUsed;
         }
         public override void Draw(Grid grid)
         {
@@ -60,7 +62,7 @@ namespace ahif_academy
         }
         public override object Copy()
         {
-            TextInput question = new TextInput(Text, Subject, CorrectAnswer, FalseAnswer);
+            TextInput question = new TextInput(Text, Subject, CorrectAnswer, FalseAnswer, Counter, LastUsed);
             question.btnNextQuestion = btnNextQuestion;
             question.textblockQuestion = textblockQuestion;
             return question;

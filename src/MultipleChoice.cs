@@ -34,12 +34,14 @@ namespace ahif_academy
             Width = 100
         };
 
-        public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject)
+        public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject, int counter, DateTime lastUsed)
         {
             Text = text;
             Answers = new string[] { ans1, ans2, ans3, ans4 };
             CorrectAnswer = correct;
             Subject = subject;
+            Counter = counter;
+            LastUsed = lastUsed;
             this.ans1.Content = Answers[0];
             this.ans2.Content = Answers[1];
             this.ans3.Content = Answers[2];
@@ -119,7 +121,7 @@ namespace ahif_academy
 
         public override object Copy()
         {
-            MultipleChoice question = new MultipleChoice(Text, Answers[0], Answers[1], Answers[2], Answers[3], CorrectAnswer, Subject);
+            MultipleChoice question = new MultipleChoice(Text, Answers[0], Answers[1], Answers[2], Answers[3], CorrectAnswer, Subject, Counter, LastUsed);
             question.btnNextQuestion = btnNextQuestion;
             question.textblockQuestion = textblockQuestion;
             return question;

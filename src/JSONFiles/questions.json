@@ -51,5 +51,49 @@
         "Type": "TextInput",
 		"Counter": "0",
 		"LastUsed": "01.06.2024 15:57:30"
-    }
+    },
+	{
+    "Text": "Verbessere folgenden Satz:",
+    "WrongAnswer": "Ich Gehe Zu Die Schule.",
+    "CorrectAnswer": "Ich gehe zur Schule.",
+    "Subject": "Deutsch",
+    "Type": "TextInput",
+    "Counter": "0",
+    "LastUsed": "01.06.2024 15:57:30"
+	},{
+    "Text": "Verbessere folgenden Satz:",
+    "WrongAnswer": "Er Hat Ein Auto Gehabt.",
+    "CorrectAnswer": "Er hat ein Auto.",
+    "Subject": "Deutsch",
+    "Type": "TextInput",
+    "Counter": "0",
+	"LastUsed": "01.06.2024 15:57:30"
+	},
+	{
+    "Text": "Verbessere folgenden Satz:",
+    "WrongAnswer": "Das Ist Mein Freund. Er Ist Ein Lehrer.",
+    "CorrectAnswer": "Das ist mein Freund, der Lehrer ist.",
+    "Subject": "Deutsch",
+    "Type": "TextInput",
+    "Counter": "0",
+    "LastUsed": "01.06.2024 15:57:30"
+	},
+	{
+    "Text": "Verbessere folgenden Satz:",
+    "WrongAnswer": "Haben Sie Einem Kugelschreiber?",
+    "CorrectAnswer": "Haben Sie einen Kugelschreiber?",
+    "Subject": "Deutsch",
+    "Type": "TextInput",
+    "Counter": "0",
+    "LastUsed": "01.06.2024 15:57:30"
+	},
+	{
+    "Text": "Verbessere folgenden Satz:",
+    "WrongAnswer": "Ich Habe Zwei Katzen Und Einen Hund.",
+    "CorrectAnswer": "Ich habe zwei Katzen und einen Hund.",
+    "Subject": "Deutsch",
+    "Type": "TextInput",
+    "Counter": "0",
+    "LastUsed": "01.06.2024 15:57:30"
+	}
 ]

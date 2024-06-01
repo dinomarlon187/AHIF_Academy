@@ -40,6 +40,8 @@ namespace ahif_academy
         }
 
         public  string CorrectAnswer { get; set; }
+        public DateTime LastUsed { get; set; }
+        public int Counter { get; set; }
         public abstract void Draw(Grid grid);
         public bool CheckAnswer(string answer)
         {
