@@ -62,5 +62,13 @@ namespace ahif_academy
         {
             return questions.GetEnumerator();
         }
+        public void Add(Question question)
+        {
+            questions.Add(question);
+        }
+        public void Remove(Question question)
+        {
+            questions.Remove(question);
+        }
     }
 }
