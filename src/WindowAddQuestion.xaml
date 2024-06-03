@@ -1,0 +1,15 @@
+﻿<Window x:Class="ahif_academy.WindowAddQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ahif_academy"
+        mc:Ignorable="d"
+        Title="WindowAddQuestion" Height="600" Width="900" ResizeMode="NoResize">
+    <Canvas x:Name="canvas">
+        <TextBlock x:Name="TextBlockHeader" Text="Füge eine neue Frage hinzu:" FontSize="50" Canvas.Left="50" Canvas.Top="10"/>
+        <Button x:Name="ButtonCancel" Content="CANCEL" Width="100" Height="50" IsCancel="True" Canvas.Left="610" Canvas.Top="500"/>
+        <Button x:Name="ButtonOK" Content="OK" Width="100" Height="50" Click="ButtonOK_Click" Canvas.Left="720" Canvas.Top="500"/>
+        
+    </Canvas>
+</Window>
