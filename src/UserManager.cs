@@ -51,9 +51,11 @@ namespace ahif_academy
                 return false; 
             }
 
-            
-            users.Add(new User { Username = username, Password = password });
+            User user = new User { Username = username, Password = password };
+            users.Add(user);
             SavedUsers(users);
+            CurrentUser = user;
+            
             return true; 
         }
     }
