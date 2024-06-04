@@ -30,18 +30,35 @@ namespace ahif_academy.pages
 
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowAddQuestion windowAddQuestion = new WindowAddQuestion();
+            windowAddQuestion.ShowDialog();
+            if (windowAddQuestion.DialogResult == true)
+            {
+                questions.Add((Question)windowAddQuestion.question);
+                UpdateListBox(questions);
+                questions.SerializeToJSON();
+            }
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
             questions.Remove((Question)listBoxQuestions.SelectedItem);
             UpdateListBox(questions);
+            questions.SerializeToJSON();
         }
 
         private void ButtonEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            questions.Remove((Question)listBoxQuestions.SelectedItem);
+            WindowAddQuestion windowAddQuestion = new WindowAddQuestion((Question)listBoxQuestions.SelectedItem);
+            windowAddQuestion.ShowDialog();
+            if (windowAddQuestion.DialogResult == true)
+            {
+                questions.Add((Question)windowAddQuestion.question);
+                UpdateListBox(questions);
+                questions.SerializeToJSON();
+            }
+           
         }
 
         private void buttonSearch_Click(object sender, RoutedEventArgs e)
