@@ -9,23 +9,40 @@
       Title="PageEnglisch">
 
     <Grid Background="{DynamicResource FrameBackground}">
-        <StackPanel VerticalAlignment="Center">
-            <TextBlock Name="EnglishTextBlock" FontSize="24" TextAlignment="Center" Margin="10" Foreground="Black"/>
-            <Button Content="Übersetzung" Click="ShowAnswer_Click" Margin="10" FontSize="20" Height="50"/>
-            <TextBlock Name="GermanTextBlock" FontSize="24" TextAlignment="Center" Margin="10" Visibility="Collapsed"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="Vorherige" Click="Previous_Click" Margin="10" Width="150" Height="50"/>
-                <Button Content="Nächste" Click="Next_Click" Margin="10" Width="150"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Center" Grid.Row="1">
+            <StackPanel x:Name="lernen" Visibility="Visible">
+                <TextBlock Name="EnglishTextBlock" FontSize="24" TextAlignment="Center" Margin="10" Foreground="Black"/>
+                <Button Content="Übersetzung" Click="ShowAnswer_Click" Margin="10" FontSize="20" Height="42"/>
+                <TextBlock Name="GermanTextBlock" FontSize="24" TextAlignment="Center" Margin="10" Visibility="Collapsed"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Content="Vorherige" Click="Previous_Click" Margin="10" Width="150" Height="42"/>
+                    <Button Content="Nächste" Click="Next_Click" Margin="10" Width="150"/>
+                </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Vertical" Margin="10">
+            
+            <StackPanel x:Name="addVoc" Orientation="Vertical" Margin="10" Visibility="Collapsed">
                 <TextBlock Text="Englisch"/>
                 <TextBox Name="NewEnglishTextBox"  Margin="5"/>
                 <TextBlock Text="Deutsch"/>
                 <TextBox Name="NewGermanTextBox"  Margin="5"/>
-                <Button Content="Vokabel hinzufügen" Click="AddVocabulary_Click" Margin="5" Height="50"/>
+                <Button Content="Vokabel hinzufügen" Click="AddVocabulary_Click" Margin="5" Height="42"/>
             </StackPanel>
-            <ListBox Name="VocabularyListBox" Margin="10" Height="200" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Button Content="Löschen" Click="Delete_Click" Margin="10" Width="150" Height="50"/>
+            <StackPanel x:Name="liste" Visibility="Collapsed">
+                <ListBox Name="VocabularyListBox" Margin="10" Height="200" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                <Button Content="Löschen" Click="Delete_Click" Margin="10" Width="150" Height="42" />
+            </StackPanel>
+            
         </StackPanel>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center"  >
+            <Button x:Name="lernenButton" Background="AliceBlue" Foreground="Black"  Content="Lernen" Click="Lernen_Click"  Width="150" Height="42" Margin="10"/>
+            <Button x:Name="addVocButton" Background="Transparent" Foreground="Black" Content="Vokabel hinzufügen" Click="AddVoc_Click"  FontSize="15" Width="150" Height="42" Margin="10"/>
+            <Button x:Name="listeButton" Background="Transparent" Foreground="Black" Content="Liste" Click="Liste_Click"  Width="150" Height="42" Margin="10"/>
+        </StackPanel>
+
+
     </Grid>
 </Page>

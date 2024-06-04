@@ -29,6 +29,8 @@ namespace ahif_academy.pages
             if (UserManager.CurrentUser != null)
             {
                 benutzer.Text = UserManager.CurrentUser.Username;
+                ButtonAnmelden.Visibility = Visibility.Collapsed;
+                ButtonRegistrieren.Visibility = Visibility.Collapsed;
             }
             else
             {

@@ -23,6 +23,8 @@ namespace ahif_academy.pages
         private List<Flashcard> flashcards;
         private int currentIndex;
         private FlashcardService flashcardService;
+        SolidColorBrush colour = new SolidColorBrush(Colors.AliceBlue);
+        SolidColorBrush trans = new SolidColorBrush(Colors.Transparent);
 
         public PageEnglisch(QuestionList questions)
         {
@@ -36,6 +38,8 @@ namespace ahif_academy.pages
                 UpdateVocabularyList();
             }
         }
+
+        
 
         private void DisplayFlashcard()
         {
@@ -87,8 +91,8 @@ namespace ahif_academy.pages
                 NewGermanTextBox.Text = string.Empty;
 
                 
-                currentIndex = flashcards.Count - 1;
-                DisplayFlashcard();
+                
+                
                 UpdateVocabularyList();
 
 
@@ -111,9 +115,41 @@ namespace ahif_academy.pages
             {
                 flashcards.RemoveAt(selected);
                 flashcardService.SaveFlashcards(flashcards);
-                DisplayFlashcard();
                 UpdateVocabularyList();
+                
+                
             }
+        }
+
+        private void Lernen_Click(object sender, RoutedEventArgs e)
+        {
+            lernen.Visibility = Visibility.Visible;
+            addVoc.Visibility = Visibility.Collapsed;
+            liste.Visibility = Visibility.Collapsed;
+            lernenButton.Background = colour;
+            addVocButton.Background = trans;
+            listeButton.Background = trans;
+
+        }
+
+        private void AddVoc_Click(object sender, RoutedEventArgs e)
+        {
+            lernen.Visibility = Visibility.Collapsed;
+            addVoc.Visibility = Visibility.Visible;
+            liste.Visibility = Visibility.Collapsed;
+            lernenButton.Background = trans;
+            addVocButton.Background = colour;
+            listeButton.Background = trans;
+        }
+
+        private void Liste_Click(object sender, RoutedEventArgs e)
+        {
+            lernen.Visibility = Visibility.Collapsed;
+            addVoc.Visibility = Visibility.Collapsed;
+            liste.Visibility = Visibility.Visible;
+            lernenButton.Background = trans;
+            addVocButton.Background = trans;
+            listeButton.Background = colour;
         }
     }
 }
