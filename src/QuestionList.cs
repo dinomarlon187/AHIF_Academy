@@ -12,7 +12,6 @@ namespace ahif_academy
     {
         private List<Question> questions = new List<Question>();
         Random random = new Random();
-        public string CurrentSubject { get; set; }
 
         public void DeserializeFromJSON()
         {
@@ -42,7 +41,7 @@ namespace ahif_academy
         public void SerializeToJSON()
         {
             string jsonString = JsonConvert.SerializeObject(questions);
-            System.IO.File.WriteAllText("Questions.json", jsonString);
+            System.IO.File.WriteAllText("../../../JSONFiles/Questions.json", jsonString);
         }
         public Question GetRandomQuestion()
         {
