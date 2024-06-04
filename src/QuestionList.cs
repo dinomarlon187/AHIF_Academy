@@ -11,7 +11,7 @@ namespace ahif_academy
     public class QuestionList
     {
         private List<Question> questions = new List<Question>();
-
+        Random random = new Random();
         public string CurrentSubject { get; set; }
 
         public void DeserializeFromJSON()
@@ -22,15 +22,15 @@ namespace ahif_academy
             {
                 if (question.Type == "MultipleChoice")
                 {
-                    questions.Add(new MultipleChoice(question.Text.ToString(), question.Answers[0].ToString(), question.Answers[1].ToString(), question.Answers[2].ToString(), question.Answers[3].ToString(), question.CorrectAnswer.ToString(), question.Subject.ToString()));
+                    questions.Add(new MultipleChoice(question.Text.ToString(), question.Answers[0].ToString(), question.Answers[1].ToString(), question.Answers[2].ToString(), question.Answers[3].ToString(), question.CorrectAnswer.ToString(), question.Subject.ToString(), Convert.ToInt16(question.Counter), Convert.ToDateTime(question.LastUsed)));
                 }
                 else if (question.Type == "YesNo")
                 {
-                    questions.Add(new YesNo(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString()));
+                    questions.Add(new YesNo(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString(), Convert.ToInt16(question.Counter), Convert.ToDateTime(question.LastUsed)));
                 }
                 else if (question.Type == "TextInput")
                 {
-                    questions.Add(new TextInput(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString(),question.WrongAnswer.ToString()));
+                    questions.Add(new TextInput(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString(),question.WrongAnswer.ToString(), Convert.ToInt16(question.Counter), Convert.ToDateTime(question.LastUsed)));
                 }
                 else
                 {
@@ -46,17 +46,29 @@ namespace ahif_academy
         }
         public Question GetRandomQuestion()
         {
-            Random random = new Random();
-            int index = random.Next(questions.Count);
+            questions = questions.OrderBy(x => x.Counter).ThenBy(x => x.LastUsed).ToList();
+            int index = random.Next(0,5);
+            questions[index].Counter++;
+            questions[index].LastUsed = DateTime.Now;
             return questions[index];
         }
-        public void FilterBySubject(string subject)
+        public QuestionList FilterBySubject(string subject)
         {
-            questions = questions.Where(q => q.Subject.ToLower() == subject).ToList();
+            QuestionList filteredList = new QuestionList();
+            filteredList.questions = this.questions.Where(q => q.Subject.ToLower() == subject.ToLower()).ToList();
+            return filteredList;
         }
         public IEnumerator GetEnumerator()
         {
             return questions.GetEnumerator();
+        }
+        public void Add(Question question)
+        {
+            questions.Add(question);
+        }
+        public void Remove(Question question)
+        {
+            questions.Remove(question);
         }
     }
 }

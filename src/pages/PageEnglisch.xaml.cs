@@ -26,7 +26,7 @@ namespace ahif_academy.pages
         SolidColorBrush colour = new SolidColorBrush(Colors.AliceBlue);
         SolidColorBrush trans = new SolidColorBrush(Colors.Transparent);
 
-        public PageEnglisch()
+        public PageEnglisch(QuestionList questions)
         {
             InitializeComponent();
             flashcardService = new FlashcardService();

@@ -22,21 +22,23 @@ namespace ahif_academy.pages
     {
         QuestionList QuestionList = new QuestionList();
         Question CurrentQuestion;
-        public PageAufgabe(string subject)
+        public PageAufgabe(QuestionList questions)
         {
             InitializeComponent();
-            QuestionList.DeserializeFromJSON();
+            QuestionList = questions;
             foreach (Question question in QuestionList)
             {
                 question.btnNextQuestion = btnNextQuestion;
             }
             CurrentQuestion = QuestionList.GetRandomQuestion();
+            CurrentQuestion = (Question)CurrentQuestion.Copy();
             CurrentQuestion.Draw(grid);
         }
 
         private void btnNextQuestion_Click(object sender, RoutedEventArgs e)
         {
             CurrentQuestion = QuestionList.GetRandomQuestion();
+            CurrentQuestion = (Question)CurrentQuestion.Copy();
             CurrentQuestion.Draw(grid);
             btnNextQuestion.Visibility = Visibility.Hidden;
         }

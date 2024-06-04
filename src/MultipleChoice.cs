@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace ahif_academy
 {
@@ -33,12 +34,14 @@ namespace ahif_academy
             Width = 100
         };
 
-        public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject)
+        public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject, int counter, DateTime lastUsed)
         {
             Text = text;
             Answers = new string[] { ans1, ans2, ans3, ans4 };
             CorrectAnswer = correct;
             Subject = subject;
+            Counter = counter;
+            LastUsed = lastUsed;
             this.ans1.Content = Answers[0];
             this.ans2.Content = Answers[1];
             this.ans3.Content = Answers[2];
@@ -59,13 +62,13 @@ namespace ahif_academy
             ans2.Click += Click;
 
             
-            Grid.SetRow(ans3, 1);
-            Grid.SetColumn(ans3, 2);
+            Grid.SetRow(ans3, 2);
+            Grid.SetColumn(ans3, 0);
             ans3.Click += Click;
 
             
-            Grid.SetRow(ans4, 1);
-            Grid.SetColumn(ans4, 3);
+            Grid.SetRow(ans4, 2);
+            Grid.SetColumn(ans4, 1);
             ans4.Click += Click;
 
             textblockQuestion.Text = Text;
@@ -78,11 +81,50 @@ namespace ahif_academy
             grid.Children.Add(btnNextQuestion);
 
         }
-
+        
         private void Click(object sender, RoutedEventArgs e)
         {
+            if (sender is Button button && AnswerPressed == false)
+            {
+                AnswerPressed = true;
+                if (Answers[0] == CorrectAnswer)
+                {
+                    ans1.Background = Brushes.Green; 
+                }
+                else if (Answers[1] == CorrectAnswer)
+                {
+                    ans2.Background = Brushes.Green;
+                }
+                else if (Answers[2] == CorrectAnswer)
+                {
+                    ans3.Background = Brushes.Green;
+                }
+                else
+                {
+                    ans4.Background = Brushes.Green;
+                }
+
             
+                if (button.Content.ToString() != CorrectAnswer)
+                {
+                    button.Background = Brushes.Red;
+                }
+                btnNextQuestion.IsEnabled = true;
+                btnNextQuestion.Visibility = Visibility.Visible;
+
+            }
+
+
+
+
         }
 
+        public override object Copy()
+        {
+            MultipleChoice question = new MultipleChoice(Text, Answers[0], Answers[1], Answers[2], Answers[3], CorrectAnswer, Subject, Counter, LastUsed);
+            question.btnNextQuestion = btnNextQuestion;
+            question.textblockQuestion = textblockQuestion;
+            return question;
+        }
     }
 }

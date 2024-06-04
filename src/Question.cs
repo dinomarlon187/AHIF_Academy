@@ -9,6 +9,7 @@ namespace ahif_academy
 {
     public abstract class Question
     {
+        protected bool AnswerPressed = false;
         public Button btnNextQuestion = new Button();
         protected TextBlock textblockQuestion = new TextBlock()
         {
@@ -39,13 +40,14 @@ namespace ahif_academy
         }
 
         public  string CorrectAnswer { get; set; }
+        public DateTime LastUsed { get; set; }
+        public int Counter { get; set; }
         public abstract void Draw(Grid grid);
         public bool CheckAnswer(string answer)
         {
             return answer == CorrectAnswer;
         }
-
-        
+        public abstract object Copy(); 
 
 
     }

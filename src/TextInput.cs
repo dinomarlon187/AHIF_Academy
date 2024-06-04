@@ -29,13 +29,15 @@ namespace ahif_academy
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
             VerticalAlignment = System.Windows.VerticalAlignment.Center
         };
-        public TextInput(string text, string subject, string answer, string falseAnswer)
+        public TextInput(string text, string subject, string answer, string falseAnswer, int counter, DateTime lastUsed)
         {
             Text = text;
             Subject = subject;
             CorrectAnswer = answer.Trim();
             FalseAnswer = falseAnswer;
             textblockQuestion.Text = Text;
+            Counter = counter;
+            LastUsed = lastUsed;
         }
         public override void Draw(Grid grid)
         {
@@ -58,7 +60,13 @@ namespace ahif_academy
             grid.Children.Add(btnNextQuestion);
             
         }
-
+        public override object Copy()
+        {
+            TextInput question = new TextInput(Text, Subject, CorrectAnswer, FalseAnswer, Counter, LastUsed);
+            question.btnNextQuestion = btnNextQuestion;
+            question.textblockQuestion = textblockQuestion;
+            return question;
+        }
         private void Submit_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             if (sender is Button button)
@@ -152,10 +160,11 @@ namespace ahif_academy
 
                       
                         }
-                        btnNextQuestion.IsEnabled = true;
-                        btnNextQuestion.Visibility = Visibility.Visible;
+                        
                     }
-                    
+                    btnNextQuestion.IsEnabled = true;
+                    btnNextQuestion.Visibility = Visibility.Visible;
+
                 }
             }
 

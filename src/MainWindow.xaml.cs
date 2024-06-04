@@ -17,10 +17,11 @@ namespace ahif_academy
     /// </summary>
     public partial class MainWindow : Window
     {
+        QuestionList questions = new QuestionList();
         public MainWindow()
         {
             InitializeComponent();
-            
+            questions.DeserializeFromJSON();
         }
 
         public void NavigateToPage(Page page)
@@ -33,18 +34,23 @@ namespace ahif_academy
         {
             var selected = sidebar.SelectedItem as NavButton;
             string subject = selected.ToolTip.ToString();
-           
             if(subject == "Mathe")
             {
-                navframe.Navigate(new PageAufgabe("Mathe"));
+                QuestionList q;
+                q = questions.FilterBySubject("Mathe");
+                navframe.Navigate(new PageAufgabe(q));
             }
             else if(subject == "Deutsch")
             {
-                navframe.Navigate(new PageAufgabe("Deutsch"));
+                QuestionList q;
+                q = questions.FilterBySubject("Deutsch");
+                navframe.Navigate(new PageAufgabe(q));
             }
             else if(subject == "Englisch")
             {
-                navframe.Navigate(new PageEnglisch());
+                QuestionList q;
+                q = questions.FilterBySubject("Englisch");
+                navframe.Navigate(new PageEnglisch(q));
             }
             else if (subject == "Einstellungen")
             {
