@@ -111,6 +111,10 @@ namespace ahif_academy
             }
             
         }
+        public override string ToString()
+        {
+            return $"Subject: {Subject}, Text: {Text}, Richtige Antwort: {CorrectAnswer}";
+        }
 
 
     }

@@ -126,5 +126,9 @@ namespace ahif_academy
             question.textblockQuestion = textblockQuestion;
             return question;
         }
+        public override string ToString()
+        {
+            return $"Subject: {Subject}, Text: {Text}, Richtige Antwort: {CorrectAnswer}, Antwort1: {Answers[0]},Antwort2:  {Answers[1]},Antwort3:  {Answers[2]},Antwort4:  {Answers[3]}";
+        }
     }
 }

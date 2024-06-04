@@ -67,7 +67,7 @@ namespace ahif_academy
             question.textblockQuestion = textblockQuestion;
             return question;
         }
-        private void Submit_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void Submit_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button)
             {
@@ -169,6 +169,10 @@ namespace ahif_academy
             }
 
             
+        }
+        public override string ToString()
+        {
+            return $"Subject: {Subject}, Text: {Text},Richtige Antwort: {CorrectAnswer}, Falsche Antwort: {FalseAnswer}";
         }
     }
 }
