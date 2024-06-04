@@ -19,7 +19,7 @@ namespace ahif_academy
     /// </summary>
     public partial class WindowAddQuestion : Window
     {
-        object question = null;
+        public object question = null;
         string[] textBoxTexts = new string[] { "", "", "", "", "", "", "" };
         string questionType = "";
         ComboBox cbQuestionType = new ComboBox();
@@ -83,6 +83,7 @@ namespace ahif_academy
             cb.SelectedIndex = 0;
             cb.Width = 200;
             cb.Height = 30;
+            cb.SelectedItem = question.Subject;
             Canvas.SetTop(cb, 90);
             Canvas.SetLeft(cb, 340);
 
