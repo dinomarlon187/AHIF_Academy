@@ -10,26 +10,27 @@ namespace ahif_academy
 {
     public class QuestionList
     {
+        [JsonProperty]
         private List<Question> questions = new List<Question>();
         Random random = new Random();
 
-        public void DeserializeFromJSON()
+        public static void DeserializeFromJSON(string path, QuestionList questions)
         {
-            string jsonString = System.IO.File.ReadAllText("../../../JSONFiles/Questions.json");
+            string jsonString = System.IO.File.ReadAllText(path);
             dynamic jsonObj = JsonConvert.DeserializeObject(jsonString);
-            foreach (var question in jsonObj)
+            foreach (var question in jsonObj.questions)
             {
                 if (question.Type == "MultipleChoice")
                 {
-                    questions.Add(new MultipleChoice(question.Text.ToString(), question.Answers[0].ToString(), question.Answers[1].ToString(), question.Answers[2].ToString(), question.Answers[3].ToString(), question.CorrectAnswer.ToString(), question.Subject.ToString(), Convert.ToInt16(question.Counter), Convert.ToDateTime(question.LastUsed)));
+                    questions.Add(new MultipleChoice(question.Text.ToString(), question.Answers[0].ToString(), question.Answers[1].ToString(), question.Answers[2].ToString(), question.Answers[3].ToString(), question.CorrectAnswer.ToString(), question.Subject.ToString()));
                 }
                 else if (question.Type == "YesNo")
                 {
-                    questions.Add(new YesNo(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString(), Convert.ToInt16(question.Counter), Convert.ToDateTime(question.LastUsed)));
+                    questions.Add(new YesNo(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString()));
                 }
                 else if (question.Type == "TextInput")
                 {
-                    questions.Add(new TextInput(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString(),question.WrongAnswer.ToString(), Convert.ToInt16(question.Counter), Convert.ToDateTime(question.LastUsed)));
+                    questions.Add(new TextInput(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString(),question.WrongAnswer.ToString()));
                 }
                 else
                 {
@@ -38,10 +39,10 @@ namespace ahif_academy
             }   
             
         }
-        public void SerializeToJSON()
+        public static void SerializeToJSON(string path, QuestionList q)
         {
-            string jsonString = JsonConvert.SerializeObject(questions);
-            System.IO.File.WriteAllText("../../../JSONFiles/Questions.json", jsonString);
+            string jsonString = JsonConvert.SerializeObject(q, Formatting.Indented);
+            System.IO.File.WriteAllText(path, jsonString);
         }
         public Question GetRandomQuestion()
         {
