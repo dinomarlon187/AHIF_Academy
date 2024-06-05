@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +8,11 @@ using System.Windows.Controls;
 
 namespace ahif_academy
 {
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public abstract class Question
     {
+        [JsonProperty]
+        public string Type { get; set; }
         protected bool AnswerPressed = false;
         public Button btnNextQuestion = new Button();
         protected TextBlock textblockQuestion = new TextBlock()
@@ -18,7 +22,9 @@ namespace ahif_academy
         };
         protected string subject;
         protected string[] subjects = { "mathe", "englisch", "deutsch" };
+        [JsonProperty]
         public string Text { get; set; }
+        [JsonProperty]
         public string Subject 
         {
             get
@@ -38,7 +44,7 @@ namespace ahif_academy
                     
             }
         }
-
+        [JsonProperty]
         public  string CorrectAnswer { get; set; }
         public DateTime LastUsed { get; set; }
         public int Counter { get; set; }
