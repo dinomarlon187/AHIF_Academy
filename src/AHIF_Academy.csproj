@@ -11,9 +11,12 @@
   <ItemGroup>
     <None Remove="pictures\cool_picture.png" />
     <None Remove="pictures\katze.png" />
+    <None Remove="pictures\maximieren.png" />
+    <None Remove="pictures\minimieren.png" />
     <None Remove="pictures\moon.png" />
     <None Remove="pictures\night.png" />
     <None Remove="pictures\profile.jpeg" />
+    <None Remove="pictures\schliessen.png" />
     <None Remove="pictures\speichern.png" />
     <None Remove="pictures\spiderman.png" />
     <None Remove="pictures\sun.png" />
@@ -27,6 +30,12 @@
     <Content Include="pictures\katze.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="pictures\maximieren.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pictures\minimieren.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="pictures\moon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -34,6 +43,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="pictures\profile.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pictures\schliessen.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="pictures\speichern.png">
