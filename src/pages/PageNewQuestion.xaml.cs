@@ -20,12 +20,11 @@ namespace ahif_academy.pages
     /// </summary>
     public partial class PageNewQuestion : Page
     {
-        QuestionList questions;
-        public PageNewQuestion(QuestionList questions)
+        User currentUser = UserManager.CurrentUser;
+        public PageNewQuestion()
         {
             InitializeComponent();
-            this.questions = questions;
-            UpdateListBox(questions);
+            UpdateListBox(currentUser.Questions);
         }
 
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
@@ -34,29 +33,29 @@ namespace ahif_academy.pages
             windowAddQuestion.ShowDialog();
             if (windowAddQuestion.DialogResult == true)
             {
-                questions.Add((Question)windowAddQuestion.question);
-                UpdateListBox(questions);
-                questions.SerializeToJSON();
+                currentUser.Questions.Add((Question)windowAddQuestion.question);
+                UpdateListBox(currentUser.Questions);
+                QuestionList.SerializeToJSON(currentUser.filepathuser, currentUser.Questions);
             }
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
-            questions.Remove((Question)listBoxQuestions.SelectedItem);
-            UpdateListBox(questions);
-            questions.SerializeToJSON();
+            currentUser.Questions.Remove((Question)listBoxQuestions.SelectedItem);
+            UpdateListBox(currentUser.Questions);
+            QuestionList.SerializeToJSON(currentUser.filepathuser, currentUser.Questions);
         }
 
         private void ButtonEdit_Click(object sender, RoutedEventArgs e)
         {
-            questions.Remove((Question)listBoxQuestions.SelectedItem);
+            currentUser.Questions.Remove((Question)listBoxQuestions.SelectedItem);
             WindowAddQuestion windowAddQuestion = new WindowAddQuestion((Question)listBoxQuestions.SelectedItem);
             windowAddQuestion.ShowDialog();
             if (windowAddQuestion.DialogResult == true)
             {
-                questions.Add((Question)windowAddQuestion.question);
-                UpdateListBox(questions);
-                questions.SerializeToJSON();
+                currentUser.Questions.Add((Question)windowAddQuestion.question);
+                UpdateListBox(currentUser.Questions);
+                QuestionList.SerializeToJSON(currentUser.filepathuser, currentUser.Questions);
             }
            
         }
@@ -64,7 +63,7 @@ namespace ahif_academy.pages
         private void buttonSearch_Click(object sender, RoutedEventArgs e)
         {
             QuestionList filteredQuestions = new QuestionList();
-            foreach (Question question in questions)
+            foreach (Question question in currentUser.Questions)
             {
                 if (question.Text.Contains(textBoxSearch.Text))
                 {
