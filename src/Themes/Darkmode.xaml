@@ -4,6 +4,7 @@
     
     <SolidColorBrush Color="#1c1b21" x:Key="Background"/>
     <SolidColorBrush Color="#353b48" x:Key="FrameBackground"/>
+    <SolidColorBrush Color="white" x:Key="foreground"/>
     <Style TargetType="ListBox">
         <Setter Property="Background" Value="#353b48"/>
     </Style>
@@ -11,8 +12,8 @@
         <Setter Property="Background" Value="#dfe6e9"/>
         <Setter Property="Foreground" Value="Black"/>
     </Style>
-    <Style TargetType="Label">
-        <Setter Property="Foreground" Value="#dfe6e9"/>
+    <Style TargetType="TextBlock" >
+        <Setter Property="Foreground" Value="white"/>
     </Style>
     <Style x:Key="ThemeToggleButtonStyle" TargetType="ToggleButton">
         <Setter Property="Template">

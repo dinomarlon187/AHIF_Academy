@@ -1,34 +1,13 @@
 [
   {
     "Username": "ensar680",
-    "Password": "ensar6868"
+    "Password": "ensar6868",
+    "Profilpicture": "../pictures/katze.png"
   },
+
   {
-    "Username": "marlon",
-    "Password": "marlon187"
-  },
-  {
-    "Username": "marlon187",
-    "Password": "ensar"
-  },
-  {
-    "Username": "dinomarlon187",
-    "Password": "Jack.<hacken"
-  },
-  {
-    "Username": "marlon678",
-    "Password": "marlon"
-  },
-  {
-    "Username": "dynamike",
-    "Password": "dyno187"
-  },
-  {
-    "Username": "dyno",
-    "Password": "dyno"
-  },
-  {
-    "Username": "elprimo",
-    "Password": "elprimo"
+    "Username": "ab",
+    "Password": "ab",
+    "Profilpicture": "../pictures/katze.png"
   }
 ]

@@ -5,19 +5,50 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ahif_academy.pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="680" d:DesignWidth="1075"
       Title="PageEinstellungen">
-    <Page.Resources>
-        
-    </Page.Resources>
-        <Grid >
-        
+
+    <Grid Background="{DynamicResource FrameBackground}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="3.5*"/>
         </Grid.RowDefinitions>
-        <ToggleButton x:Name="ThemeToggleButton" Width="120" Height="60" Cursor="Hand" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked" Style="{DynamicResource ThemeToggleButtonStyle}">
-            
-        </ToggleButton>
+        <Border Background="AliceBlue" CornerRadius="25" Margin="5,5,5,30">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="left">
+                <Ellipse Width="80" Height="80" Margin="10,0,0,0">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="{Binding Path=ImagePath}"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                
+                <TextBlock Text="Max123" FontSize="25" Margin="5,25,0,0"/>
+                    
+                
+            </StackPanel>
+        </Border>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Border Margin="5" Background="AliceBlue" CornerRadius="25">
+                <StackPanel>
+                    <TextBlock Text="Mode" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <ToggleButton x:Name="ThemeToggleButton" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Width="120" Height="60" Cursor="Hand" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked" Style="{DynamicResource ThemeToggleButtonStyle}">
+                    </ToggleButton>
+                </StackPanel>
+            </Border>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Border Margin="5" Background="AliceBlue" CornerRadius="25">
+                    <StackPanel>
+                        <TextBlock Text="Profilbild" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <ComboBox Width="100" Height="50" Margin="8" Name="Profilbild" SelectionChanged="ComboBox_SelectionChanged">
+                            <ComboBoxItem Content="Katze" IsSelected="True"/>
+                            <ComboBoxItem Content="Spiderman"/>
+                            <ComboBoxItem Content="Cool"/>
+                        </ComboBox>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+       
+        
+        
     </Grid>
 </Page>

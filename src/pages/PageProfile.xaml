@@ -9,6 +9,20 @@
       Title="PageLogin" Background="{DynamicResource Background}">
 
     <Grid Background="{DynamicResource FrameBackground}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3.5*"/>
+        </Grid.RowDefinitions>
+        <Border Background="AliceBlue" CornerRadius="25" Margin="5,5,5,30">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="left">
+                <Ellipse Width="80" Height="80" Margin="10,0,0,0">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="{Binding Path=ImagePath}"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Text="Max123" FontSize="25" Margin="5,25,0,0"/>
+            </StackPanel>
+        </Border>
         
     </Grid>
 </Page>

@@ -9,13 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="pictures\katze.png" />
     <None Remove="pictures\moon.png" />
     <None Remove="pictures\night.png" />
     <None Remove="pictures\profile.jpeg" />
+    <None Remove="pictures\spiderman.png" />
     <None Remove="pictures\sun.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="pictures\katze.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="pictures\moon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -23,6 +28,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="pictures\profile.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pictures\spiderman.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="pictures\sun.png">

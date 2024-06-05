@@ -38,9 +38,9 @@
             
         </StackPanel>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center"  >
-            <Button x:Name="lernenButton" Background="AliceBlue" Foreground="Black"  Content="Lernen" Click="Lernen_Click"  Width="150" Height="42" Margin="10"/>
-            <Button x:Name="addVocButton" Background="Transparent" Foreground="Black" Content="Vokabel hinzufügen" Click="AddVoc_Click"  FontSize="15" Width="150" Height="42" Margin="10"/>
-            <Button x:Name="listeButton" Background="Transparent" Foreground="Black" Content="Liste" Click="Liste_Click"  Width="150" Height="42" Margin="10"/>
+            <Button x:Name="lernenButton" Background="AliceBlue" Foreground="{DynamicResource foreground}"  Content="Lernen" Click="Lernen_Click"  Width="150" Height="42" Margin="10"/>
+            <Button x:Name="addVocButton" Background="Transparent" Foreground="{DynamicResource foreground}" Content="Vokabel hinzufügen" Click="AddVoc_Click"  FontSize="15" Width="150" Height="42" Margin="10"/>
+            <Button x:Name="listeButton" Background="Transparent" Foreground="{DynamicResource foreground}" Content="Liste" Click="Liste_Click"  Width="150" Height="42" Margin="10"/>
         </StackPanel>
 
 

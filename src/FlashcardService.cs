@@ -11,23 +11,23 @@ namespace ahif_academy
 {
     class FlashcardService
     {
-        private readonly string _filePath = "../../../JSONFiles/vocable.json";
+        private readonly string filePath = "../../../JSONFiles/vocable.json";
 
         public List<Flashcard> LoadFlashcards()
         {
-            if (!File.Exists(_filePath))
+            if (!File.Exists(filePath))
             {
                 return new List<Flashcard>();
             }
 
-            var json = File.ReadAllText(_filePath);
+            var json = File.ReadAllText(filePath);
             return JsonConvert.DeserializeObject<List<Flashcard>>(json);
         }
 
         public void SaveFlashcards(List<Flashcard> flashcards)
         {
             var json = JsonConvert.SerializeObject(flashcards, Formatting.Indented);
-            File.WriteAllText(_filePath, json);
+            File.WriteAllText(filePath, json);
         }
     }
 }

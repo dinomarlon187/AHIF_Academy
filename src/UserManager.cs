@@ -38,25 +38,41 @@ namespace ahif_academy
             User user = users.Find(u => u.Username == username && u.Password == password);
             if (user != null)
             {
-                CurrentUser = user; // Setzen des aktuellen Benutzers
+                CurrentUser = user; 
             }
             return user;
         }
         public static bool RegisterUser(string username, string password)
         {
             List<User> users = LoadUsers();
+            
 
             if (users.Exists(u => u.Username == username))
             {
                 return false; 
             }
 
-            User user = new User { Username = username, Password = password };
+            User user = new User { Username = username, Password = password, Profilpicture =  "../pictures/katze.png"};
             users.Add(user);
             SavedUsers(users);
             CurrentUser = user;
             
             return true; 
+        }
+        public static void ChangeProfilePicture(string newProfilePicturePath)
+        {
+            List<User> users = LoadUsers();
+            foreach (User user in users)
+            {
+                if (user.Username == CurrentUser.Username && user.Password == CurrentUser.Password)
+                {
+                    user.Profilpicture = newProfilePicturePath;
+                    break;
+                }
+            }
+            SavedUsers(users);
+
+            
         }
     }
 }

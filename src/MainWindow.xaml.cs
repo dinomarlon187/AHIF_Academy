@@ -61,6 +61,10 @@ namespace ahif_academy
             {
                 navframe.Navigate(new PageHome());
             }
+            else if (subject == "Profil")
+            {
+                navframe.Navigate(new PageProfile());
+            }
         }
     }
 }

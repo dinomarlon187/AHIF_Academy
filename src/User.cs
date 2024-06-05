@@ -10,6 +10,7 @@ namespace ahif_academy
     {
         public string Username { get; set; }
         public string Password { get; set; }
+        public string Profilpicture { get; set; }
 
     }
 }

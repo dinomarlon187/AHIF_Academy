@@ -20,9 +20,11 @@ namespace ahif_academy.pages
     /// </summary>
     public partial class PageEinstellungen : Page
     {
+        public string ImagePath { get; set; } = UserManager.CurrentUser.Profilpicture.ToString();
         public PageEinstellungen()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
         private void ThemeToggleButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -34,6 +36,15 @@ namespace ahif_academy.pages
         {
             AppTheme.ChangeTheme(new Uri("Themes/WhiteMode.xaml", UriKind.Relative));
             
+        }
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Profilbild.SelectedItem.ToString() == "Spiderman")
+            {
+                
+                string path = "../pictures/spiderman.png";
+                UserManager.ChangeProfilePicture(path);
+            }
         }
     }
 }

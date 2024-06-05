@@ -20,9 +20,11 @@ namespace ahif_academy.pages
     /// </summary>
     public partial class PageProfile : Page
     {
+        public string ImagePath { get; set; } = UserManager.CurrentUser.Profilpicture.ToString();
         public PageProfile()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
     }
 }
