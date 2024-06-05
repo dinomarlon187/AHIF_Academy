@@ -45,10 +45,10 @@ Eine Lernapp für verschiedene Fächer mit angepassten Fragen und Aufgaben.
 | Marlon                          | Ensar               |
 | ------------------------------- | ------------------- |
 | Klassen                         | GUI                 |
-| User Profiles inkl. Statistiken | Login-System        |
+| User Profiles Statistiken 	  | Login-System        |
 | Mathe, Deutsch                  | Karteikarten        |
-| Benutzerdefinierte Fragen       | Fragen organisieren |
-| Fragen organisieren             |  					|
+| Benutzerdefinierte Fragen       | User Profiles		|
+| Fragen organisieren             | Fragen organisieren |
 
 
 ### Grobe zeitliche Einteilung
