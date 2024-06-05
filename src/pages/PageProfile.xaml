@@ -20,7 +20,7 @@
                         <ImageBrush ImageSource="{Binding Path=ImagePath}"/>
                     </Ellipse.Fill>
                 </Ellipse>
-                <TextBlock Text="Max123" FontSize="25" Margin="5,25,0,0"/>
+                <TextBlock Text="" x:Name="benutzername" FontSize="25" Margin="5,25,0,0"/>
             </StackPanel>
         </Border>
         

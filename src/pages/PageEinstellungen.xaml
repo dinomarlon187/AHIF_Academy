@@ -21,28 +21,39 @@
                     </Ellipse.Fill>
                 </Ellipse>
                 
-                <TextBlock Text="Max123" FontSize="25" Margin="5,25,0,0"/>
+                <TextBlock x:Name="benutzername" Text="" FontSize="25" Margin="5,25,0,0"/>
                     
                 
             </StackPanel>
         </Border>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <Border Margin="5" Background="AliceBlue" CornerRadius="25">
-                <StackPanel>
+                <StackPanel Margin="15">
                     <TextBlock Text="Mode" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,5"/>
                     <ToggleButton x:Name="ThemeToggleButton" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Width="120" Height="60" Cursor="Hand" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked" Style="{DynamicResource ThemeToggleButtonStyle}">
                     </ToggleButton>
                 </StackPanel>
             </Border>
-            <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Border Margin="5" Background="AliceBlue" CornerRadius="25">
+                <StackPanel Margin="15">
+                    <TextBlock Text="Benutzername" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0, 5"/>
+                    <TextBox x:Name="changeBenutzername" Width="100" Height="40" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="14"/>
+                    <Button Height="60" Width="60" Click="Button_Click">
+                        <Image Source="../pictures/speichern.png" Height="30" Width="30"/>
+                    </Button>
+                </StackPanel>
+            </Border>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" >
                 <Border Margin="5" Background="AliceBlue" CornerRadius="25">
-                    <StackPanel>
+                    <StackPanel Margin="15">
                         <TextBlock Text="Profilbild" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <ComboBox Width="100" Height="50" Margin="8" x:Name="Profilbild" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBox Width="100" Height="50" Margin="8" x:Name="Profilbild" SelectionChanged="ComboBox_SelectionChanged" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                             <ComboBoxItem Content="Katze" />
                             <ComboBoxItem Content="Spiderman"/>
                             <ComboBoxItem Content="Cool"/>
+                            <ComboBoxItem Content="ToΣ"/>
                         </ComboBox>
+                        
                     </StackPanel>
                 </Border>
             </StackPanel>

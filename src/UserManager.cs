@@ -71,9 +71,22 @@ namespace ahif_academy
                     break;
                 }
             }
-            SavedUsers(users);
-
-            
+            SavedUsers(users); 
         }
+        public static void ChangeUsername(string newUsername)
+        {
+            List<User> users = LoadUsers();
+            foreach (User user in users)
+            {
+                if (user.Username == CurrentUser.Username && user.Password == CurrentUser.Password)
+                {
+                    user.Username = newUsername;
+                    CurrentUser = user;
+                    break;
+                }
+            }
+            SavedUsers(users); 
+        }
+
     }
 }

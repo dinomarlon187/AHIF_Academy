@@ -2,11 +2,21 @@
   {
     "Username": "ensar680",
     "Password": "ensar6868",
-    "Profilpicture": "../pictures/katze.png"
+    "Profilpicture": "../pictures/tos.png"
   },
   {
     "Username": "ab",
     "Password": "ab",
+    "Profilpicture": "../pictures/katze.png"
+  },
+  {
+    "Username": "a",
+    "Password": "a",
+    "Profilpicture": "../pictures/tos.png"
+  },
+  {
+    "Username": ";--",
+    "Password": "aaa",
     "Profilpicture": "../pictures/katze.png"
   }
 ]
