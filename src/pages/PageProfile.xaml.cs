@@ -26,6 +26,7 @@ namespace ahif_academy.pages
             InitializeComponent();
             this.DataContext = this;
             benutzername.Text = UserManager.CurrentUser.Username;
+            
         }
     }
 }

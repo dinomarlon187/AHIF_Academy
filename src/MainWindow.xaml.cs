@@ -91,7 +91,15 @@ namespace ahif_academy
             }
             else if (subject == "Einstellungen")
             {
-                navframe.Navigate(new PageEinstellungen());
+                if (UserManager.CurrentUser == null)
+                {
+                    MessageBox.Show("Bitte loggen Sie sich ein");
+                    navframe.Navigate(new PageLogin());
+                }
+                else
+                {
+                    navframe.Navigate(new PageEinstellungen());
+                }
 
             }
             else if (subject == "Home")
@@ -100,7 +108,15 @@ namespace ahif_academy
             }
             else if (subject == "Profil")
             {
-                navframe.Navigate(new PageProfile());
+                if (UserManager.CurrentUser == null)
+                {
+                    MessageBox.Show("Bitte loggen Sie sich ein");
+                    navframe.Navigate(new PageLogin());
+                }
+                else
+                {
+                    navframe.Navigate(new PageProfile());
+                }   
             }
         }
     }
