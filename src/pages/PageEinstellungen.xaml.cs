@@ -39,12 +39,32 @@ namespace ahif_academy.pages
         }
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (Profilbild.SelectedItem.ToString() == "Spiderman")
+            var selected = Profilbild.SelectedItem as ComboBoxItem;
+
+            if (selected != null)
             {
-                
-                string path = "../pictures/spiderman.png";
-                UserManager.ChangeProfilePicture(path);
-            }
+                if (selected.Content.ToString() == "Spiderman")
+                {
+
+                    string path = "../pictures/spiderman.png";
+                    UserManager.ChangeProfilePicture(path);
+                    ImagePath = path;
+                }
+                else if (selected.Content.ToString() == "Katze")
+                {
+
+                    string path = "../pictures/katze.png";
+                    UserManager.ChangeProfilePicture(path);
+                    ImagePath = path;
+                }
+                else if (selected.Content.ToString() == "Cool")
+                {
+
+                    string path = "../pictures/cool_picture.png";
+                    UserManager.ChangeProfilePicture(path);
+                    ImagePath = path;
+                }
+            }    
         }
     }
 }

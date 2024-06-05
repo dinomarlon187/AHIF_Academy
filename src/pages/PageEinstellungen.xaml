@@ -38,8 +38,8 @@
                 <Border Margin="5" Background="AliceBlue" CornerRadius="25">
                     <StackPanel>
                         <TextBlock Text="Profilbild" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <ComboBox Width="100" Height="50" Margin="8" Name="Profilbild" SelectionChanged="ComboBox_SelectionChanged">
-                            <ComboBoxItem Content="Katze" IsSelected="True"/>
+                        <ComboBox Width="100" Height="50" Margin="8" x:Name="Profilbild" SelectionChanged="ComboBox_SelectionChanged">
+                            <ComboBoxItem Content="Katze" />
                             <ComboBoxItem Content="Spiderman"/>
                             <ComboBoxItem Content="Cool"/>
                         </ComboBox>

@@ -67,6 +67,7 @@ namespace ahif_academy
                 if (user.Username == CurrentUser.Username && user.Password == CurrentUser.Password)
                 {
                     user.Profilpicture = newProfilePicturePath;
+                    CurrentUser = user;
                     break;
                 }
             }
