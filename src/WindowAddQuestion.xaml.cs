@@ -71,7 +71,7 @@ namespace ahif_academy
             cbQuestionType.Items.Add("MultipleChoice");
             cbQuestionType.Items.Add("YesNo");
             cbQuestionType.Items.Add("TextInput");
-            cbQuestionType.SelectedIndex = 0;
+            cbQuestionType.SelectedItem = question.Type;
             cbQuestionType.Width = 200;
             cbQuestionType.Height = 30;
             cbQuestionType.SelectionChanged += CbQuestionType_SelectionChanged;
@@ -102,7 +102,7 @@ namespace ahif_academy
             else if (question is TextInput)
             {
                 questionType = "textinput";
-                textBoxTexts = new string[] { question.Text, ((TextInput)question).CorrectAnswer, ((TextInput)question).FalseAnswer };
+                textBoxTexts = new string[] { question.Text, ((TextInput)question).CorrectAnswer, ((TextInput)question).WrongAnswer };
             }
             InitWindow(questionType, textBoxTexts);
             
@@ -165,28 +165,33 @@ namespace ahif_academy
         }
 
         private void ButtonOK_Click(object sender, RoutedEventArgs e)
-        {
-            
-            if ((string)cbQuestionType.SelectedItem == "MultipleChoice")
+        {  
+            if ((string)cbQuestionType.SelectedItem == "MultipleChoice" && textBoxTexts[0] != "" && textBoxTexts[2] != "" && textBoxTexts[3] != "" && textBoxTexts[4] != "" && textBoxTexts[5] != "" && textBoxTexts[1] != "")
             {
-                question = new MultipleChoice(textBoxTexts[0], textBoxTexts[2], textBoxTexts[3], textBoxTexts[4], textBoxTexts[5], textBoxTexts[1], (string)cb.SelectedItem, 0, DateTime.Now);
+                question = new MultipleChoice(textBoxTexts[0], textBoxTexts[2], textBoxTexts[3], textBoxTexts[4], textBoxTexts[5], textBoxTexts[1], (string)cb.SelectedItem);
+                DialogResult = true;
             }
-            else if ((string)cbQuestionType.SelectedItem == "YesNo")
+            else if ((string)cbQuestionType.SelectedItem == "YesNo" && textBoxTexts[0] != "" && textBoxTexts[1] != "")
             {
                 if (textBoxTexts[1].ToLower() == "yes" || textBoxTexts[1].ToLower() == "no")
                 {
-                    question = new YesNo(textBoxTexts[0], (string)cb.SelectedItem, textBoxTexts[1], 0, DateTime.Now);
+                    question = new YesNo(textBoxTexts[0], (string)cb.SelectedItem, textBoxTexts[1]);
+                    DialogResult = true;
                 }
                 else
                 {
                     MessageBox.Show("Die Antwort muss entweder 'yes' oder 'no' sein.");
                 }
             }
-            else if ((string)cbQuestionType.SelectedItem == "TextInput")
+            else if ((string)cbQuestionType.SelectedItem == "TextInput" && textBoxTexts[0] != "" && textBoxTexts[1] != "" && textBoxTexts[2] != "")
             {
-                question = new TextInput(textBoxTexts[0], (string)cb.SelectedItem, textBoxTexts[1], textBoxTexts[2], 0, DateTime.Now);
+                question = new TextInput(textBoxTexts[0], (string)cb.SelectedItem, textBoxTexts[1], textBoxTexts[2]);
+                DialogResult = true;
             }
-            DialogResult = true;
+            else
+            {
+                MessageBox.Show("Bitte gib überall einen Wert ein!");
+            }
         }
     }
 }
