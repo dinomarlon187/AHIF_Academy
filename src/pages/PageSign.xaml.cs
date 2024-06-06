@@ -34,14 +34,15 @@ namespace ahif_academy.pages
 
             if (success)
             {
-                MessageBox.Show("Registration successful!");
+                MessageBox.Show("Erfolgreich registriert!");
+                Log.log.Information("User " + username + " registered.");
                 PageHome pageHome = new PageHome();
                 MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
                 mainWindow.NavigateToPage(pageHome);
             }
             else
             {
-                MessageBox.Show("Username already exists.");
+                MessageBox.Show("Benutzername existiert schon.");
             }
         }
     }

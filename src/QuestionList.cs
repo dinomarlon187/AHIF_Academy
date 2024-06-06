@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using Newtonsoft.Json;
 
 namespace ahif_academy
@@ -18,26 +19,52 @@ namespace ahif_academy
         {
             string jsonString = System.IO.File.ReadAllText(path);
             dynamic jsonObj = JsonConvert.DeserializeObject(jsonString);
+            int counterWrong = 0;
+            int counterRight = 0;
+            Log.log.Information($"Deserialisierung der Fragen von der JSON file {path} gestartet.");
+            
             foreach (var question in jsonObj.questions)
             {
-                if (question.Type == "MultipleChoice")
+                try
                 {
-                    questions.Add(new MultipleChoice(question.Text.ToString(), question.Answers[0].ToString(), question.Answers[1].ToString(), question.Answers[2].ToString(), question.Answers[3].ToString(), question.CorrectAnswer.ToString(), question.Subject.ToString()));
+                    if (question.Type == "MultipleChoice")
+                    {
+                        questions.Add(new MultipleChoice(question.Text.ToString(), question.Answers[0].ToString(), question.Answers[1].ToString(), question.Answers[2].ToString(), question.Answers[3].ToString(), question.CorrectAnswer.ToString(), question.Subject.ToString()));
+                        counterRight++;
+                    }
+                    else if (question.Type == "YesNo")
+                    {
+                        questions.Add(new YesNo(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString()));
+                        counterRight++;
+                    }
+                    else if (question.Type == "TextInput")
+                    {
+                        questions.Add(new TextInput(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString(), question.WrongAnswer.ToString()));
+                        counterRight++;
+                    }
+                    else
+                    { 
+                       
+                        throw new ArgumentException("Invalid question type");
+                    }
                 }
-                else if (question.Type == "YesNo")
+                catch (Exception e)
                 {
-                    questions.Add(new YesNo(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString()));
+                    Log.log.Warning("Eine Fragte konnte nicht deserialisiert werden.");
+                    counterWrong++;
                 }
-                else if (question.Type == "TextInput")
-                {
-                    questions.Add(new TextInput(question.Text.ToString(), question.Subject.ToString(), question.CorrectAnswer.ToString(),question.WrongAnswer.ToString()));
-                }
-                else
-                {
-                    throw new ArgumentException("Invalid question type");
-                }
-            }   
-            
+            }  
+            if (counterRight == 0)
+            {
+                Log.log.Warning("0 Fragen wurden erfolgreich deserialisiert.");
+            }
+            if (counterWrong > 0)
+            {
+                MessageBox.Show(counterWrong + " questions could not be loaded", "Warning");
+            }
+            Log.log.Information($"Deserialisierung der Fragen von der JSON file {path} beendet.");
+
+
         }
         public static void SerializeToJSON(string path, QuestionList q)
         {
