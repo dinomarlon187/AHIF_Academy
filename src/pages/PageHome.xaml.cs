@@ -24,6 +24,7 @@ namespace ahif_academy.pages
         public PageHome()
         {
             InitializeComponent();
+            Log.log.Information("Home Page geöffnet");
 
             
             if (UserManager.CurrentUser != null)

@@ -30,6 +30,7 @@ namespace ahif_academy
         public WindowAddQuestion()
         {
             InitializeComponent();
+            Log.log.Information("Fenster zum Hinzufügen einer Frage geöffnet");
             canvasDraw = canvas;
             buttonOK = ButtonOK;
             textBlockHead = TextBlockHeader;
@@ -62,6 +63,7 @@ namespace ahif_academy
         public WindowAddQuestion(Question question)
         {
             InitializeComponent();
+            Log.log.Information("Fenster zum Editieren einer Frage geöffnet");
 
             canvasDraw = canvas;
             buttonOK = ButtonOK;
@@ -181,6 +183,7 @@ namespace ahif_academy
                 else
                 {
                     MessageBox.Show("Die Antwort muss entweder 'yes' oder 'no' sein.");
+                    Log.log.Warning("Versuch, eine Yes/No Frage mit einer ungültigen Antwort hinzuzufügen");
                 }
             }
             else if ((string)cbQuestionType.SelectedItem == "TextInput" && textBoxTexts[0] != "" && textBoxTexts[1] != "" && textBoxTexts[2] != "")
@@ -191,6 +194,7 @@ namespace ahif_academy
             else
             {
                 MessageBox.Show("Bitte gib überall einen Wert ein!");
+                Log.log.Warning("Versuch, eine Frage mit fehlenden Variablen hinzuzufügen");
             }
         }
     }

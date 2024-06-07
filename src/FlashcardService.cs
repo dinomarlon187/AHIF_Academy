@@ -21,12 +21,14 @@ namespace ahif_academy
             }
 
             var json = File.ReadAllText(filePath);
+            Log.log.Information("Karteikarten werden geladen");
             return JsonConvert.DeserializeObject<List<Flashcard>>(json);
         }
 
         public void SaveFlashcards(List<Flashcard> flashcards)
         {
             var json = JsonConvert.SerializeObject(flashcards, Formatting.Indented);
+            Log.log.Information("Karteikarten werden gespeichert");
             File.WriteAllText(filePath, json);
         }
     }

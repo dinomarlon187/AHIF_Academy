@@ -59,7 +59,6 @@ namespace ahif_academy
             grid.Children.Add(textBoxAnswer);
             grid.Children.Add(submit);
             grid.Children.Add(btnNextQuestion);
-            
         }
         public override object Copy()
         {
@@ -86,13 +85,13 @@ namespace ahif_academy
                 }
                 if (CorrectAnswer.Length - userAnswer.Length > 10 || userAnswer.Length - CorrectAnswer.Length > 10)
                 {
-                    MessageBox.Show("Hör auf reinzutrollen.");
+                    MessageBox.Show("Hör auf reinzutrollen. Die Antwort ist zu weit von der richtigen Antwort entfernt.");
                 }
                 else
                 {
                     button.IsEnabled = false;
                     textBoxAnswer.IsReadOnly = true;
-                    if (CheckAnswer(userAnswer))
+                    if (CheckAnswer(userAnswer, Subject))
                     {
                         textBoxAnswer.Background = System.Windows.Media.Brushes.Green;
                     }

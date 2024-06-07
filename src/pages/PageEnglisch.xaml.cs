@@ -29,6 +29,7 @@ namespace ahif_academy.pages
         public PageEnglisch()
         {
             InitializeComponent();
+            Log.log.Information("Englisch Page geöffnet");
             flashcardService = new FlashcardService();
             flashcards = flashcardService.LoadFlashcards();
             if (flashcards.Count > 0)
@@ -47,6 +48,7 @@ namespace ahif_academy.pages
             EnglishTextBlock.Text = flashcard.English;
             GermanTextBlock.Text = flashcard.German;
             GermanTextBlock.Visibility = Visibility.Collapsed;
+            Log.log.Information("Neue Karteikarte angezeigt");
         }
 
         private void ShowAnswer_Click(object sender, RoutedEventArgs e)
@@ -106,6 +108,7 @@ namespace ahif_academy.pages
             {
                 VocabularyListBox.Items.Add($"{flashcard.English} - {flashcard.German}");
             }
+            Log.log.Information("Vokabelliste aktualisiert");
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
@@ -123,6 +126,7 @@ namespace ahif_academy.pages
 
         private void Lernen_Click(object sender, RoutedEventArgs e)
         {
+            Log.log.Information("'Vokabeln lernen' angezeigt");
             lernen.Visibility = Visibility.Visible;
             addVoc.Visibility = Visibility.Collapsed;
             liste.Visibility = Visibility.Collapsed;
@@ -134,6 +138,7 @@ namespace ahif_academy.pages
 
         private void AddVoc_Click(object sender, RoutedEventArgs e)
         {
+            Log.log.Information("'Vokabel hinzufügen' angezeigt");
             lernen.Visibility = Visibility.Collapsed;
             addVoc.Visibility = Visibility.Visible;
             liste.Visibility = Visibility.Collapsed;
@@ -144,6 +149,7 @@ namespace ahif_academy.pages
 
         private void Liste_Click(object sender, RoutedEventArgs e)
         {
+            Log.log.Information("'Vokabelliste' angezeigt");
             lernen.Visibility = Visibility.Collapsed;
             addVoc.Visibility = Visibility.Collapsed;
             liste.Visibility = Visibility.Visible;

@@ -28,6 +28,7 @@ namespace ahif_academy
         {
             string json = JsonConvert.SerializeObject(users, Formatting.Indented);
             File.WriteAllText(filePath, json);
+            Log.log.Information($"Benutzer in JSON Datei {filePath} gespeichert");
         }
 
         public static List<User> LoadUsers()
@@ -37,6 +38,7 @@ namespace ahif_academy
                 return new List<User>();
             }
             string json = File.ReadAllText(filePath);
+            Log.log.Information($"Benutzer werden aus der JSON Datei {filePath} geladen");
             return JsonConvert.DeserializeObject<List<User>>(json);
         }
 
@@ -52,7 +54,7 @@ namespace ahif_academy
                 CurrentUser = user; // Setzen des aktuellen Benutzers
                 QuestionList.DeserializeFromJSON(user.filepathuser, CurrentUser.Questions);
                 user.filepathuser = "../../../JSONFiles/" + username + ".json";
-
+                Log.log.Information($"{CurrentUser.Username} hat sich eingeloggt");
             }
             return user;
         }
@@ -68,6 +70,7 @@ namespace ahif_academy
 
             User user = new User { Username = username, Password = password, Profilpicture =  "../pictures/katze.png"};
             user.filepathuser = "../../../JSONFiles/" + username + ".json";
+            Log.log.Information($"{user.Username} hat sich registriert");
             users.Add(user);
             SavedUsers(users);
             CurrentUser = user;
@@ -86,6 +89,7 @@ namespace ahif_academy
                 {
                     user.Profilpicture = newProfilePicturePath;
                     CurrentUser = user;
+                    Log.log.Information("Profilbild geändert.");
                     break;
                 }
             }
@@ -99,7 +103,10 @@ namespace ahif_academy
                 if (user.Username == CurrentUser.Username && user.Password == CurrentUser.Password)
                 {
                     user.Username = newUsername;
+                    File.Move(user.filepathuser, "../../../JSONFiles/" + user.Username + ".json");
+                    user.filepathuser = "../../../JSONFiles/" + user.Username + ".json";
                     CurrentUser = user;
+                    Log.log.Information("Benutzername geändert.");
                     break;
                 }
             }

@@ -21,7 +21,7 @@ namespace ahif_academy
             dynamic jsonObj = JsonConvert.DeserializeObject(jsonString);
             int counterWrong = 0;
             int counterRight = 0;
-            Log.log.Information($"Deserialisierung der Fragen von der JSON file {path} gestartet.");
+            Log.log.Information($"Deserialisierung der Fragen von der JSON file {path} gestartet");
             
             foreach (var question in jsonObj.questions)
             {
@@ -43,20 +43,20 @@ namespace ahif_academy
                         counterRight++;
                     }
                     else
-                    { 
-                       
+                    {
+                        Log.log.Warning("Eine Frage konnte nicht deserialisiert werden aufgrund eines unbekannten Fragetyps");
                         throw new ArgumentException("Invalid question type");
                     }
                 }
                 catch (Exception e)
                 {
-                    Log.log.Warning("Eine Fragte konnte nicht deserialisiert werden.");
+                    Log.log.Warning("Eine Frage konnte nicht deserialisiert werden");
                     counterWrong++;
                 }
             }  
             if (counterRight == 0)
             {
-                Log.log.Warning("0 Fragen wurden erfolgreich deserialisiert.");
+                Log.log.Warning("0 Fragen wurden erfolgreich deserialisiert");
             }
             if (counterWrong > 0)
             {
@@ -70,6 +70,7 @@ namespace ahif_academy
         {
             string jsonString = JsonConvert.SerializeObject(q, Formatting.Indented);
             System.IO.File.WriteAllText(path, jsonString);
+            Log.log.Information($"Serialisierung der Fragen in die JSON file {path} beendet");
         }
         public Question GetRandomQuestion()
         {
@@ -91,11 +92,18 @@ namespace ahif_academy
         }
         public void Add(Question question)
         {
+
             questions.Add(question);
+            Log.log.Information("Neue Frage hinzugefügt");
         }
         public void Remove(Question question)
         {
             questions.Remove(question);
+            Log.log.Information("Frage gelöscht");
+        }
+        public int GetAmount()
+        {
+            return questions.Count;
         }
     }
 }

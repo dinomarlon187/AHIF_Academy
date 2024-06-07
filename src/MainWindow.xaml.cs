@@ -78,24 +78,39 @@ namespace ahif_academy
             {
 
                 string subject = selected.ToolTip.ToString();
+                
+                
                 if (subject == "Mathe")
                 {
-
                     QuestionList q;
-                    q = UserManager.CurrentUser.Questions.FilterBySubject("Mathe");
+                    q = UserManager.CurrentUser.Questions.FilterBySubject(subject);
+                    if (q.GetAmount() < 5)
+                    {
+                        MessageBox.Show($"Zu wenig Fragen in der Fragenliste. Bitte Fragen vom Fach {subject} hinzufügen, bis es mindestens 5 Fragen sind.");
+                        Log.log.Warning($"Versuch, mit weniger als 5 Fragen im Fach {subject} die jeweilige Page zu öffnen.");
+                    }
+                    else
+                    {
+                        navframe.Navigate(new PageAufgabe(q));
+                    }
 
-                    //navframe.Navigate(new PageAufgabe(q));
                 }
                 else if (subject == "Deutsch")
                 {
                     QuestionList q;
-                    q = UserManager.CurrentUser.Questions.FilterBySubject("Deutsch");
-                    navframe.Navigate(new PageAufgabe(q));
+                    q = UserManager.CurrentUser.Questions.FilterBySubject(subject);
+                    if (q.GetAmount() < 5)
+                    {
+                        MessageBox.Show($"Zu wenig Fragen in der Fragenliste. Bitte Fragen vom Fach {subject} hinzufügen, bis es mindestens 5 Fragen sind.");
+                        Log.log.Warning($"Versuch, mit weniger als 5 Fragen im Fach {subject} die jeweilige Page zu öffnen.");
+                    }
+                    else
+                    {
+                        navframe.Navigate(new PageAufgabe(q));
+                    }
                 }
                 else if (subject == "Englisch")
                 {
-                    QuestionList q;
-                    q = UserManager.CurrentUser.Questions.FilterBySubject("Englisch");
                     navframe.Navigate(new PageEnglisch());
                 }
                 else if (subject == "Einstellungen")
@@ -103,6 +118,7 @@ namespace ahif_academy
                     if (UserManager.CurrentUser == null)
                     {
                         MessageBox.Show("Bitte loggen Sie sich ein");
+                        Log.log.Warning("Versuch, ohne Anmeldung eine Page zu öffnen");
                         navframe.Navigate(new PageLogin());
                     }
                     else
@@ -120,6 +136,7 @@ namespace ahif_academy
                     if (UserManager.CurrentUser == null)
                     {
                         MessageBox.Show("Bitte loggen Sie sich ein");
+                        Log.log.Warning("Versuch, ohne Anmeldung eine Page zu öffnen");
                         navframe.Navigate(new PageLogin());
                     }
                     else

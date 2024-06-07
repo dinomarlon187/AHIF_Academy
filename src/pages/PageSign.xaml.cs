@@ -23,6 +23,7 @@ namespace ahif_academy.pages
         public PageSign()
         {
             InitializeComponent();
+            Log.log.Information("Registrieren Page geöffnet");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -35,7 +36,7 @@ namespace ahif_academy.pages
             if (success)
             {
                 MessageBox.Show("Erfolgreich registriert!");
-                Log.log.Information("User " + username + " registered.");
+                Log.log.Information("Neuen User registriert");
                 PageHome pageHome = new PageHome();
                 MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
                 mainWindow.NavigateToPage(pageHome);

@@ -24,6 +24,7 @@ namespace ahif_academy.pages
         public PageNewQuestion()
         {
             InitializeComponent();
+            Log.log.Information("Fragenanzeige Page geöffnet");
             UpdateListBox(currentUser.Questions);
         }
 
@@ -79,6 +80,7 @@ namespace ahif_academy.pages
             {
                 listBoxQuestions.Items.Add(question);
             }
+            Log.log.Information("Fragenliste aktualisiert");
         }
     }
 }

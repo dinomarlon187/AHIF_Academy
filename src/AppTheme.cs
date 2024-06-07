@@ -14,6 +14,7 @@ namespace ahif_academy
             ResourceDictionary Theme = new ResourceDictionary() { Source = ThemeUri };
             App.Current.Resources.Clear();
             App.Current.Resources.MergedDictionaries.Add(Theme);
+            Log.log.Information($"Theme zu {ThemeUri} geändert");
         }
 
     }

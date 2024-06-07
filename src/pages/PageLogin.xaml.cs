@@ -23,6 +23,7 @@ namespace ahif_academy.pages
         public PageLogin()
         {
             InitializeComponent();
+            Log.log.Information("Login Page geöffnet");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -33,7 +34,7 @@ namespace ahif_academy.pages
             User user = UserManager.AuthenticateUser(username, password);
             if (user != null)
             {
-                MessageBox.Show("Login successful!");
+                MessageBox.Show("Erfolgreich eingeloggt!");
 
                 PageHome pageHome = new PageHome();
                 MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;

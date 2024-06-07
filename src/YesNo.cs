@@ -33,6 +33,7 @@ namespace ahif_academy
             }
             else
             {
+                Log.log.Warning("Versuch, eine Yes/No Frage mit einer ungültigen Antwort zu erstellen");
                 throw new ArgumentException("Correct answer must be either 'yes' or 'no'");
             }
 
@@ -92,8 +93,16 @@ namespace ahif_academy
             Grid.SetColumnSpan(textBlock, 3);
             if (sender is Button button)
             {
-                string answer = button.Content.ToString().ToLower();
-                if (CheckAnswer(answer))
+                string answer;
+                if (button == yes)
+                {
+                    answer = "Yes";
+                }
+                else
+                {
+                    answer = "No";
+                }
+                if (CheckAnswer(answer, Subject))
                 {
                     textBlock.Text = "Correct";
                 }

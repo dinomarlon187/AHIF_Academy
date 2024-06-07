@@ -193,6 +193,7 @@ namespace ahif_academy
                     }
                 }
             }
+            Log.log.Information("Statistik für User {UserManager.CurrentUser} gezeichnet");
 
             
 

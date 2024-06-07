@@ -49,9 +49,32 @@ namespace ahif_academy
         public DateTime LastUsed { get; set; }
         public int Counter { get; set; }
         public abstract void Draw(Grid grid);
-        public bool CheckAnswer(string answer)
+        public bool CheckAnswer(string answer, string subject)
         {
-            return answer == CorrectAnswer;
+            bool correct = answer == CorrectAnswer;
+            if (correct)
+            {
+                if (subject.ToLower() == "deutsch")
+                {
+                    UserManager.CurrentUser.QuestionsAnsweredCorrectDeutsch++;
+                }
+                else
+                {
+                    UserManager.CurrentUser.QuestionsAnsweredCorrectMathe++;
+                }
+            }
+            else
+            {
+                if (subject.ToLower() == "deutsch")
+                {
+                    UserManager.CurrentUser.QuestionsAnsweredIncorrectDeutsch++;
+                }
+                else
+                {
+                    UserManager.CurrentUser.QuestionsAnsweredIncorrectMathe++;
+                }
+            }
+            return correct;
         }
         public abstract object Copy(); 
 

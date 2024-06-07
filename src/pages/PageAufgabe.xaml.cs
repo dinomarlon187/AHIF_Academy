@@ -25,6 +25,7 @@ namespace ahif_academy.pages
         public PageAufgabe(QuestionList questions)
         {
             InitializeComponent();
+            Log.log.Information("Aufgaben Page geöffnet");
             QuestionList = questions;
             foreach (Question question in QuestionList)
             {
@@ -37,6 +38,7 @@ namespace ahif_academy.pages
 
         private void btnNextQuestion_Click(object sender, RoutedEventArgs e)
         {
+            Log.log.Information("Nächste Frage");
             CurrentQuestion = QuestionList.GetRandomQuestion();
             CurrentQuestion = (Question)CurrentQuestion.Copy();
             CurrentQuestion.Draw(grid);

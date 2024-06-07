@@ -26,19 +26,18 @@ namespace ahif_academy.pages
         public PageEinstellungen()
         {
             InitializeComponent();
+            Log.log.Information("Einstellungen Page geöffnet");
             this.DataContext = this;
             benutzername.Text = UserManager.CurrentUser.Username;
         }
         private void ThemeToggleButton_Checked(object sender, RoutedEventArgs e)
         {
             AppTheme.ChangeTheme(new Uri("Themes/Darkmode.xaml", UriKind.Relative));
-            
         }
 
         private void ThemeToggleButton_Unchecked(object sender, RoutedEventArgs e)
         {
             AppTheme.ChangeTheme(new Uri("Themes/WhiteMode.xaml", UriKind.Relative));
-            
         }
 
         

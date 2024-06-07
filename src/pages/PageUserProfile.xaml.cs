@@ -16,23 +16,19 @@ using System.Windows.Shapes;
 namespace ahif_academy.pages
 {
     /// <summary>
-    /// Interaction logic for PageProfile.xaml
+    /// Interaction logic for PageUserProfile.xaml
     /// </summary>
-    public partial class PageProfile : Page
+    public partial class PageUserProfile : Page
     {
-        public string ImagePath { get; set; } = UserManager.CurrentUser.Profilpicture.ToString();
-        public PageProfile()
+        public PageUserProfile(User user)
         {
             InitializeComponent();
-            Log.log.Information("Profil Page geöffnet");
-            this.DataContext = this;
-            benutzername.Text = UserManager.CurrentUser.Username;
-            
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button button)
-            {
+
+            if (sender is Button button){
                 UserManager.CurrentUser.StatisticsDraw((string)button.Content, canvas);
             }
         }
