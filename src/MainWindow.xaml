@@ -19,12 +19,12 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        <Border Background="white" Grid.Row="0" Grid.ColumnSpan="3" >
+
+        <Border Background="{DynamicResource FrameBackground}" Grid.Row="0" Grid.ColumnSpan="3" >
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
                 <TextBlock Text="AHIF-Acedamy" Margin="0,0,925,0" FontSize="10" FontWeight="Bold"/>
-                <Image Source="pictures/minimieren.png" Width="10" Height="Auto" Margin="0,0,15,0" MouseDown="TitleMinimize_MouseDown" Cursor="Hand"/>
-                <Image Source="pictures/maximieren.png" Width="10" Height="Auto" Margin="0,0,15,0" MouseDown="TitleMaximize_MouseDown" Cursor="Hand"/>
+                <Image x:Name="minimize" Source="pictures/minimieren.png" Width="10" Height="Auto" Margin="0,0,15,0" MouseDown="TitleMinimize_MouseDown" Cursor="Hand" />
+                <Image Source="pictures/maximieren.png" Width="10" Height="Auto" Margin="0,0,15,0" MouseDown="TitleMaximize_MouseDown" Cursor="Hand" />
                 <Image Source="pictures/schliessen.png" Width="10" Height="Auto" Margin="0,0,25,0" MouseDown="TitleClose_MouseDown" Cursor="Hand"/>
             </StackPanel>
         </Border>
@@ -34,7 +34,7 @@
 
 
 
-        <ListBox Grid.Column="0" SelectionMode="Single" SelectionChanged="sidebar_SelectionChanged" x:Name="sidebar" BorderThickness="0" Margin="10,10,0,10">
+        <ListBox Grid.Column="0" Grid.Row="1"  SelectionMode="Single" SelectionChanged="sidebar_SelectionChanged" x:Name="sidebar" BorderThickness="0" Margin="10,10,0,10">
             <local:NavButton x:Name="navbuttonProfil" ToolTip="Profil" Margin="20" Padding="9" Icon="M36.5 73C56.6584 73 73 56.6584 73 36.5C73 16.3416 56.6584 0 36.5 0C16.3416 0 0 16.3416 0 36.5C0 56.6584 16.3416 73 36.5 73ZM49 19.5C49 26.4036 43.4036 32 36.5 32C29.5964 32 24 26.4036 24 19.5C24 12.5964 29.5964 7 36.5 7C43.4036 7 49 12.5964 49 19.5ZM61 60C61 56.7169 60.3663 53.466 59.135 50.4329C57.9038 47.3998 56.0992 44.6438 53.8241 42.3223C51.5491 40.0009 48.8482 38.1594 45.8757 36.903C42.9033 35.6466 39.7174 35 36.5 35C33.2826 35 30.0967 35.6466 27.1243 36.903C24.1518 38.1594 21.4509 40.0009 19.1759 42.3223C16.9008 44.6438 15.0962 47.3998 13.865 50.4329C12.6337 53.466 12 56.7169 12 60H36.5H61Z"/>
             <local:NavButton x:Name="navbuttonHome" ToolTip="Home" Margin="20" Padding="9" Icon="M 11.336 2.253 a 1 1 0 0 1 1.328 0 l 9 8 a 1 1 0 0 1 -1.328 1.494 L 20 11.45 V 19 a 2 2 0 0 1 -2 2 H 6 a 2 2 0 0 1 -2 -2 v -7.55 l -0.336 0.297 a 1 1 0 0 1 -1.328 -1.494 l 9 -8 Z M 6 9.67 V 19 h 3 v -5 a 1 1 0 0 1 1 -1 h 4 a 1 1 0 0 1 1 1 v 5 h 3 V 9.671 l -6 -5.333 l -6 5.333 Z M 13 19 v -4 h -2 v 4 h 2 Z"/>
             <local:NavButton x:Name="navbuttonMathe" ToolTip="Mathe" Margin="20" Padding="9" Icon="M30 0H0V30H30V0ZM7 11V15H10V11H14V8H10V4H7V8H3V11H7ZM27 8H16V11H27V8ZM13 21.5C13 23.9853 10.9853 26 8.5 26C6.01471 26 4 23.9853 4 21.5C4 19.0147 6.01471 17 8.5 17C10.9853 17 13 19.0147 13 21.5ZM21.5 27C22.3284 27 23 26.3284 23 25.5C23 24.6716 22.3284 24 21.5 24C20.6716 24 20 24.6716 20 25.5C20 26.3284 20.6716 27 21.5 27ZM16 20H27V23H16V20ZM23 17.5C23 18.3284 22.3284 19 21.5 19C20.6716 19 20 18.3284 20 17.5C20 16.6716 20.6716 16 21.5 16C22.3284 16 23 16.6716 23 17.5Z"/>

@@ -62,7 +62,6 @@ namespace ahif_academy
 
         public void NavigateToPage(Page page)
         {
-            // Navigate to the given page
             navframe.Navigate(page);
         }
 
@@ -77,7 +76,7 @@ namespace ahif_academy
             }
             else
             {
-                
+
                 string subject = selected.ToolTip.ToString();
                 if (subject == "Mathe")
                 {
@@ -85,48 +84,49 @@ namespace ahif_academy
                     QuestionList q;
                     q = UserManager.CurrentUser.Questions.FilterBySubject("Mathe");
 
-                //navframe.Navigate(new PageAufgabe(q));
-            }
-            else if(subject == "Deutsch")
-            {
-                QuestionList q;
-                q = UserManager.CurrentUser.Questions.FilterBySubject("Deutsch");
-                navframe.Navigate(new PageAufgabe(q));
-            }
-            else if(subject == "Englisch")
-            {
-                QuestionList q;
-                q = UserManager.CurrentUser.Questions.FilterBySubject("Englisch");
-                navframe.Navigate(new PageEnglisch(q));
-            }
-            else if (subject == "Einstellungen")
-            {
-                if (UserManager.CurrentUser == null)
-                {
-                    MessageBox.Show("Bitte loggen Sie sich ein");
-                    navframe.Navigate(new PageLogin());
+                    //navframe.Navigate(new PageAufgabe(q));
                 }
-                else
+                else if (subject == "Deutsch")
                 {
-                    navframe.Navigate(new PageEinstellungen());
+                    QuestionList q;
+                    q = UserManager.CurrentUser.Questions.FilterBySubject("Deutsch");
+                    navframe.Navigate(new PageAufgabe(q));
                 }
+                else if (subject == "Englisch")
+                {
+                    QuestionList q;
+                    q = UserManager.CurrentUser.Questions.FilterBySubject("Englisch");
+                    navframe.Navigate(new PageEnglisch());
+                }
+                else if (subject == "Einstellungen")
+                {
+                    if (UserManager.CurrentUser == null)
+                    {
+                        MessageBox.Show("Bitte loggen Sie sich ein");
+                        navframe.Navigate(new PageLogin());
+                    }
+                    else
+                    {
+                        navframe.Navigate(new PageEinstellungen());
+                    }
 
-            }
-            else if (subject == "Home")
-            {
-                navframe.Navigate(new PageHome());
-            }
-            else if (subject == "Profil")
-            {
-                if (UserManager.CurrentUser == null)
-                {
-                    MessageBox.Show("Bitte loggen Sie sich ein");
-                    navframe.Navigate(new PageLogin());
                 }
-                else
+                else if (subject == "Home")
                 {
-                    navframe.Navigate(new PageProfile());
-                }   
+                    navframe.Navigate(new PageHome());
+                }
+                else if (subject == "Profil")
+                {
+                    if (UserManager.CurrentUser == null)
+                    {
+                        MessageBox.Show("Bitte loggen Sie sich ein");
+                        navframe.Navigate(new PageLogin());
+                    }
+                    else
+                    {
+                        navframe.Navigate(new PageProfile());
+                    }
+                }
             }
         }
     }
