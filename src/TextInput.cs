@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,8 @@ namespace ahif_academy
 {
     public class TextInput : Question
     {
-        public string FalseAnswer { get; set; }
+        [JsonProperty]
+        public string WrongAnswer { get; set; }
 
         Button submit = new Button()
         {
@@ -29,15 +31,14 @@ namespace ahif_academy
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
             VerticalAlignment = System.Windows.VerticalAlignment.Center
         };
-        public TextInput(string text, string subject, string answer, string falseAnswer, int counter, DateTime lastUsed)
+        public TextInput(string text, string subject, string answer, string wrongAnswer)
         {
             Text = text;
             Subject = subject;
             CorrectAnswer = answer.Trim();
-            FalseAnswer = falseAnswer;
+            WrongAnswer = wrongAnswer;
             textblockQuestion.Text = Text;
-            Counter = counter;
-            LastUsed = lastUsed;
+            Type = "TextInput";
         }
         public override void Draw(Grid grid)
         {
@@ -46,7 +47,7 @@ namespace ahif_academy
             Grid.SetRow(textblockQuestion, 0);
             Grid.SetColumnSpan(textblockQuestion, 3);
             textBoxAnswer.Document.Blocks.Clear();
-            textBoxAnswer.Document.Blocks.Add(new Paragraph(new Run(FalseAnswer)));
+            textBoxAnswer.Document.Blocks.Add(new Paragraph(new Run(WrongAnswer)));
             Grid.SetColumn(textBoxAnswer, 0);
             Grid.SetRow(textBoxAnswer, 1);
             Grid.SetColumnSpan(textBoxAnswer, 3);
@@ -62,12 +63,12 @@ namespace ahif_academy
         }
         public override object Copy()
         {
-            TextInput question = new TextInput(Text, Subject, CorrectAnswer, FalseAnswer, Counter, LastUsed);
+            TextInput question = new TextInput(Text, Subject, CorrectAnswer, WrongAnswer);
             question.btnNextQuestion = btnNextQuestion;
             question.textblockQuestion = textblockQuestion;
             return question;
         }
-        private void Submit_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void Submit_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button)
             {
@@ -169,6 +170,10 @@ namespace ahif_academy
             }
 
             
+        }
+        public override string ToString()
+        {
+            return $"Subject: {Subject}, Text: {Text},Richtige Antwort: {CorrectAnswer}, Falsche Antwort: {WrongAnswer}";
         }
     }
 }

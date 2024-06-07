@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ahif_academy.pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageNewQuestion">
+      Title="PageNewQuestion" Background="White">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -28,7 +28,7 @@
                 <TextBox  Grid.Row="0" Grid.Column="1" Margin="10" Name="textBoxSearch"/>
                 <Button Grid.Row="0" Grid.Column="1" Name="buttonSearch" Content="Search" Width="80" Height="30" Click="buttonSearch_Click"/>
             </StackPanel>
-            <ListBox Grid.Row="1" Grid.Column="1" Margin="10" Name="listBoxQuestions" ItemsSource="{Binding}" DisplayMemberPath="Name"/>
+            <ListBox Grid.Row="1" Grid.Column="1" Margin="10" Name="listBoxQuestions"/>
         </Grid>
     </Grid>
 </Page>

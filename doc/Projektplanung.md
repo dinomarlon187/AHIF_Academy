@@ -11,7 +11,7 @@ Eine Lernapp für verschiedene Fächer mit angepassten Fragen und Aufgaben.
 - Loginsystem
 - Benutzerfreundliches und ansprechendes GUI
   - Mehrere Themes (Darkmode,...)
-- Benutzerdefinierte Fragen (Durch Eingabe und Auswahl von Kategorien/Tags)
+- Benutzerdefinierte Fragen
 - Eigene Pages für die Fächer
 - Verschiedene Aufgabentypen:
   - Karteikarten Englisch
@@ -45,9 +45,11 @@ Eine Lernapp für verschiedene Fächer mit angepassten Fragen und Aufgaben.
 | Marlon                          | Ensar               |
 | ------------------------------- | ------------------- |
 | Klassen                         | GUI                 |
-| User Profiles inkl. Statistiken | Login-System        |
+| User Profiles Statistiken 	  | Login-System        |
 | Mathe, Deutsch                  | Karteikarten        |
+| Benutzerdefinierte Fragen       | User Profiles		|
 | Fragen organisieren             | Fragen organisieren |
+
 
 ### Grobe zeitliche Einteilung
 
@@ -55,8 +57,8 @@ Eine Lernapp für verschiedene Fächer mit angepassten Fragen und Aufgaben.
 | -------- | ------------------------------- | ----- |
 | Woche 1  | Klassen                         | GUI   |
 | Woche 2  | Mathe und Deutsch               |       |
-| Woche 3  | User Profiles inkl. Statistiken |       |
-| Woche 4  | Nice-To-Haves                   |       |
+| Woche 3  | Benutzerdefinierte Fragen       |       |
+| Woche 4  | User Profiles inkl. Statistiken |       |
 
 ## Klassen
 
@@ -71,30 +73,39 @@ Eine Lernapp für verschiedene Fächer mit angepassten Fragen und Aufgaben.
 
 Alle Frage-Klassen (MultipleChoice, YesNo, TextInput) haben eine Parent-Klasse "Question" von welcher sie einige Properties und Methoden erben.
 
-### MultipleChoice
+### Question
 
 ```
 @startuml
 class Question{
+  + Answerpressed: bool
+  + btnNextQuestion: Button
+  + textblockQuestion: TextBlock
   + Subject: string
   + Text: string
-  + string[4]: subjects
-  + Draw(Grid grid): void
+  + string[3]: subjects
+  + CorrectAnswer: string
+  + LastUsed: DateTime
+  + Counter: int
+  + abstract Draw(Grid grid): void
   + CheckAnswer(string answer): void
+  + abstract Copy(): void
 @enduml
 }
 ```
+
+### Multiple Choice
+```
 @startuml
 class MultipleChoice{
-+ Subject: string
-+ Text: string
 + Answers: string[4]
-+ CorrectAnswer: string
++ ans1: Button
++ ans2: Button
++ ans3: Button
++ ans4: Button
 + MultipleChoice()
-+ MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, char correctAnswer, string Subject)
-+ Draw(Grid grid): void
-+ ShuffleAnswers(): void
-+ CheckAnswer(string answer): void
++ MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject, int counter, DateTime lastUsed)
++ EVENT Click(object sender, RoutedEventArgs e): void
 }
 @enduml
 ```
@@ -104,13 +115,10 @@ class MultipleChoice{
 ```
 @startuml
 class YesNo{
-+ Subject: string
-+ Text: string
-+ CorrectAnswer: bool
++ yes: Button
++ no: Button
 + YesNo()
-+YesNo(string text, bool correctAnswer, string Subject)
-+ Draw(Grid grid): void
-+ CheckAnswer(int index): void
++YesNo(string text, string subject, string correctAnswer, int counter, DateTime lastUsed)
 }
 @enduml
 ```
@@ -120,14 +128,12 @@ class YesNo{
 ```
 @startuml
 class TextInput{
-+ Subject: string
-+ Text: string
-+ CorrectAnswer: string
 + WrongText: string
++ submit: Button
++ textBoxAnswer: RichTextBox
 + TextInput()
-+ TextInput(string text, string CorrectAnswer, string WrongText, string Subject)
-+ Draw(Grid grid): void
-+ CheckAnswer(string answer): void
++ TextInput(string text, string subject, string answer, string falseAnswer, int counter, DateTime lastUsed)
++ EVENT Submit_Click(object sender, RoutedEventArgs e): void
 }
 @enduml
 ```
@@ -135,13 +141,9 @@ class TextInput{
 ### FlashCard
 
 ```
-+ Subject: string
-+ Group: id
-+ FirstText: string
-+ SecondText: string
-+ Shown: bool
-+ FlashCard(string first, string second, string Group, string Subject)
-+ Draw(): void
++ German: string
++ English: string
++ FlashCard()
 ```
 
 ### User
@@ -152,21 +154,27 @@ class User{
 + Username: string
 + Password: string
 + QuestionsAnsweredMath: int
-+ QuestionsAnsweredEnglish: int
 + QuestionsAnsweredGerman: int
 + QuestionsAnsweredCorrectMath: int
-+ QuestionsAnsweredCorrectEnglish: int
 + QuestionsAnsweredCorrectGerman: int
 + StatisticsDraw()
 }
+```
 
-### QuestionCollection
+### QuestionList
+
 ```
 @startuml
 class QuestionList{
-- questions: List<Object>
-+ GetAllQuestionsFromJSON(): void
-+ GetRandomQuestion(): object
+- questions: List<Question>
+- random: Random
++ CurrentSubject: string
++ FilterBySubject(string subject): QuestionList
++ Add(Question question): void
++ Remove(Question question): void
++ DeserializeFromJSON(): void
++ GetRandomQuestion(): Question
++ SerializeToJSON(): void
 }
 @enduml
 ```

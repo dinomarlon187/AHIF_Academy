@@ -12,8 +12,18 @@ namespace ahif_academy
     internal class UserManager
     {
         private static string filePath = "../../../JSONFiles/profiles.json";
+        private static string filepathquestions = "../../../JSONFiles/questions.json";
+        public static QuestionList QuestionList = new QuestionList();
 
         public static User CurrentUser { get; private set; }
+
+        public UserManager()
+        {
+            if (!File.Exists(filepathquestions))
+            {
+                
+            }
+        }
         public static void SavedUsers(List<User> users)
         {
             string json = JsonConvert.SerializeObject(users, Formatting.Indented);
@@ -38,7 +48,11 @@ namespace ahif_academy
             User user = users.Find(u => u.Username == username && u.Password == password);
             if (user != null)
             {
-                CurrentUser = user; 
+                
+                CurrentUser = user; // Setzen des aktuellen Benutzers
+                QuestionList.DeserializeFromJSON(user.filepathuser, CurrentUser.Questions);
+                user.filepathuser = "../../../JSONFiles/" + username + ".json";
+
             }
             return user;
         }
@@ -53,10 +67,14 @@ namespace ahif_academy
             }
 
             User user = new User { Username = username, Password = password, Profilpicture =  "../pictures/katze.png"};
+            user.filepathuser = "../../../JSONFiles/" + username + ".json";
             users.Add(user);
             SavedUsers(users);
             CurrentUser = user;
-            
+            QuestionList.DeserializeFromJSON(filepathquestions, CurrentUser.Questions);
+            QuestionList.SerializeToJSON(user.filepathuser, CurrentUser.Questions);
+
+
             return true; 
         }
         public static void ChangeProfilePicture(string newProfilePicturePath)

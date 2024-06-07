@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -12,6 +13,7 @@ namespace ahif_academy
 {
     class MultipleChoice : Question
     {
+        [JsonProperty]
         public string[] Answers { get; set; }
         Button ans1 = new Button()
         {
@@ -34,18 +36,17 @@ namespace ahif_academy
             Width = 100
         };
 
-        public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject, int counter, DateTime lastUsed)
+        public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject)
         {
             Text = text;
             Answers = new string[] { ans1, ans2, ans3, ans4 };
             CorrectAnswer = correct;
             Subject = subject;
-            Counter = counter;
-            LastUsed = lastUsed;
             this.ans1.Content = Answers[0];
             this.ans2.Content = Answers[1];
             this.ans3.Content = Answers[2];
             this.ans4.Content = Answers[3];
+            Type = "MultipleChoice";
 
         }
         public override void Draw(Grid grid)
@@ -121,10 +122,14 @@ namespace ahif_academy
 
         public override object Copy()
         {
-            MultipleChoice question = new MultipleChoice(Text, Answers[0], Answers[1], Answers[2], Answers[3], CorrectAnswer, Subject, Counter, LastUsed);
+            MultipleChoice question = new MultipleChoice(Text, Answers[0], Answers[1], Answers[2], Answers[3], CorrectAnswer, Subject);
             question.btnNextQuestion = btnNextQuestion;
             question.textblockQuestion = textblockQuestion;
             return question;
+        }
+        public override string ToString()
+        {
+            return $"Subject: {Subject}, Text: {Text}, Richtige Antwort: {CorrectAnswer}, Antwort1: {Answers[0]},Antwort2:  {Answers[1]},Antwort3:  {Answers[2]},Antwort4:  {Answers[3]}";
         }
     }
 }

@@ -22,12 +22,11 @@ namespace ahif_academy
             Width = 100,
             Content = "No"
         };
-        public YesNo(string text, string subject, string correctAnswer, int counter, DateTime lastUsed) 
+        public YesNo(string text, string subject, string correctAnswer) 
         {
             Text = text;
             Subject = subject;
-            Counter = counter;
-            LastUsed = lastUsed;
+            Type = "YesNo";
             if (correctAnswer.ToLower() == "yes" || correctAnswer.ToLower() == "no")
             {
                 CorrectAnswer = correctAnswer;
@@ -71,7 +70,7 @@ namespace ahif_academy
         }
         public override object Copy()
         {
-            YesNo question = new YesNo(Text,Subject,CorrectAnswer, Counter, LastUsed);
+            YesNo question = new YesNo(Text,Subject,CorrectAnswer);
             question.btnNextQuestion = btnNextQuestion;
             question.textblockQuestion = textblockQuestion;
             return question;
@@ -110,6 +109,10 @@ namespace ahif_academy
                 btnNextQuestion.Visibility = Visibility.Visible;
             }
             
+        }
+        public override string ToString()
+        {
+            return $"Subject: {Subject}, Text: {Text}, Richtige Antwort: {CorrectAnswer}";
         }
 
 

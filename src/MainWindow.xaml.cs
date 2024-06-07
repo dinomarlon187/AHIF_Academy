@@ -17,11 +17,9 @@ namespace ahif_academy
     /// </summary>
     public partial class MainWindow : Window
     {
-        QuestionList questions = new QuestionList();
         public MainWindow()
         {
             InitializeComponent();
-            questions.DeserializeFromJSON();
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -74,19 +72,21 @@ namespace ahif_academy
             if(subject == "Mathe")
             {
                 QuestionList q;
-                q = questions.FilterBySubject("Mathe");
-                navframe.Navigate(new PageAufgabe(q));
+                q = UserManager.CurrentUser.Questions.FilterBySubject("Mathe");
+                navframe.Navigate(new PageNewQuestion());
+
+                //navframe.Navigate(new PageAufgabe(q));
             }
             else if(subject == "Deutsch")
             {
                 QuestionList q;
-                q = questions.FilterBySubject("Deutsch");
+                q = UserManager.CurrentUser.Questions.FilterBySubject("Deutsch");
                 navframe.Navigate(new PageAufgabe(q));
             }
             else if(subject == "Englisch")
             {
                 QuestionList q;
-                q = questions.FilterBySubject("Englisch");
+                q = UserManager.CurrentUser.Questions.FilterBySubject("Englisch");
                 navframe.Navigate(new PageEnglisch(q));
             }
             else if (subject == "Einstellungen")
