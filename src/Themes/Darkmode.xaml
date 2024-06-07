@@ -5,6 +5,32 @@
     <SolidColorBrush Color="#1c1b21" x:Key="Background"/>
     <SolidColorBrush Color="#353b48" x:Key="FrameBackground"/>
     <SolidColorBrush Color="white" x:Key="foreground"/>
+    <SolidColorBrush Color="#686D76" x:Key="listbocBackground"/>
+    <SolidColorBrush Color="#31363F" x:Key="borderBackground"/>
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="#686D76"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+        BorderBrush="{TemplateBinding BorderBrush}"
+        BorderThickness="{TemplateBinding BorderThickness}"
+        CornerRadius="25">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#EEEEEE"/>
+                <Setter Property="Foreground" Value="Black"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
     <Style TargetType="ListBox">
         <Setter Property="Background" Value="#353b48"/>
     </Style>

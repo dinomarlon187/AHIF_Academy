@@ -20,11 +20,12 @@
         </Grid.RowDefinitions>
 
         <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="8,0,0,0">
-            <TextBlock Text=" السلام عليكم (as-salāmu ʿalaikum)  " FontSize="20" FontWeight="Bold" FontFamily="Calibri" TextAlignment="Center" />
-            <TextBlock Text="Benutzer!" Foreground="#FF00A5D8" FontSize="20" FontWeight="Bold" FontFamily="Calibri" TextAlignment="Center"/>
+            <TextBlock Text="Hallo " FontSize="40" FontWeight="Bold" FontFamily="Calibri" TextAlignment="Center" />
+            <TextBlock Text="Benutzer!" Foreground="#FF00A5D8" FontSize="40" FontWeight="Bold" FontFamily="Calibri" TextAlignment="Center"/>
         </StackPanel>
-        <TextBox x:Name="UsernameBox" Grid.Row="1" Margin="5,30,5,30"/>
-        <PasswordBox x:Name="PasswordBox" Grid.Row="2" Margin="5,30,5,30"/>
+        <TextBox x:Name="UsernameBox" Grid.Row="1" FontSize="20" VerticalContentAlignment="Center" Margin="5,30,5,30" GotFocus="UsernameBox_GotFocus" LostFocus="UsernameBox_LostFocus_1" />
+        <TextBox x:Name="placeholderPassword" FontSize="20" VerticalContentAlignment="Center" Visibility="Visible" Grid.Row="2" Margin="5,30,5,30" GotFocus="PlaceholderPassword_GotFocus" />
+        <PasswordBox x:Name="PasswordBox" FontSize="20" VerticalContentAlignment="Center" Visibility="Collapsed" Grid.Row="2" Margin="5,30,5,30" LostFocus="PasswordBox_LostFocus"/>
         <Button Grid.Row="3" Content="Registrieren" Margin="5,30,5,30" Click="Button_Click"/>
 
     </Grid>
