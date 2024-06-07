@@ -20,6 +20,7 @@ namespace ahif_academy
         public MainWindow()
         {
             InitializeComponent();
+            sidebar.SelectedItem = navbuttonHome;
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -68,12 +69,21 @@ namespace ahif_academy
         private void sidebar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selected = sidebar.SelectedItem as NavButton;
-            string subject = selected.ToolTip.ToString();
-            if(subject == "Mathe")
+            if (UserManager.CurrentUser == null && selected != navbuttonHome)
             {
-                QuestionList q;
-                q = UserManager.CurrentUser.Questions.FilterBySubject("Mathe");
-                navframe.Navigate(new PageNewQuestion());
+                MessageBox.Show("Sie sind nicht angemeldet. Bitte melden Sie sich an oder registrieren sie sich.");
+                sidebar.SelectedItem = navbuttonHome;
+                return;
+            }
+            else
+            {
+                
+                string subject = selected.ToolTip.ToString();
+                if (subject == "Mathe")
+                {
+
+                    QuestionList q;
+                    q = UserManager.CurrentUser.Questions.FilterBySubject("Mathe");
 
                 //navframe.Navigate(new PageAufgabe(q));
             }
