@@ -161,6 +161,7 @@ namespace ahif_academy
                     Label header = new Label()
                     {
                         Height = height / 2 - 10,
+                        Margin = new System.Windows.Thickness(0, 15, 0, 0),
                         FontSize = 20
                     };
                     int correct = 0;

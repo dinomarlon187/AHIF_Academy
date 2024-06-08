@@ -84,5 +84,13 @@ namespace ahif_academy.pages
                 UsernameBox.Foreground = gray;
             }
         }
+
+        private void zurueck_Click(object sender, RoutedEventArgs e)
+        {
+            PageHome pageHome = new PageHome();
+            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow.NavigateToPage(pageHome);
+
+        }
     }
 }
