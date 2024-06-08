@@ -31,8 +31,12 @@ namespace ahif_academy.pages
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            AllgemeinButton.Background = new SolidColorBrush(Colors.Transparent);
+            MatheButton.Background = new SolidColorBrush(Colors.Transparent);
+            DeutschButton.Background = new SolidColorBrush(Colors.Transparent);
             if (sender is Button button)
             {
+                button.Background = new SolidColorBrush(Colors.AliceBlue);
                 UserManager.CurrentUser.StatisticsDraw((string)button.Content, canvas);
             }
         }

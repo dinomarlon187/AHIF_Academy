@@ -104,5 +104,9 @@ namespace ahif_academy
         {
             return questions.Count;
         }
+        public void SortbySubjects()
+        {
+            questions = questions.OrderBy(x => x.Subject).ToList();
+        }
     }
 }

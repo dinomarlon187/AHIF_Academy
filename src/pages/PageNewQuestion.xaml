@@ -14,9 +14,9 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel>
-            <Button x:Name="ButtonAdd" Content="Add" HorizontalAlignment="Left"  Margin ="10" VerticalAlignment="Top" Width="100" Height="50" Click="ButtonAdd_Click" />
-            <Button x:Name="ButtonDelete" Content="Delete" HorizontalAlignment="Left"  Margin="10" VerticalAlignment="Top" Width="100" Height="50" Click="ButtonDelete_Click" />
-            <Button x:Name="ButtonEdit" Content="Edit" HorizontalAlignment="Left"  Margin="10" VerticalAlignment="Top" Width="100" Height="50" Click="ButtonEdit_Click"/>
+            <Button x:Name="ButtonAdd" Content="Add" HorizontalAlignment="Left"  Margin ="10" VerticalAlignment="Top" FontSize="30" Width="140" Height="60" Click="ButtonAdd_Click" />
+            <Button x:Name="ButtonDelete" Content="Delete" HorizontalAlignment="Left"  Margin="10" VerticalAlignment="Top" FontSize="30" Width="140" Height="60" Click="ButtonDelete_Click" />
+            <Button x:Name="ButtonEdit" Content="Edit" HorizontalAlignment="Left"  Margin="10" VerticalAlignment="Top" FontSize="30" Width="140" Height="60" Click="ButtonEdit_Click"/>
         </StackPanel>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
@@ -24,11 +24,11 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel>
-                <TextBlock Grid.Row="0" Grid.Column="1" Margin="10" Text="Search for a keyword or a phrase:" />
-                <TextBox  Grid.Row="0" Grid.Column="1" Margin="10" Name="textBoxSearch"/>
-                <Button Grid.Row="0" Grid.Column="1" Name="buttonSearch" Content="Search" Width="80" Height="30" Click="buttonSearch_Click"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" Margin="10" FontSize="20" Text="Search for a keyword or a phrase:" />
+                <TextBox  Grid.Row="0" Grid.Column="1" Margin="10" Name="textBoxSearch" Height="30"/>
+                <Button Grid.Row="0" Grid.Column="1" Name="buttonSearch" Content="Search" FontSize="30" Width="140" Height="60" Click="buttonSearch_Click"/>
             </StackPanel>
-            <ListBox Grid.Row="1" Grid.Column="1" Margin="10" Name="listBoxQuestions"/>
+            <ListBox Grid.Row="1" FontSize="20" Grid.Column="1" Margin="10" Name="listBoxQuestions"/>
         </Grid>
     </Grid>
 </Page>
