@@ -37,10 +37,25 @@ namespace ahif_academy.pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            bool success = false;
             string username = UsernameBox.Text;
             string password = PasswordBox.Password;
+            if (username.Length < 2)
+            {
+                MessageBox.Show("Benutzername muss min. 2 lang sein");
+                
+            }
+            else if (password.Length < 8)
+            {
+                MessageBox.Show("Passwort muss min. 8 lang sein");
+                
+            }
+            else
+            {
+                success = UserManager.RegisterUser(username, password);
+            }
 
-            bool success  = UserManager.RegisterUser(username, password);
+            
 
             if (success)
             {

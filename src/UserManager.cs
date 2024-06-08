@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
+using System.Security.Cryptography;
+
+
 
 namespace ahif_academy
 {
@@ -47,7 +50,8 @@ namespace ahif_academy
         public static User AuthenticateUser(string username, string password)
         {
             List<User> users = LoadUsers();
-            User user = users.Find(u => u.Username == username && u.Password == password);
+            string hashedPassword = HashPassword(password);
+            User user = users.Find(u => u.Username == username && u.Password == hashedPassword);
             if (user != null)
             {
                 user.filepathuser = "../../../JSONFiles/" + username + ".json";
@@ -66,8 +70,9 @@ namespace ahif_academy
             {
                 return false; 
             }
+            string hashedPassword = HashPassword(password);
 
-            User user = new User { Username = username, Password = password, Profilpicture =  "../pictures/katze.png"};
+            User user = new User { Username = username, Password = hashedPassword, Profilpicture =  "../pictures/katze.png"};
             user.filepathuser = "../../../JSONFiles/" + username + ".json";
             Log.log.Information($"{user.Username} hat sich registriert");
             users.Add(user);
@@ -111,6 +116,20 @@ namespace ahif_academy
                 }
             }
             SavedUsers(users); 
+        }
+        private static string HashPassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
         }
 
     }

@@ -1,44 +1,5 @@
 [
-  {
-    "filepathuser": "../../../JSONFiles/profiles.json",
-    "Username": "ensar680",
-    "Password": "ensar6868",
-    "Profilpicture": "../pictures/tos.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathuser": "../../../JSONFiles/profiles.json",
-    "Username": "ab",
-    "Password": "ab",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathuser": "../../../JSONFiles/profiles.json",
-    "Username": "a",
-    "Password": "a",
-    "Profilpicture": "../pictures/tos.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathuser": "../../../JSONFiles/profiles.json",
-    "Username": ";--",
-    "Password": "aaa",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
+  
   {
     "filepathuser": "../../../JSONFiles/f.json",
     "Username": "f",
@@ -48,5 +9,15 @@
     "QuestionsAnsweredCorrectDeutsch": 2,
     "QuestionsAnsweredIncorrectMathe": 1,
     "QuestionsAnsweredCorrectMathe": 1
+  },
+  {
+    "filepathuser": "../../../JSONFiles/enter_button.json",
+    "Username": "enter_button",
+    "Password": "dcbab71c48b27cddc99593951782e61cba46eceee9e8aa9b8c2a96a40043b5ec",
+    "Profilpicture": "../pictures/katze.png",
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
   }
 ]
