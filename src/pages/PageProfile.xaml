@@ -29,9 +29,9 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center"  >
-                <Button x:Name="AllgemeinButton" Background="Transparent" Foreground="Black" Content="Allgemein" Width="150" Height="42" Margin="10" Click="Button_Click"/>
-                <Button x:Name="DeutschButton" Background="AliceBlue" Foreground="Black"  Content="Deutsch" Width="150" Height="42" Margin="10" Click="Button_Click"/>
-                <Button x:Name="MatheButton" Background="Transparent" Foreground="Black" Content="Mathe" Width="150" Height="42" Margin="10" Click="Button_Click"/>
+                <Button x:Name="AllgemeinButton" Background="Transparent" Foreground="Black" Content="Allgemein" FontSize="30" Width="200" Height="60" Margin="10" Click="Button_Click"/>
+                <Button x:Name="DeutschButton" Background="Transparent" Foreground="Black"  Content="Deutsch" FontSize="30" Width="200" Height="60" Margin="10" Click="Button_Click"/>
+                <Button x:Name="MatheButton" Background="Transparent" Foreground="Black" Content="Mathe" FontSize="30" Width="200" Height="60" Margin="10" Click="Button_Click"/>
             </StackPanel>
             <Canvas x:Name="canvas" Grid.Row="1" VerticalAlignment="Stretch" Margin="5">
 

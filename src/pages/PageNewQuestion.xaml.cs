@@ -42,6 +42,11 @@ namespace ahif_academy.pages
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
+            if (listBoxQuestions.SelectedItem == null)
+            {
+                MessageBox.Show("Bitte wählen Sie eine Frage aus");
+                return;
+            }
             currentUser.Questions.Remove((Question)listBoxQuestions.SelectedItem);
             UpdateListBox(currentUser.Questions);
             QuestionList.SerializeToJSON(currentUser.filepathuser, currentUser.Questions);
@@ -49,6 +54,11 @@ namespace ahif_academy.pages
 
         private void ButtonEdit_Click(object sender, RoutedEventArgs e)
         {
+            if (listBoxQuestions.SelectedItem == null)
+            {
+                MessageBox.Show("Bitte wählen Sie eine Frage aus");
+                return;
+            }
             currentUser.Questions.Remove((Question)listBoxQuestions.SelectedItem);
             WindowAddQuestion windowAddQuestion = new WindowAddQuestion((Question)listBoxQuestions.SelectedItem);
             windowAddQuestion.ShowDialog();
