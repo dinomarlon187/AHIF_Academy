@@ -1,22 +1,11 @@
 [
-  
-  {
-    "filepathuser": "../../../JSONFiles/f.json",
-    "Username": "f",
-    "Password": "f",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 2,
-    "QuestionsAnsweredIncorrectMathe": 1,
-    "QuestionsAnsweredCorrectMathe": 1
-  },
   {
     "filepathuser": "../../../JSONFiles/enter_button.json",
     "Username": "enter_button",
     "Password": "dcbab71c48b27cddc99593951782e61cba46eceee9e8aa9b8c2a96a40043b5ec",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
+    "Profilpicture": "../pictures/spiderman.png",
+    "QuestionsAnsweredIncorrectDeutsch": 26,
+    "QuestionsAnsweredCorrectDeutsch": 33,
     "QuestionsAnsweredIncorrectMathe": 0,
     "QuestionsAnsweredCorrectMathe": 0
   }

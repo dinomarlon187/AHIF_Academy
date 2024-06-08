@@ -26,7 +26,7 @@ namespace ahif_academy
         protected TextBlock textblockQuestion = new TextBlock()
         {
             FontSize = 30,
-            Width = 650,
+            Width = 800,
             Height = 50,
             Foreground = System.Windows.Media.Brushes.Black,
             TextAlignment = System.Windows.TextAlignment.Center,
