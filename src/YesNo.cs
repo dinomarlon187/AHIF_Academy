@@ -12,15 +12,17 @@ namespace ahif_academy
     {
         Button yes = new Button()
         {
-            Height = 50,
-            Width = 100,
-            Content = "Yes"
+            VerticalAlignment = VerticalAlignment.Stretch,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
+            Content = "Yes",
+            Margin = new Thickness(10, 10, 10, 10)
         };
         Button no = new Button()
         {
-            Height = 50,
-            Width = 100,
-            Content = "No"
+            VerticalAlignment = VerticalAlignment.Stretch,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
+            Content = "No",
+            Margin = new Thickness(10, 10, 10, 10)
         };
         public YesNo(string text, string subject, string correctAnswer) 
         {
@@ -53,14 +55,14 @@ namespace ahif_academy
 
             
             Grid.SetColumn(yes, 0);
-            Grid.SetRow(yes, 1);
+            Grid.SetRow(yes, 2);
             yes.Click += Click;
             yes.IsEnabled = true;
 
             no.IsEnabled = true;
             no.Click += Click;
             Grid.SetColumn(no, 2);
-            Grid.SetRow(no, 1);
+            Grid.SetRow(no, 2);
 
             grid.Children.Add(textblockQuestion);
             grid.Children.Add(yes);

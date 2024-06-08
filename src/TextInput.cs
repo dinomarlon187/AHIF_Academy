@@ -95,7 +95,7 @@ namespace ahif_academy
                     textBoxAnswer.IsReadOnly = true;
                     if (CheckAnswer(userAnswer, Subject))
                     {
-                        textBoxAnswer.Background = System.Windows.Media.Brushes.Green;
+                        textBoxAnswer.Background = Brushes.Green;
                     }
                     else
                     {

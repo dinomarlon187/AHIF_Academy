@@ -75,7 +75,7 @@ namespace ahif_academy
         public Question GetRandomQuestion()
         {
             questions = questions.OrderBy(x => x.Counter).ThenBy(x => x.LastUsed).ToList();
-            int index = random.Next(0,5);
+            int index = random.Next(0,3);
             questions[index].Counter++;
             questions[index].LastUsed = DateTime.Now;
             return questions[index];
@@ -92,7 +92,6 @@ namespace ahif_academy
         }
         public void Add(Question question)
         {
-
             questions.Add(question);
             Log.log.Information("Neue Frage hinzugefügt");
         }
