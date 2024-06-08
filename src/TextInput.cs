@@ -46,7 +46,7 @@ namespace ahif_academy
         }
         public override void Draw(Grid grid)
         {
-            grid.Children.Clear();
+
             Grid.SetColumnSpan(textblockQuestion, 2);
             textBoxAnswer.Document.Blocks.Clear();
             textBoxAnswer.Document.Blocks.Add(new Paragraph(new Run(WrongAnswer)));
@@ -57,6 +57,7 @@ namespace ahif_academy
             Grid.SetRow(submit, 2);
             submit.Click += Submit_Click;
             submit.IsEnabled = true;
+            grid.Children.Clear();
             grid.Children.Add(textblockQuestion);
             grid.Children.Add(textBoxAnswer);
             grid.Children.Add(submit);

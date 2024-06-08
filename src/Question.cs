@@ -68,28 +68,45 @@ namespace ahif_academy
         public bool CheckAnswer(string answer, string subject)
         {
             bool correct = answer == CorrectAnswer;
-            if (correct)
+            List<User> users = UserManager.LoadUsers();
+            foreach (User user in users)
             {
-                if (subject.ToLower() == "deutsch")
+                if (user.Username == UserManager.CurrentUser.Username && user.Password == UserManager.CurrentUser.Password)
                 {
-                    UserManager.CurrentUser.QuestionsAnsweredCorrectDeutsch++;
-                }
-                else
-                {
-                    UserManager.CurrentUser.QuestionsAnsweredCorrectMathe++;
+                    if (correct)
+                    {
+                        if (subject.ToLower() == "deutsch")
+                        {
+                            user.QuestionsAnsweredCorrectDeutsch++;
+                            UserManager.CurrentUser.QuestionsAnsweredCorrectDeutsch++;
+                        }
+                        else
+                        {
+                            user.QuestionsAnsweredCorrectMathe++;
+                            UserManager.CurrentUser.QuestionsAnsweredCorrectMathe++;
+                        }
+                        
+                    }
+                    else
+                    {
+                        if (subject.ToLower() == "deutsch")
+                        {
+                            user.QuestionsAnsweredIncorrectDeutsch++;
+                            UserManager.CurrentUser.QuestionsAnsweredIncorrectDeutsch++;
+                        }
+                        else
+                        {
+                            user.QuestionsAnsweredIncorrectMathe++;
+                            UserManager.CurrentUser.QuestionsAnsweredIncorrectMathe++;
+                        }
+                    }
                 }
             }
-            else
-            {
-                if (subject.ToLower() == "deutsch")
-                {
-                    UserManager.CurrentUser.QuestionsAnsweredIncorrectDeutsch++;
-                }
-                else
-                {
-                    UserManager.CurrentUser.QuestionsAnsweredIncorrectMathe++;
-                }
-            }
+            UserManager.SavedUsers(users);
+            
+
+            
+
             return correct;
         }
         public abstract object Copy(); 

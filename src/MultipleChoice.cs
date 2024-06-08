@@ -64,7 +64,7 @@ namespace ahif_academy
         }
         public override void Draw(Grid grid)
         {
-            grid.Children.Clear();
+            
             
             Grid.SetRow(ans1, 1);
             Grid.SetColumn(ans1, 0);
@@ -87,7 +87,7 @@ namespace ahif_academy
 
             textblockQuestion.Text = Text;
             Grid.SetColumnSpan(textblockQuestion, 2);
-
+            grid.Children.Clear();
             grid.Children.Add(textblockQuestion);
             grid.Children.Add(ans1);
             grid.Children.Add(ans2);
@@ -125,7 +125,7 @@ namespace ahif_academy
                 }
                 btnNextQuestion.IsEnabled = true;
                 btnNextQuestion.Visibility = Visibility.Visible;
-
+                
             }
 
 

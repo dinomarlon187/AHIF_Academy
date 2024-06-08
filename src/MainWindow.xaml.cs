@@ -115,16 +115,8 @@ namespace ahif_academy
                 }
                 else if (subject == "Einstellungen")
                 {
-                    if (UserManager.CurrentUser == null)
-                    {
-                        MessageBox.Show("Bitte loggen Sie sich ein");
-                        Log.log.Warning("Versuch, ohne Anmeldung eine Page zu öffnen");
-                        navframe.Navigate(new PageLogin());
-                    }
-                    else
-                    {
-                        navframe.Navigate(new PageEinstellungen());
-                    }
+                    navframe.Navigate(new PageEinstellungen());
+
 
                 }
                 else if (subject == "Home")
@@ -133,29 +125,12 @@ namespace ahif_academy
                 }
                 else if (subject == "Profil")
                 {
-                    if (UserManager.CurrentUser == null)
-                    {
-                        MessageBox.Show("Bitte loggen Sie sich ein");
-                        Log.log.Warning("Versuch, ohne Anmeldung eine Page zu öffnen");
-                        navframe.Navigate(new PageLogin());
-                    }
-                    else
-                    {
-                        navframe.Navigate(new PageProfile());
-                    }
+                    navframe.Navigate(new PageProfile());
+
                 }
                 else if (subject == "Frage hinzufügen") 
                 {                     
-                    if (UserManager.CurrentUser == null)
-                    {
-                        MessageBox.Show("Bitte loggen Sie sich ein");
-                        Log.log.Warning("Versuch, ohne Anmeldung eine Page zu öffnen");
-                        navframe.Navigate(new PageLogin());
-                    }
-                    else
-                    {
-                        navframe.Navigate(new PageNewQuestion());
-                    }
+                    navframe.Navigate(new PageNewQuestion());
                 }
                 
                 

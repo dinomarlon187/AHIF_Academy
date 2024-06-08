@@ -47,7 +47,7 @@ namespace ahif_academy
 
         public override void Draw(Grid grid)
         {
-            grid.Children.Clear();
+            
             Grid.SetColumn(textblockQuestion, 0);
             Grid.SetRow(textblockQuestion, 0);
             Grid.SetColumnSpan(textblockQuestion, 3);
@@ -63,7 +63,7 @@ namespace ahif_academy
             no.Click += Click;
             Grid.SetColumn(no, 2);
             Grid.SetRow(no, 1);
-
+            grid.Children.Clear();
             grid.Children.Add(textblockQuestion);
             grid.Children.Add(yes);
             grid.Children.Add(no);

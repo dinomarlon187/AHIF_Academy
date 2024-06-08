@@ -39,9 +39,13 @@ namespace ahif_academy
                 return QuestionsAnsweredIncorrectDeutsch+QuestionsAnsweredIncorrectMathe;
             }
         }
+        [JsonProperty]
         public int QuestionsAnsweredIncorrectDeutsch { get; set; }
+        [JsonProperty]
         public int QuestionsAnsweredCorrectDeutsch { get; set; }
+        [JsonProperty]
         public int QuestionsAnsweredIncorrectMathe { get; set; }
+        [JsonProperty]
         public int QuestionsAnsweredCorrectMathe { get; set; }
 
         public void StatisticsDraw(string subject, Canvas canvas)

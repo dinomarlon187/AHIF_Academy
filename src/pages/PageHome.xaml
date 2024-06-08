@@ -18,7 +18,7 @@
 
         <StackPanel Margin="54,200,410,0" Grid.ColumnSpan="2"  Panel.ZIndex="1" VerticalAlignment="Top">
             <TextBlock Text="AHIF ACADEMY"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontFamily="Century Gothic" />
-            <TextBlock Margin="0,20,0,0" TextWrapping="Wrap"  FontFamily="Century Gothic" Text="Herzlich willkommen an der AHIF ACADEMY! Diese App bietet dir eine großartige Gelegenheit, deine Fähigkeiten in den Bereichen Mathematik, Deutsch und Englisch zu verbessern. Nutze einfach die intuitiven Symbole an der Seitenleiste, um mit deinem Lernabenteuer zu beginnen." Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="15" />
+            <TextBlock x:Name="textBlockText" Margin="0,20,0,0" TextWrapping="Wrap"  FontFamily="Century Gothic" Text="Herzlich willkommen an der AHIF ACADEMY! Diese App bietet dir eine großartige Gelegenheit, deine Fähigkeiten in den Bereichen Mathematik, Deutsch und Englisch zu verbessern. Nutze einfach die intuitiven Symbole an der Seitenleiste, um mit deinem Lernabenteuer zu beginnen." Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="15" />
         </StackPanel>
 
         <Grid Margin="160,-365,-610,85" Grid.Column="1">
