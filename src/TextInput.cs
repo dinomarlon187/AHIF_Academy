@@ -20,19 +20,20 @@ namespace ahif_academy
 
         Button submit = new Button()
         {
-            Height = 100,
-            Width = 250,
-            FontSize = 50,
-            Content = "Submit"
+            Height = 50,
+            Width = 100,
+            Content = "Abgeben",
+            HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
+            VerticalAlignment = System.Windows.VerticalAlignment.Top
         };
 
         RichTextBox textBoxAnswer = new RichTextBox()
         {
-            Width = 500,
-            Height = 100,
-            FontSize = 30,
+            Width = 400,
+            FontSize = 20,
+            Margin = new Thickness(60),
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
-            VerticalAlignment = System.Windows.VerticalAlignment.Center
+            VerticalAlignment = System.Windows.VerticalAlignment.Top
         };
         public TextInput(string text, string subject, string answer, string wrongAnswer)
         {
@@ -46,15 +47,13 @@ namespace ahif_academy
         public override void Draw(Grid grid)
         {
             grid.Children.Clear();
-            Grid.SetColumn(textblockQuestion, 0);
-            Grid.SetRow(textblockQuestion, 0);
-            Grid.SetColumnSpan(textblockQuestion, 3);
+            Grid.SetColumnSpan(textblockQuestion, 2);
             textBoxAnswer.Document.Blocks.Clear();
             textBoxAnswer.Document.Blocks.Add(new Paragraph(new Run(WrongAnswer)));
-            Grid.SetColumn(textBoxAnswer, 0);
+            
             Grid.SetRow(textBoxAnswer, 1);
-            Grid.SetColumnSpan(textBoxAnswer, 3);
-            Grid.SetColumn(submit, 1);
+            Grid.SetColumnSpan(textBoxAnswer, 2);
+            Grid.SetColumnSpan(submit, 2);
             Grid.SetRow(submit, 2);
             submit.Click += Submit_Click;
             submit.IsEnabled = true;

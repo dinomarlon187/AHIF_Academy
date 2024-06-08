@@ -14,12 +14,27 @@ namespace ahif_academy
         [JsonProperty]
         public string Type { get; set; }
         protected bool AnswerPressed = false;
-        public Button btnNextQuestion = new Button();
+        public Button btnNextQuestion = new Button()
+        {
+            Width = 300,
+            Height = 100,
+            Content = "Nächste Frage",
+            HorizontalAlignment = System.Windows.HorizontalAlignment.Right,
+            VerticalAlignment = System.Windows.VerticalAlignment.Top
+
+        };
         protected TextBlock textblockQuestion = new TextBlock()
         {
-            FontSize = 40,
+            FontSize = 30,
+            Width = 650,
+            Height = 50,
+            Foreground = System.Windows.Media.Brushes.Black,
+            TextAlignment = System.Windows.TextAlignment.Center,
+            Background = System.Windows.Media.Brushes.LightGray,
             TextWrapping = System.Windows.TextWrapping.Wrap,
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
+            VerticalAlignment = System.Windows.VerticalAlignment.Bottom
+            
         };
         protected string subject;
         protected string[] subjects = { "mathe", "englisch", "deutsch" };

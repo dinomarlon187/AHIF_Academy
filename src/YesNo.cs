@@ -83,12 +83,18 @@ namespace ahif_academy
             
             TextBlock textBlock = new TextBlock()
             {
-                FontSize = 60,
+                Height = 200,
+                Width = 200,
+                TextAlignment = TextAlignment.Center,
+                FontSize = 30,
+                FontWeight = FontWeights.Bold,
+                TextWrapping = TextWrapping.Wrap,
                 HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center
+                VerticalAlignment = VerticalAlignment.Bottom
             };
-            Grid.SetColumn(textBlock, 1);
+            
             Grid.SetRow(textBlock, 1);
+            Grid.SetColumnSpan(textBlock, 2);
             if (sender is Button button)
             {
                 string answer;
@@ -102,11 +108,13 @@ namespace ahif_academy
                 }
                 if (CheckAnswer(answer, Subject))
                 {
-                    textBlock.Text = "Correct";
+                    textBlock.Foreground = System.Windows.Media.Brushes.Green;
+                    textBlock.Text = "Richtig";
                 }
                 else
                 {
-                    textBlock.Text = "Incorrect";
+                    textBlock.Foreground = System.Windows.Media.Brushes.Red;
+                    textBlock.Text = "Falsch";
                 }
                 Grid grid = (Grid)button.Parent;
                 yes.IsEnabled = false;

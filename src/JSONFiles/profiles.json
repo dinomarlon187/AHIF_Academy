@@ -1,22 +1,77 @@
 [
   {
+    "filepathuser": "../../../JSONFiles/profiles.json",
     "Username": "ensar680",
     "Password": "ensar6868",
-    "Profilpicture": "../pictures/tos.png"
+    "Profilpicture": "../pictures/tos.png",
+    "Questions": {
+      "questions": []
+    },
+    "QuestionsAnsweredCorrect": 0,
+    "QuestionsAnsweredIncorrect": 0,
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
   },
   {
+    "filepathuser": "../../../JSONFiles/profiles.json",
     "Username": "ab",
     "Password": "ab",
-    "Profilpicture": "../pictures/katze.png"
+    "Profilpicture": "../pictures/katze.png",
+    "Questions": {
+      "questions": []
+    },
+    "QuestionsAnsweredCorrect": 0,
+    "QuestionsAnsweredIncorrect": 0,
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
   },
   {
+    "filepathuser": "../../../JSONFiles/profiles.json",
     "Username": "a",
     "Password": "a",
-    "Profilpicture": "../pictures/tos.png"
+    "Profilpicture": "../pictures/tos.png",
+    "Questions": {
+      "questions": []
+    },
+    "QuestionsAnsweredCorrect": 0,
+    "QuestionsAnsweredIncorrect": 0,
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
   },
   {
+    "filepathuser": "../../../JSONFiles/profiles.json",
     "Username": ";--",
     "Password": "aaa",
-    "Profilpicture": "../pictures/katze.png"
+    "Profilpicture": "../pictures/katze.png",
+    "Questions": {
+      "questions": []
+    },
+    "QuestionsAnsweredCorrect": 0,
+    "QuestionsAnsweredIncorrect": 0,
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
+  },
+  {
+    "filepathuser": "../../../JSONFiles/f.json",
+    "Username": "f",
+    "Password": "f",
+    "Profilpicture": "../pictures/katze.png",
+    "Questions": {
+      "questions": []
+    },
+    "QuestionsAnsweredCorrect": 0,
+    "QuestionsAnsweredIncorrect": 0,
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
   }
 ]

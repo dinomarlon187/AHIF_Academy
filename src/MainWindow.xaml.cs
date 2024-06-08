@@ -144,10 +144,21 @@ namespace ahif_academy
                         navframe.Navigate(new PageProfile());
                     }
                 }
-                else if (subject == "Liste")
-                {
-                    navframe.Navigate(new PageNewQuestion());
+                else if (subject == "Frage hinzufügen") 
+                {                     
+                    if (UserManager.CurrentUser == null)
+                    {
+                        MessageBox.Show("Bitte loggen Sie sich ein");
+                        Log.log.Warning("Versuch, ohne Anmeldung eine Page zu öffnen");
+                        navframe.Navigate(new PageLogin());
+                    }
+                    else
+                    {
+                        navframe.Navigate(new PageNewQuestion());
+                    }
                 }
+                
+                
             }
         }
     }
