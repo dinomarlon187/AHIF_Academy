@@ -22,12 +22,15 @@ namespace ahif_academy
         {
             Height = 50,
             Width = 100,
-            Content = "Submit"
+            Content = "Abgeben",
+            HorizontalAlignment = System.Windows.HorizontalAlignment.Right,
+            VerticalAlignment = System.Windows.VerticalAlignment.Top
         };
 
         RichTextBox textBoxAnswer = new RichTextBox()
         {
             Width = 400,
+            FontSize = 20,
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
             VerticalAlignment = System.Windows.VerticalAlignment.Center
         };
@@ -43,15 +46,13 @@ namespace ahif_academy
         public override void Draw(Grid grid)
         {
             grid.Children.Clear();
-            Grid.SetColumn(textblockQuestion, 0);
-            Grid.SetRow(textblockQuestion, 0);
-            Grid.SetColumnSpan(textblockQuestion, 3);
+            Grid.SetColumnSpan(textblockQuestion, 2);
             textBoxAnswer.Document.Blocks.Clear();
             textBoxAnswer.Document.Blocks.Add(new Paragraph(new Run(WrongAnswer)));
-            Grid.SetColumn(textBoxAnswer, 0);
+            
             Grid.SetRow(textBoxAnswer, 1);
-            Grid.SetColumnSpan(textBoxAnswer, 3);
-            Grid.SetColumn(submit, 1);
+            Grid.SetColumnSpan(textBoxAnswer, 2);
+            Grid.SetColumnSpan(textBoxAnswer, 2);
             Grid.SetRow(submit, 2);
             submit.Click += Submit_Click;
             submit.IsEnabled = true;

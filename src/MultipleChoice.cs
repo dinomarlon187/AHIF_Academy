@@ -17,23 +17,36 @@ namespace ahif_academy
         public string[] Answers { get; set; }
         Button ans1 = new Button()
         {
-            Height = 50,
-            Width = 100
+            Height = 100,
+            Width = 300,
+            Margin = new Thickness(10),
+            HorizontalAlignment = HorizontalAlignment.Right,
+            VerticalAlignment = VerticalAlignment.Bottom
+
         };
         Button ans2 = new Button()
         {
-            Height = 50,
-            Width = 100
+            Height = 100,
+            Width = 300,
+            Margin = new Thickness(10),
+            HorizontalAlignment = HorizontalAlignment.Left,
+            VerticalAlignment = VerticalAlignment.Bottom
         };
         Button ans3 = new Button()
         {
-            Height = 50,
-            Width = 100
+            Height = 100,
+            Width = 300,
+            Margin = new Thickness(10),
+            HorizontalAlignment = HorizontalAlignment.Right,
+            VerticalAlignment = VerticalAlignment.Top
         };
         Button ans4 = new Button()
         {
-            Height = 50,
-            Width = 100
+            Height = 100,
+            Width = 300,
+            Margin = new Thickness(10),
+            HorizontalAlignment = HorizontalAlignment.Left,
+            VerticalAlignment = VerticalAlignment.Top
         };
 
         public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject)
@@ -73,6 +86,7 @@ namespace ahif_academy
             ans4.Click += Click;
 
             textblockQuestion.Text = Text;
+            Grid.SetColumnSpan(textblockQuestion, 2);
 
             grid.Children.Add(textblockQuestion);
             grid.Children.Add(ans1);

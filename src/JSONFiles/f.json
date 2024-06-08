@@ -1,0 +1,118 @@
+{
+  "questions": [
+    {
+      "Answers": [
+        "Paris",
+        "Berlin",
+        "Madrid",
+        "Rome"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "What is the capital of France?",
+      "Subject": "Englisch",
+      "CorrectAnswer": "Paris"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Is the Earth flat?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "What is 2 + 2?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "4"
+    },
+    {
+      "WrongAnswer": "Ich Bin Der Marlon.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich bin der Marlon."
+    },
+    {
+      "WrongAnswer": "Ich Gehe Zu Die Schule.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich gehe zur Schule."
+    },
+    {
+      "WrongAnswer": "Er Hat Ein Auto Gehabt.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er hat ein Auto."
+    },
+    {
+      "WrongAnswer": "Das Ist Mein Freund. Er Ist Ein Lehrer.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Das ist mein Freund, der Lehrer ist."
+    },
+    {
+      "WrongAnswer": "Haben Sie Einem Kugelschreiber?",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Haben Sie einen Kugelschreiber?"
+    },
+    {
+      "WrongAnswer": "Ich Habe Zwei Katzen Und Einen Hund.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich habe zwei Katzen und einen Hund."
+    },
+    {
+      "Answers": [
+        "6",
+        "9",
+        "12",
+        "3"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Was ist 3*3",
+      "Subject": "Mathe",
+      "CorrectAnswer": "9"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist Albert Einstein tot",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Answers": [
+        "10",
+        "12",
+        "24",
+        "25"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "5+5",
+      "Subject": "Mathe",
+      "CorrectAnswer": "10"
+    },
+    {
+      "Answers": [
+        "5",
+        "7,5",
+        "3",
+        "10"
+      ],
+      "Type": "MultipleChoice",
+      "Text": " 5 + 10/2",
+      "Subject": "Mathe",
+      "CorrectAnswer": "10"
+    }
+  ]
+}
