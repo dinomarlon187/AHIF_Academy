@@ -110,14 +110,14 @@ namespace ahif_academy
                 {
                     labelCorrect.Content = $"{correct} Fragen, {Math.Round((double)correct / ((double)correct + (double)incorrect) * 100)}%";
                     Canvas.SetLeft(labelCorrect, 20);
-                    Canvas.SetTop(labelCorrect, height / 2 - labelCorrect.Height / 2);
+                    Canvas.SetTop(labelCorrect, height / 2 - barCorrect.Height / 2 + barCorrect.Height);
                     canvas.Children.Add(labelCorrect);
                 }
                 if (incorrect != 0)
                 {
                     labelIncorrect.Content = $"{incorrect} Fragen, {Math.Round((double)incorrect / ((double)incorrect + (double)correct) * 100)}%";
-                    Canvas.SetLeft(labelIncorrect, width - barIncorrect.Width+ 20);
-                    Canvas.SetTop(labelIncorrect, height / 2 - labelCorrect.Height / 2);
+                    Canvas.SetRight(labelIncorrect, 0);
+                    Canvas.SetTop(labelIncorrect, height / 2 - barCorrect.Height / 2 + barCorrect.Height);
                     canvas.Children.Add(labelIncorrect);
                 }
             }
@@ -184,21 +184,21 @@ namespace ahif_academy
                     Canvas.SetLeft(barCorrect, 20);
                     canvas.Children.Add(barCorrect);
 
-                    Canvas.SetTop(header, height / 3 * i);
+                    Canvas.SetTop(header, height / 3 * i-10);
                     Canvas.SetLeft(header, 20);
                     canvas.Children.Add(header);
                     if (correct != 0)
                     {
                         labelCorrect.Content = $"{correct} Fragen, {Math.Round((double)correct / ((double)correct + (double)incorrect) * 100)}%";
                         Canvas.SetLeft(labelCorrect, 20);
-                        Canvas.SetTop(labelCorrect, height / 3 * i + height / 6 - labelCorrect.Height / 2);
+                        Canvas.SetTop(labelCorrect, height / 3 * i + height / 6 - barCorrect.Height / 2 + barCorrect.Height-5);
                         canvas.Children.Add(labelCorrect);
                     }
                     if (incorrect != 0)
                     {
                         labelIncorrect.Content = $"{incorrect} Fragen, {Math.Round((double)incorrect / ((double)incorrect + (double)correct) * 100)}%";
-                        Canvas.SetLeft(labelIncorrect, width - barIncorrect.Width + 20);
-                        Canvas.SetTop(labelIncorrect, height / 3 * i + height / 6 - labelIncorrect.Height / 2);
+                        Canvas.SetRight(labelIncorrect,0);
+                        Canvas.SetTop(labelIncorrect, height / 3 * i + height / 6 - barCorrect.Height / 2 + barCorrect.Height-5);
                         canvas.Children.Add(labelIncorrect);
                     }
                 }
