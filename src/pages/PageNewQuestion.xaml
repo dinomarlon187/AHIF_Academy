@@ -8,11 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageNewQuestion" Background="White">
 
-    <Grid>
+    <Grid Background="{DynamicResource FrameBackground}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        
         <StackPanel>
             <Button x:Name="ButtonAdd" Content="Add" HorizontalAlignment="Left"  Margin ="10" VerticalAlignment="Top" FontSize="30" Width="140" Height="60" Click="ButtonAdd_Click" />
             <Button x:Name="ButtonDelete" Content="Delete" HorizontalAlignment="Left"  Margin="10" VerticalAlignment="Top" FontSize="30" Width="140" Height="60" Click="ButtonDelete_Click" />
