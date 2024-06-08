@@ -15,14 +15,14 @@ namespace ahif_academy
             VerticalAlignment = VerticalAlignment.Stretch,
             HorizontalAlignment = HorizontalAlignment.Stretch,
             Content = "Yes",
-            Margin = new Thickness(10, 10, 10, 10)
+            Margin = new Thickness(170, 70, 130, 70)
         };
         Button no = new Button()
         {
             VerticalAlignment = VerticalAlignment.Stretch,
             HorizontalAlignment = HorizontalAlignment.Stretch,
             Content = "No",
-            Margin = new Thickness(10, 10, 10, 10)
+            Margin = new Thickness(130, 70, 170, 70)
         };
         public YesNo(string text, string subject, string correctAnswer) 
         {
@@ -55,14 +55,14 @@ namespace ahif_academy
 
             
             Grid.SetColumn(yes, 0);
-            Grid.SetRow(yes, 2);
+            Grid.SetRow(yes, 1);
             yes.Click += Click;
             yes.IsEnabled = true;
 
             no.IsEnabled = true;
             no.Click += Click;
             Grid.SetColumn(no, 2);
-            Grid.SetRow(no, 2);
+            Grid.SetRow(no, 1);
 
             grid.Children.Add(textblockQuestion);
             grid.Children.Add(yes);
