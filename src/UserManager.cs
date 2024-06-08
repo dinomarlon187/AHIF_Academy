@@ -50,10 +50,9 @@ namespace ahif_academy
             User user = users.Find(u => u.Username == username && u.Password == password);
             if (user != null)
             {
-                
+                user.filepathuser = "../../../JSONFiles/" + username + ".json";
                 CurrentUser = user; // Setzen des aktuellen Benutzers
                 QuestionList.DeserializeFromJSON(user.filepathuser, CurrentUser.Questions);
-                user.filepathuser = "../../../JSONFiles/" + username + ".json";
                 Log.log.Information($"{CurrentUser.Username} hat sich eingeloggt");
             }
             return user;
@@ -105,6 +104,7 @@ namespace ahif_academy
                     user.Username = newUsername;
                     File.Move(user.filepathuser, "../../../JSONFiles/" + user.Username + ".json");
                     user.filepathuser = "../../../JSONFiles/" + user.Username + ".json";
+                    QuestionList.DeserializeFromJSON(user.filepathuser, user.Questions);
                     CurrentUser = user;
                     Log.log.Information("Benutzername geändert.");
                     break;

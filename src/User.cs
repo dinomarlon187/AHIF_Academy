@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Media.Media3D;
 using System.Windows.Media;
+using Newtonsoft.Json;
 
 namespace ahif_academy
 {
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public class User
     {
+        [JsonProperty]
         public string filepathuser = "../../../JSONFiles/profiles.json";
+        [JsonProperty]
         public string Username { get; set; }
+        [JsonProperty]
         public string Password { get; set; }
+        [JsonProperty]
         public string Profilpicture { get; set; }
         public QuestionList Questions { get; set; } = new QuestionList();
 

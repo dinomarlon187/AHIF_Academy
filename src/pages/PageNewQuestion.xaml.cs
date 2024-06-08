@@ -76,6 +76,7 @@ namespace ahif_academy.pages
         private void UpdateListBox(QuestionList q)
         {
             listBoxQuestions.Items.Clear();
+            q.SortbySubjects();
             foreach (Question question in q)
             {
                 listBoxQuestions.Items.Add(question);

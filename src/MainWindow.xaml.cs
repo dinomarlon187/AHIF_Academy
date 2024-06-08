@@ -144,6 +144,10 @@ namespace ahif_academy
                         navframe.Navigate(new PageProfile());
                     }
                 }
+                else if (subject == "Liste")
+                {
+                    navframe.Navigate(new PageNewQuestion());
+                }
             }
         }
     }

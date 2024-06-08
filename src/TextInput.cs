@@ -20,16 +20,17 @@ namespace ahif_academy
 
         Button submit = new Button()
         {
-            Height = 75,
-            Width = 160,
+            Height = 100,
+            Width = 250,
+            FontSize = 50,
             Content = "Submit"
         };
 
         RichTextBox textBoxAnswer = new RichTextBox()
         {
-            Width = 400,
-            Height = 60,
-            FontSize = 20,
+            Width = 500,
+            Height = 100,
+            FontSize = 30,
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
             VerticalAlignment = System.Windows.VerticalAlignment.Center
         };

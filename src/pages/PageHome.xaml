@@ -18,7 +18,7 @@
 
         <StackPanel Margin="54,200,410,0" Grid.ColumnSpan="2"  Panel.ZIndex="1" VerticalAlignment="Top">
             <TextBlock Text="AHIF ACADEMY"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontFamily="Century Gothic" />
-            <TextBlock Margin="0,20,0,0" TextWrapping="Wrap"  FontFamily="Century Gothic" Text="Herzlich willkommen an der AHIF ACADEMY! Diese App bietet dir eine großartige Gelegenheit, deine Fähigkeiten in den Bereichen Mathematik, Deutsch und Englisch zu verbessern. Nutze einfach die intuitiven Symbole an der Seitenleiste, um mit deinem Lernabenteuer zu beginnen." Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="15" />
+            <TextBlock x:Name="textBlockText" Margin="0,20,0,0" TextWrapping="Wrap"  FontFamily="Century Gothic" Text="" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" />
         </StackPanel>
 
         <Grid Margin="160,-365,-610,85" Grid.Column="1">
@@ -62,17 +62,17 @@
                             Background="#FF7AB2B2"
                             CornerRadius="20"
                             Margin="75,15,0,0"/>
-                    
+
                 </StackPanel>
             </StackPanel>
 
         </Grid>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="70,0,0,180">
-            <Button x:Name="ButtonAnmelden" Content="Anmelden" Width="150" Height="50" Click="ButtonAnmelden_Click"  />
-            <Button x:Name="ButtonRegistrieren" Margin="30,0,0,0" Content="Registrieren" Width="150" Height="50" Click="ButtonRegistrieren_Click" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,480,0,0">
+            <Button x:Name="ButtonAnmelden" Content="Anmelden" Width="180" Height="75" Click="ButtonAnmelden_Click" FontSize="30" />
+            <Button x:Name="ButtonRegistrieren" Margin="30,0,0,0" Content="Registrieren" Width="180" Height="75" FontSize="30" Click="ButtonRegistrieren_Click" />
         </StackPanel>
-        <TextBlock x:Name="benutzer" TextWrapping="Wrap" Text="" Margin="0,25,228,598"/>
-        
+        <TextBlock x:Name="benutzer" TextWrapping="Wrap" FontSize="20" Text="" Margin="10,10,218,613"/>
+
 
 
     </Grid>

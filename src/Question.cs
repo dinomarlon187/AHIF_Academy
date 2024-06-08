@@ -17,7 +17,7 @@ namespace ahif_academy
         public Button btnNextQuestion = new Button();
         protected TextBlock textblockQuestion = new TextBlock()
         {
-            FontSize = 30,
+            FontSize = 40,
             TextWrapping = System.Windows.TextWrapping.Wrap,
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
         };

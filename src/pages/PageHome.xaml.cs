@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,7 +21,7 @@ namespace ahif_academy.pages
     /// </summary>
     public partial class PageHome : Page
     {
-
+        string text = "Herzlich willkommen an der AHIF ACADEMY! Diese App bietet dir eine großartige Gelegenheit, deine Fähigkeiten in den Bereichen Mathematik, Deutsch und Englisch zu verbessern.Jetzt bist du nur noch wenige Klicks von deinem Abenteuer entfernt. Melde dich an oder registriere dich um loszulegen!";
         public PageHome()
         {
             InitializeComponent();
@@ -32,11 +33,13 @@ namespace ahif_academy.pages
                 benutzer.Text = UserManager.CurrentUser.Username;
                 ButtonAnmelden.Visibility = Visibility.Collapsed;
                 ButtonRegistrieren.Visibility = Visibility.Collapsed;
+                text = "Nun kannst du mit deinem Abenteuer beginnen! Benutze einfach die intuitiven Icons an der linken Seite des Bildschirms und fang an!";
             }
             else
             {
                 benutzer.Text = "Nicht angemeldet";
             }
+            textBlockText.Text = text;
         }
 
         private void ButtonAnmelden_Click(object sender, RoutedEventArgs e)
@@ -44,6 +47,7 @@ namespace ahif_academy.pages
             PageLogin pageLogin = new PageLogin();
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow.NavigateToPage(pageLogin);
+            text = "Nun kannst du mit deinem Abenteuer beginnen! Benutze einfach die intuitiven Icons an der linken Seite des Bildschirms und fang an!";
         }
 
         private void ButtonRegistrieren_Click(object sender, RoutedEventArgs e)
@@ -51,6 +55,7 @@ namespace ahif_academy.pages
             PageSign pageSign = new PageSign();
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow.NavigateToPage(pageSign);
+            text = "Nun kannst du mit deinem Abenteuer beginnen! Benutze einfach die intuitiven Icons an der linken Seite des Bildschirms und fang an!";
         }
     }
 }
