@@ -22,6 +22,8 @@ namespace ahif_academy
         [JsonProperty]
         public string Profilpicture { get; set; }
         public QuestionList Questions { get; set; } = new QuestionList();
+        SolidColorBrush Blue = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#7AB2B2"));
+        SolidColorBrush Red = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FA7070"));
 
 
         public int QuestionsAnsweredCorrect 
@@ -57,26 +59,30 @@ namespace ahif_academy
             {
                 System.Windows.Shapes.Rectangle barCorrect = new System.Windows.Shapes.Rectangle
                 {
-                    Fill = Brushes.Blue,
-                    Height = height/3,
+                    Fill = Blue,
+                    Height = height/4,
+                    RadiusX = 10,
+                    RadiusY = 10,
                     Stroke = Brushes.Black
                 };
                 System.Windows.Shapes.Rectangle barIncorrect = new System.Windows.Shapes.Rectangle
                 {
-                    Fill = Brushes.Red,
-                    Height = height/3,
+                    Fill = Red,
+                    Height = height/4,
+                    RadiusX = 10,
+                    RadiusY = 10,
                     Stroke = Brushes.Black
                 };
                 Label labelCorrect = new Label()
                 {
                     Height = height/3-10,
-                    FontSize = 30
+                    FontSize = 25
 
                 };
                 Label labelIncorrect = new Label()
                 {
                     Height = height / 3 - 10,
-                    FontSize = 30
+                    FontSize = 25
                 };
                 int correct = 0;
                 int incorrect = 0;
@@ -127,31 +133,35 @@ namespace ahif_academy
                 {
                     System.Windows.Shapes.Rectangle barCorrect = new System.Windows.Shapes.Rectangle
                     {
-                        Fill = Brushes.Blue,
-                        Height = height / 6,
+                        Fill = Blue,
+                        Height = height / 7,
+                        RadiusX = 10,
+                        RadiusY = 10,
                         Stroke = Brushes.Black
                     };
                     System.Windows.Shapes.Rectangle barIncorrect = new System.Windows.Shapes.Rectangle
                     {
-                        Fill = Brushes.Red,
-                        Height = height / 6,
+                        Fill = Red,
+                        Height = height / 7,
+                        RadiusX = 10,
+                        RadiusY = 10,
                         Stroke = Brushes.Black
                     };
                     Label labelCorrect = new Label()
                     {
-                        Height = height / 6 - 10,
-                        FontSize = 30
+                        Height = height / 7 - 10,
+                        FontSize = 20
 
                     };
                     Label labelIncorrect = new Label()
                     {
-                        Height = height / 6 - 10,
-                        FontSize = 30
+                        Height = height / 7 - 10,
+                        FontSize = 20
                     };
                     Label header = new Label()
                     {
-                        Height = height / 6 - 10,
-                        FontSize = 30
+                        Height = height / 2 - 10,
+                        FontSize = 20
                     };
                     int correct = 0;
                     int incorrect = 0;
