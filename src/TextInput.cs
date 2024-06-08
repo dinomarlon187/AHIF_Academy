@@ -20,14 +20,16 @@ namespace ahif_academy
 
         Button submit = new Button()
         {
-            Height = 50,
-            Width = 100,
+            Height = 75,
+            Width = 160,
             Content = "Submit"
         };
 
         RichTextBox textBoxAnswer = new RichTextBox()
         {
             Width = 400,
+            Height = 60,
+            FontSize = 20,
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
             VerticalAlignment = System.Windows.VerticalAlignment.Center
         };
@@ -93,7 +95,7 @@ namespace ahif_academy
                     textBoxAnswer.IsReadOnly = true;
                     if (CheckAnswer(userAnswer, Subject))
                     {
-                        textBoxAnswer.Background = System.Windows.Media.Brushes.Green;
+                        textBoxAnswer.Background = Brushes.Green;
                     }
                     else
                     {

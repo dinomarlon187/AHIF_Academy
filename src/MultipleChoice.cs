@@ -17,23 +17,23 @@ namespace ahif_academy
         public string[] Answers { get; set; }
         Button ans1 = new Button()
         {
-            Height = 50,
-            Width = 100
+            VerticalAlignment = VerticalAlignment.Stretch,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
         };
         Button ans2 = new Button()
         {
-            Height = 50,
-            Width = 100
+            VerticalAlignment = VerticalAlignment.Stretch,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
         };
         Button ans3 = new Button()
         {
-            Height = 50,
-            Width = 100
+            VerticalAlignment = VerticalAlignment.Stretch,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
         };
         Button ans4 = new Button()
         {
-            Height = 50,
-            Width = 100
+            VerticalAlignment = VerticalAlignment.Stretch,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
         };
 
         public MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject)

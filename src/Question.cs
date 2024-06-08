@@ -17,8 +17,9 @@ namespace ahif_academy
         public Button btnNextQuestion = new Button();
         protected TextBlock textblockQuestion = new TextBlock()
         {
-            FontSize = 20,
-            TextWrapping = System.Windows.TextWrapping.Wrap
+            FontSize = 30,
+            TextWrapping = System.Windows.TextWrapping.Wrap,
+            HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
         };
         protected string subject;
         protected string[] subjects = { "mathe", "englisch", "deutsch" };
