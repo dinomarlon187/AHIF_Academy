@@ -8,7 +8,7 @@
         Title="WindowAddQuestion" Height="600" Width="900" ResizeMode="NoResize">
     <Canvas x:Name="canvas">
         <TextBlock x:Name="TextBlockHeader" Text="Füge eine neue Frage hinzu:" FontSize="50" Canvas.Left="50" Canvas.Top="10"/>
-        <Button x:Name="ButtonCancel" Content="CANCEL" Width="100" Height="50" IsCancel="True" Canvas.Left="610" Canvas.Top="500"/>
+        <Button x:Name="ButtonCancel" Content="Abbrechen" Width="100" Height="50" IsCancel="True" Canvas.Left="610" Canvas.Top="500"/>
         <Button x:Name="ButtonOK" Content="OK" Width="100" Height="50" Click="ButtonOK_Click" Canvas.Left="720" Canvas.Top="500"/>
         
     </Canvas>

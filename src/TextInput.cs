@@ -23,7 +23,7 @@ namespace ahif_academy
             Height = 50,
             Width = 100,
             Content = "Abgeben",
-            HorizontalAlignment = System.Windows.HorizontalAlignment.Right,
+            HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
             VerticalAlignment = System.Windows.VerticalAlignment.Top
         };
 
@@ -31,8 +31,9 @@ namespace ahif_academy
         {
             Width = 400,
             FontSize = 20,
+            Margin = new Thickness(60),
             HorizontalAlignment = System.Windows.HorizontalAlignment.Center,
-            VerticalAlignment = System.Windows.VerticalAlignment.Center
+            VerticalAlignment = System.Windows.VerticalAlignment.Top
         };
         public TextInput(string text, string subject, string answer, string wrongAnswer)
         {
@@ -52,7 +53,7 @@ namespace ahif_academy
             
             Grid.SetRow(textBoxAnswer, 1);
             Grid.SetColumnSpan(textBoxAnswer, 2);
-            Grid.SetColumnSpan(textBoxAnswer, 2);
+            Grid.SetColumnSpan(submit, 2);
             Grid.SetRow(submit, 2);
             submit.Click += Submit_Click;
             submit.IsEnabled = true;

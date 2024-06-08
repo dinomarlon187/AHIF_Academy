@@ -22,12 +22,13 @@
 
         <Border Background="{DynamicResource FrameBackground}" Grid.Row="0" Grid.ColumnSpan="3" >
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                <TextBlock Text="AHIF-Acedamy" Margin="0,0,925,0" FontSize="10" FontWeight="Bold"/>
-                <Image x:Name="minimize" Source="pictures/minimieren.png" Width="10" Height="Auto" Margin="0,0,15,0" MouseDown="TitleMinimize_MouseDown" Cursor="Hand" />
-                <Image Source="pictures/maximieren.png" Width="10" Height="Auto" Margin="0,0,15,0" MouseDown="TitleMaximize_MouseDown" Cursor="Hand" />
-                <Image Source="pictures/schliessen.png" Width="10" Height="Auto" Margin="0,0,25,0" MouseDown="TitleClose_MouseDown" Cursor="Hand"/>
+                <Image x:Name="minimize" Source="pictures/minimieren.png" Width="10" Height="Auto" Margin="0,3,15,0" MouseDown="TitleMinimize_MouseDown" Cursor="Hand" />
+                <Image Source="pictures/maximieren.png" Width="10" Height="Auto" Margin="0,3,15,0" MouseDown="TitleMaximize_MouseDown" Cursor="Hand" />
+                <Image Source="pictures/schliessen.png" Width="10" Height="Auto" Margin="0,3,25,0" MouseDown="TitleClose_MouseDown" Cursor="Hand"/>
             </StackPanel>
+            
         </Border>
+        <TextBlock Text="AHIF-Acedamy" Margin="14,3,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold"/>
 
 
 

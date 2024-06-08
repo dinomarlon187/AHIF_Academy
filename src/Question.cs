@@ -27,7 +27,7 @@ namespace ahif_academy
         {
             FontSize = 30,
             Width = 650,
-            Height = 55,
+            Height = 50,
             Foreground = System.Windows.Media.Brushes.Black,
             TextAlignment = System.Windows.TextAlignment.Center,
             Background = System.Windows.Media.Brushes.LightGray,
