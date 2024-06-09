@@ -101,21 +101,20 @@ namespace ahif_academy
             if (sender is Button button && AnswerPressed == false)
             {
                 AnswerPressed = true;
-                if (Answers[0] == CorrectAnswer)
+                if (CheckAnswer(button.Content.ToString(), Subject))
                 {
-                    ans1.Background = Brushes.Green; 
-                }
-                else if (Answers[1] == CorrectAnswer)
-                {
-                    ans2.Background = Brushes.Green;
-                }
-                else if (Answers[2] == CorrectAnswer)
-                {
-                    ans3.Background = Brushes.Green;
+                    button.Background = Brushes.Green;
                 }
                 else
                 {
-                    ans4.Background = Brushes.Green;
+                    button.Background = Brushes.Red;
+                }
+                foreach (Button b in new Button[] { ans1, ans2, ans3, ans4 })
+                {
+                    if (b.Content.ToString() == CorrectAnswer)
+                    {
+                        b.Background = Brushes.Green;
+                    }
                 }
 
             

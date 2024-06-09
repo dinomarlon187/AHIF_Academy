@@ -91,6 +91,7 @@ namespace ahif_academy
             {
                 if (user.Username == CurrentUser.Username && user.Password == CurrentUser.Password)
                 {
+                    user.Questions = CurrentUser.Questions;
                     user.Profilpicture = newProfilePicturePath;
                     CurrentUser = user;
                     Log.log.Information("Profilbild geändert.");

@@ -75,7 +75,7 @@ namespace ahif_academy
         public Question GetRandomQuestion()
         {
             questions = questions.OrderBy(x => x.Counter).ThenBy(x => x.LastUsed).ToList();
-            int index = random.Next(0,3);
+            int index = random.Next(0,8);
             questions[index].Counter++;
             questions[index].LastUsed = DateTime.Now;
             return questions[index];
@@ -107,6 +107,18 @@ namespace ahif_academy
         public void SortbySubjects()
         {
             questions = questions.OrderBy(x => x.Subject).ToList();
+        }
+        public void Shuffle()
+        {
+            int n = questions.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = random.Next(n + 1);
+                Question q = questions[k];
+                questions[k] = questions[n];
+                questions[n] = q;
+            }
         }
     }
 }

@@ -27,6 +27,7 @@ namespace ahif_academy.pages
             InitializeComponent();
             Log.log.Information("Aufgaben Page geöffnet");
             QuestionList = questions;
+            QuestionList.Shuffle();
             foreach (Question question in QuestionList)
             {
                 question.btnNextQuestion = btnNextQuestion;

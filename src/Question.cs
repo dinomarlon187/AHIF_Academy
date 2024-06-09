@@ -27,7 +27,7 @@ namespace ahif_academy
         {
             FontSize = 30,
             Width = 800,
-            Height = 50,
+            Height = 100,
             Foreground = System.Windows.Media.Brushes.Black,
             TextAlignment = System.Windows.TextAlignment.Center,
             Background = System.Windows.Media.Brushes.LightGray,
@@ -85,6 +85,7 @@ namespace ahif_academy
                             user.QuestionsAnsweredCorrectMathe++;
                             UserManager.CurrentUser.QuestionsAnsweredCorrectMathe++;
                         }
+                        Log.log.Information($"{UserManager.CurrentUser.Username} hat eine Frage richtig beantwortet.");
                         
                     }
                     else
@@ -99,6 +100,7 @@ namespace ahif_academy
                             user.QuestionsAnsweredIncorrectMathe++;
                             UserManager.CurrentUser.QuestionsAnsweredIncorrectMathe++;
                         }
+                        Log.log.Information($"{UserManager.CurrentUser.Username} hat eine Frage falsch beantwortet.");
                     }
                 }
             }
