@@ -14,8 +14,8 @@ namespace ahif_academy
 {
     internal class UserManager
     {
-        private static string filePath = "JSONFiles/profiles.json";
-        private static string filepathquestions = "JSONFiles/questions.json";
+        private static string filePath = "../../../JSONFiles/profiles.json";
+        private static string filepathquestions = "../../../JSONFiles/questions.json";
         
         public static QuestionList QuestionList = new QuestionList();
 
@@ -55,7 +55,7 @@ namespace ahif_academy
             User user = users.Find(u => u.Username == username && u.Password == hashedPassword);
             if (user != null)
             {
-                user.filepathuser = "JSONFiles/" + username + ".json";
+                user.filepathuser = "../../../JSONFiles/" + username + ".json";
                 
 
                 CurrentUser = user; 
@@ -76,8 +76,8 @@ namespace ahif_academy
             }
             string hashedPassword = HashPassword(password);
 
-            User user = new User { Username = username, Password = hashedPassword, Profilpicture =  "pictures/default1.png", filepathvocable = "JSONFiles/" + username + "Vocable.json" };
-            user.filepathuser = "JSONFiles/" + username + ".json";
+            User user = new User { Username = username, Password = hashedPassword, Profilpicture =  "../pictures/default1.png", filepathvocable = "../../../JSONFiles/" + username + "Vocable.json" };
+            user.filepathuser = "../../../JSONFiles/" + username + ".json";
             
             Log.log.Information($"{user.Username} hat sich registriert");
             users.Add(user);
@@ -119,9 +119,9 @@ namespace ahif_academy
                 if (user.Username == CurrentUser.Username && user.Password == CurrentUser.Password)
                 {
                     user.Username = newUsername;
-                    File.Move(user.filepathuser, "JSONFiles/" + user.Username + ".json");
-                    user.filepathuser = "JSONFiles/" + user.Username + ".json";
-                    user.filepathvocable = "JSONFiles/" + user.Username + "Vocable.json";
+                    File.Move(user.filepathuser, "../../../JSONFiles/" + user.Username + ".json");
+                    user.filepathuser = "../../../JSONFiles/" + user.Username + ".json";
+                    user.filepathvocable = "../../../JSONFiles/" + user.Username + "Vocable.json";
                     QuestionList.DeserializeFromJSON(user.filepathuser, user.Questions);
                     CurrentUser = user;
                     Log.log.Information("Benutzername geändert.");
