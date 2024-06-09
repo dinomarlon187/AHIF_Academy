@@ -42,5 +42,16 @@
     "QuestionsAnsweredCorrectDeutsch": 0,
     "QuestionsAnsweredIncorrectMathe": 0,
     "QuestionsAnsweredCorrectMathe": 0
+  },
+  {
+    "filepathvocable": "../../../JSONFiles/MArlonVocable.json",
+    "filepathuser": "../../../JSONFiles/MArlon.json",
+    "Username": "MArlon",
+    "Password": "db41f7ca2b0ad446bceb6f44e5bf1c6341185bcaadce4667ccedaacd43c4b33a",
+    "Profilpicture": "../pictures/default1.png",
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 1,
+    "QuestionsAnsweredCorrectMathe": 0
   }
 ]

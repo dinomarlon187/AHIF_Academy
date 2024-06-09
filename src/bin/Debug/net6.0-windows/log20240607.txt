@@ -1,0 +1,249 @@
+2024-06-07 08:05:26.746 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet.
+2024-06-07 08:05:27.008 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-07 08:05:28.876 +02:00 [INF] User Marlon registered.
+2024-06-07 08:07:26.007 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet.
+2024-06-07 08:07:26.233 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-07 08:07:27.204 +02:00 [INF] User Marlon registered.
+2024-06-07 08:09:50.960 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet.
+2024-06-07 08:09:51.190 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-07 08:09:58.436 +02:00 [INF] User Hallo registered.
+2024-06-07 19:39:02.789 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet.
+2024-06-07 19:39:03.029 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-07 19:39:04.216 +02:00 [INF] User Marlon registered.
+2024-06-07 19:42:52.352 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet.
+2024-06-07 19:42:52.583 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-07 19:42:54.003 +02:00 [INF] User Marlon registered.
+2024-06-07 19:47:18.672 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet.
+2024-06-07 19:47:18.896 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-07 19:47:19.950 +02:00 [INF] User Marlon registered.
+2024-06-07 19:48:17.431 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet.
+2024-06-07 19:48:17.672 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-07 19:48:18.526 +02:00 [INF] User Marlon registered.
+2024-06-07 19:56:24.670 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet.
+2024-06-07 19:56:24.898 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 19:58:16.945 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet.
+2024-06-07 19:58:17.198 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 20:00:32.653 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet.
+2024-06-07 20:00:32.877 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 20:07:50.239 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Home die jeweilige Page zu öffnen.
+2024-06-07 20:40:21.416 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet.
+2024-06-07 20:40:21.645 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 20:40:41.037 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Mathe die jeweilige Page zu öffnen.
+2024-06-07 20:41:05.227 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Deutsch die jeweilige Page zu öffnen.
+2024-06-07 20:41:07.936 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Mathe die jeweilige Page zu öffnen.
+2024-06-07 20:43:15.531 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet.
+2024-06-07 20:43:15.747 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 20:43:24.455 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Mathe die jeweilige Page zu öffnen.
+2024-06-07 20:44:11.232 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Mathe die jeweilige Page zu öffnen.
+2024-06-07 20:44:16.468 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Mathe die jeweilige Page zu öffnen.
+2024-06-07 21:26:15.828 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:26:18.555 +02:00 [INF] Registrieren Page geöffnet
+2024-06-07 21:26:21.977 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:26:23.046 +02:00 [INF] Login Page geöffnet
+2024-06-07 21:26:29.041 +02:00 [INF] Benutzer werden aus der JSON Datei ../../../JSONFiles/profiles.json geladen
+2024-06-07 21:26:29.343 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet
+2024-06-07 21:26:29.477 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.482 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.482 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.495 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.495 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.496 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.496 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.496 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.497 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:26:29.497 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 21:26:29.497 +02:00 [INF] Marlon hat sich eingeloggt
+2024-06-07 21:26:30.537 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:26:31.645 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:26:33.822 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:35.137 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:36.672 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:37.885 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:39.425 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:40.772 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:52.527 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:54.047 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:55.438 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:56.644 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:57.730 +02:00 [INF] Nächste Frage
+2024-06-07 21:26:58.848 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:01.567 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:03.143 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:04.584 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:05.707 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:06.819 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:07.940 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:09.088 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:10.361 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:11.667 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:13.235 +02:00 [INF] Nächste Frage
+2024-06-07 21:27:16.865 +02:00 [INF] Nächste Frage
+2024-06-07 21:28:02.777 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:28:05.301 +02:00 [INF] Login Page geöffnet
+2024-06-07 21:28:12.078 +02:00 [INF] Benutzer werden aus der JSON Datei ../../../JSONFiles/profiles.json geladen
+2024-06-07 21:28:12.377 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet
+2024-06-07 21:28:12.522 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.526 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.526 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.537 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.537 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.538 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.538 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.539 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.539 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:12.539 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 21:28:12.539 +02:00 [INF] Marlon hat sich eingeloggt
+2024-06-07 21:28:13.443 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:28:15.774 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:19.026 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:28:19.027 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:28:19.030 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:28:19.031 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:28:19.273 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:19.621 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:28:19.621 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:28:19.621 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:28:19.622 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:28:20.414 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:20.770 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:28:20.770 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:28:20.770 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:28:20.770 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:28:21.005 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:21.304 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:28:21.304 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:28:21.304 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:28:21.304 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:28:21.526 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:31.758 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:28:34.637 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:28:35.066 +02:00 [INF] Login Page geöffnet
+2024-06-07 21:28:41.535 +02:00 [INF] Benutzer werden aus der JSON Datei ../../../JSONFiles/profiles.json geladen
+2024-06-07 21:28:41.835 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet
+2024-06-07 21:28:41.985 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:41.989 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:41.989 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:42.000 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:42.001 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:42.001 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:42.002 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:42.002 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:42.002 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:28:42.002 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 21:28:42.002 +02:00 [INF] Marlon hat sich eingeloggt
+2024-06-07 21:28:42.784 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:28:43.637 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:45.502 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:28:45.503 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:28:45.505 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:28:45.506 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:28:46.174 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:46.950 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:28:46.951 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:28:46.951 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:28:46.951 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:28:47.490 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:48.105 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:28:48.105 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:28:48.105 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:28:48.105 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:28:48.550 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:28:49.109 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:28:49.109 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:28:49.109 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:28:49.109 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:28:49.600 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:29:07.395 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:29:10.516 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:29:10.929 +02:00 [INF] Login Page geöffnet
+2024-06-07 21:29:16.635 +02:00 [INF] Benutzer werden aus der JSON Datei ../../../JSONFiles/profiles.json geladen
+2024-06-07 21:29:16.959 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet
+2024-06-07 21:29:17.095 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.100 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.100 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.111 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.111 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.112 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.112 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.113 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.113 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:29:17.113 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 21:29:17.113 +02:00 [INF] Marlon hat sich eingeloggt
+2024-06-07 21:29:17.904 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:29:18.432 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:29:26.224 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:07.200 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:30:09.687 +02:00 [INF] Login Page geöffnet
+2024-06-07 21:30:13.418 +02:00 [INF] Benutzer werden aus der JSON Datei ../../../JSONFiles/profiles.json geladen
+2024-06-07 21:30:13.728 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json gestartet
+2024-06-07 21:30:13.908 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.913 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.913 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.924 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.925 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.925 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.925 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.926 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.926 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:30:13.926 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/Marlon.json beendet.
+2024-06-07 21:30:13.926 +02:00 [INF] Marlon hat sich eingeloggt
+2024-06-07 21:30:14.779 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:30:15.845 +02:00 [INF] Aufgaben Page geöffnet
+2024-06-07 21:30:28.044 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:29.447 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:30.680 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:31.860 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:33.255 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:34.641 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:36.354 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:37.568 +02:00 [INF] Nächste Frage
+2024-06-07 21:30:43.851 +02:00 [INF] Nächste Frage
+2024-06-07 21:33:25.957 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:33:38.248 +02:00 [INF] Registrieren Page geöffnet
+2024-06-07 21:33:44.022 +02:00 [INF] Benutzer werden aus der JSON Datei ../../../JSONFiles/profiles.json geladen
+2024-06-07 21:33:44.253 +02:00 [INF] Marlon hat sich registriert
+2024-06-07 21:33:44.304 +02:00 [INF] Benutzer in JSON Datei ../../../JSONFiles/profiles.json gespeichert
+2024-06-07 21:33:44.341 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet
+2024-06-07 21:33:44.481 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.486 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.487 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.498 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.498 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.499 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.499 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.500 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.500 +02:00 [INF] Neue Frage hinzugefügt
+2024-06-07 21:33:44.500 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-07 21:33:44.518 +02:00 [INF] Serialisierung der Fragen in die JSON file ../../../JSONFiles/Marlon.json beendet
+2024-06-07 21:33:45.529 +02:00 [INF] Neuen User registriert
+2024-06-07 21:33:45.532 +02:00 [INF] Home Page geöffnet
+2024-06-07 21:33:47.722 +02:00 [INF] Profil Page geöffnet
+2024-06-07 21:33:48.904 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:49.398 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:49.736 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:50.022 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:50.534 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:50.806 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:51.229 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:51.517 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:51.832 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:52.098 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:52.351 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:52.565 +02:00 [INF] Statistik für User {UserManager.CurrentUser} gezeichnet
+2024-06-07 21:33:53.720 +02:00 [INF] Einstellungen Page geöffnet
+2024-06-07 21:33:57.525 +02:00 [INF] Benutzer werden aus der JSON Datei ../../../JSONFiles/profiles.json geladen
+2024-06-07 21:33:57.539 +02:00 [INF] Profilbild geändert.
+2024-06-07 21:33:57.540 +02:00 [INF] Benutzer in JSON Datei ../../../JSONFiles/profiles.json gespeichert
+2024-06-07 21:33:58.560 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:33:58.560 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:33:58.563 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:33:58.563 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:33:58.888 +02:00 [INF] Einstellungen Page geöffnet
+2024-06-07 21:34:00.680 +02:00 [INF] Theme zu Themes/Darkmode.xaml geändert
+2024-06-07 21:34:02.583 +02:00 [INF] Englisch Page geöffnet
+2024-06-07 21:34:02.583 +02:00 [INF] Karteikarten werden geladen
+2024-06-07 21:34:02.583 +02:00 [INF] Neue Karteikarte angezeigt
+2024-06-07 21:34:02.583 +02:00 [INF] Vokabelliste aktualisiert
+2024-06-07 21:34:05.700 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Deutsch die jeweilige Page zu öffnen.
+2024-06-07 21:34:07.807 +02:00 [WRN] Versuch, mit weniger als 5 Fragen im Fach Mathe die jeweilige Page zu öffnen.
+2024-06-07 21:34:09.030 +02:00 [INF] Home Page geöffnet

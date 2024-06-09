@@ -1,0 +1,1471 @@
+{
+  "questions": [
+
+    {
+      "Answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "2 + 2?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "4"
+    },
+
+    {
+      "Answers": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "3 + 5?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "8"
+    },
+    {
+      "Answers": [
+        "5",
+        "6",
+        "3",
+        "4"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "10 - 6?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "4"
+    },
+    {
+      "Answers": [
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "7 * 3?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "21"
+    },
+    {
+      "Answers": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "16 / 4?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "4"
+    },
+    {
+      "Answers": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "2^3?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "8"
+    },
+    {
+      "Answers": [
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "25 - 7?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "18"
+    },
+    {
+      "Answers": [
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "8 + 6?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "14"
+    },
+    {
+      "Answers": [
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "9 * 2?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "18"
+    },
+    {
+      "Answers": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "49 / 7?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "7"
+    },
+    {
+      "Answers": [
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "12 + 15?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "27"
+    },
+    {
+      "Answers": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "18 - 9?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "9"
+    },
+    {
+      "Answers": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "5 * 4?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "20"
+    },
+    {
+      "Answers": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "32 / 8?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "4"
+    },
+    {
+      "Answers": [
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "15 + 13?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "28"
+    },
+    {
+      "Answers": [
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "20 - 4?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "16"
+    },
+    {
+      "Answers": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "6 * 6?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "36"
+    },
+    {
+      "Answers": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "100 / 10?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "10"
+    },
+    {
+      "Answers": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "7 + 9?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "16"
+    },
+    {
+      "Answers": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "14 - 5?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "9"
+    },
+    {
+      "Answers": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "4 * 5?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "20"
+    },
+    {
+      "Answers": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "81 / 9?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "9"
+    },
+    {
+      "Answers": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "5 + 5?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "10"
+    },
+    {
+      "Answers": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "15 - 3?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "12"
+    },
+    {
+      "Answers": [
+        "80",
+        "81",
+        "82",
+        "83"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "9 * 9?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "81"
+    },
+    {
+      "Answers": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "64 / 8?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "8"
+    },
+    {
+      "Answers": [
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "11 + 12?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "23"
+    },
+    {
+      "Answers": [
+        "19",
+        "20",
+        "21",
+        "22"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "30 - 10?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "20"
+    },
+    {
+      "Answers": [
+        "55",
+        "56",
+        "57",
+        "58"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "7 * 8?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "56"
+    },
+    {
+      "Answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "24 / 6?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "4"
+    },
+    {
+      "Answers": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "9 + 6?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "15"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist der Wert von π größer als 3?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist die Zahl 1000 eine Primzahl?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 1 + 1 gleich 2?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist die Summe von 1 und 2 gleich 5?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 2 + 2 gleich 4?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 5 eine gerade Zahl?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 10 - 5 gleich 5?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Hat ein Rechteck fünf Ecken?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist die Quadratwurzel von 16 gleich 4?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 7 eine Primzahl?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 15 eine Primzahl?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist der Umfang eines Kreises 2πr?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 9 * 9 gleich 81?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 100 / 4 gleich 20?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist π ungefähr 3.14?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist der Wert von e gleich 2?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Sind parallele Linien immer gleich weit voneinander entfernt?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist die Fläche eines Quadrats Seite^2?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist die Summe der Innenwinkel in einem Dreieck 180 Grad?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist die Summe der Innenwinkel in einem Quadrat 360 Grad?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Hat das Wort 'Haus' fünf Buchstaben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Beginnt ein Satz im Deutschen mit einem Großbuchstaben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'laufen' ein Verb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'Baum' ein Adjektiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Gibt es im Deutschen 26 Buchstaben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist das Wort 'schön' ein Adverb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Answers": [
+        "Komma",
+        "Fragezeichen",
+        "Ausrufezeichen",
+        "Punkt"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Satzzeichen endet einen Aussagesatz?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Punkt"
+    },
+    {
+      "Answers": [
+        "Adjektiv",
+        "Substantiv",
+        "Verb",
+        "Artikel"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Was ist das Wort 'laufen'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Verb"
+    },
+    {
+      "Answers": [
+        "Der",
+        "Die",
+        "Das",
+        "Es"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welcher Artikel passt zu 'Auto'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Das"
+    },
+    {
+      "Answers": [
+        "Ich",
+        "Du",
+        "Er",
+        "Wir"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches ist ein Personalpronomen?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich"
+    },
+    {
+      "Answers": [
+        "k",
+        "n",
+        "g",
+        "r"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welcher Buchstabe kommt in 'Buch' nicht vor?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "n"
+    },
+    {
+      "Answers": [
+        "Himmel",
+        "laufen",
+        "fröhlich",
+        "schnell"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches ist ein Adjektiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "fröhlich"
+    },
+    {
+      "Answers": [
+        "Und",
+        "Oder",
+        "Denn",
+        "Obwohl"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches ist eine Konjunktion?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Und"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Wird das Substantiv 'Freund' im Plural zu 'Freunde'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'und' eine Konjunktion?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Wird das Verb 'gehen' im Präteritum zu 'geht'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Wird der Artikel 'der' im Akkusativ zu 'den'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Endet der Plural von 'Kind' auf 'en'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Gibt es im Deutschen starke und schwache Verben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'lesen' ein starkes Verb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Wird das Adjektiv 'klein' im Superlativ zu 'kleinster'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 12 eine gerade Zahl?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 3 + 7 gleich 11?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 25 - 5 gleich 20?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 8 * 8 gleich 64?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 81 eine Primzahl?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 0 eine natürliche Zahl?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Hat ein Fünfeck fünf Seiten?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 50 / 5 gleich 9?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+
+    {
+      "Type": "YesNo",
+      "Text": "Ist das Produkt von 3 und 4 gleich 12?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist der Wert von √25 gleich 6?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Hat ein Kreis keine Ecken?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 144 durch 12 teilbar?",
+      "Subject": "Mathe",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Hat das Wort 'Baum' vier Buchstaben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Schreibt man im Deutschen Nomen immer klein?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'Haus' ein Substantiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'laufen' ein Substantiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist das Wort 'groß' ein Adjektiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'schön' ein Adverb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Hat das Wort 'Schule' sechs Buchstaben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "WrongAnswer": "Ich Mag Schokolade.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich mag Schokolade."
+    },
+    {
+      "WrongAnswer": "Sie Trinkt Einen Kaffee.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie trinkt einen Kaffee."
+    },
+    {
+      "WrongAnswer": "Wir Haben Ferien.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir haben Ferien."
+    },
+    {
+      "WrongAnswer": "Das Kind Spielt Draussen.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Das Kind spielt draußen."
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Beginnt ein deutsches Wort in der Regel mit einem Großbuchstaben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Gibt es im Deutschen mehr als 30 Buchstaben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'Lesen' ein Verb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Endet das Wort 'Freund' im Plural auf 'e'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Gibt es im Deutschen Artikel?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist 'sie' im Deutschen ein Artikel?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Ist das Wort 'Apfel' ein Substantiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Yes"
+    },
+    {
+      "Type": "YesNo",
+      "Text": "Hat das Wort 'Buch' fünf Buchstaben?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "No"
+    },
+    {
+      "WrongAnswer": "Ich Bin Der Marlon.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich bin der Marlon."
+    },
+    {
+      "WrongAnswer": "Ich Bin Der Marlon.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich bin der Marlon."
+    },
+    {
+      "WrongAnswer": "Er Spielt Fussball.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er spielt Fußball."
+    },
+    {
+      "WrongAnswer": "Heute Ist Ein Schoener Tag.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Heute ist ein schöner Tag."
+    },
+    {
+      "WrongAnswer": "Wir Gehen In Den Park.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir gehen in den Park."
+    },
+    {
+      "WrongAnswer": "Sie Liest Ein Buch.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie liest ein Buch."
+    },
+    {
+      "WrongAnswer": "Das Ist Ein Gutes Beispiel.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Das ist ein gutes Beispiel."
+    },
+    {
+      "WrongAnswer": "Der Hund Bellt Laut.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der Hund bellt laut."
+    },
+    {
+      "WrongAnswer": "Er Hat Eine Neue Uhr.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er hat eine neue Uhr."
+    },
+
+    {
+      "WrongAnswer": "Er Lernt Deutsch.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er lernt Deutsch."
+    },
+    {
+      "WrongAnswer": "Sie Fährt Mit Dem Fahrrad.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie fährt mit dem Fahrrad."
+    },
+    {
+      "WrongAnswer": "Ich Esse Einen Apfel.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich esse einen Apfel."
+    },
+    {
+      "WrongAnswer": "Der Vogel Fliegt Hoch.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der Vogel fliegt hoch."
+    },
+    {
+      "WrongAnswer": "Wir Lesen Ein Buch.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir lesen ein Buch."
+    },
+    {
+      "WrongAnswer": "Er Trinkt Ein Glas Wasser.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er trinkt ein Glas Wasser."
+    },
+    {
+      "WrongAnswer": "Sie Schreibt Einen Brief.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie schreibt einen Brief."
+    },
+    {
+      "WrongAnswer": "Der Baum Ist Grün.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der Baum ist grün."
+    },
+    {
+      "WrongAnswer": "Das Auto Fährt Schnell.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Das Auto fährt schnell."
+    },
+    {
+      "WrongAnswer": "Ich Höre Musik.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich höre Musik."
+    },
+    {
+      "WrongAnswer": "Wir Gehen Ins Kino.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir gehen ins Kino."
+    },
+    {
+      "WrongAnswer": "Sie Malen Ein Bild.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie malen ein Bild."
+    },
+    {
+      "WrongAnswer": "Der Hund Läuft Schnell.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der Hund läuft schnell."
+    },
+    {
+      "WrongAnswer": "Ich Spiele Ein Spiel.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich spiele ein Spiel."
+    },
+    {
+      "WrongAnswer": "Er Schreibt Ein Buch.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er schreibt ein Buch."
+    },
+    {
+      "WrongAnswer": "Wir Kochen Abendessen.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir kochen Abendessen."
+    },
+    {
+      "WrongAnswer": "Sie Tanzen Auf Der Party.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie tanzen auf der Party."
+    },
+    {
+      "WrongAnswer": "Er Schwimmt Im Meer.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er schwimmt im Meer."
+    },
+    {
+      "WrongAnswer": "Ich Trinke Ein Bier.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich trinke ein Bier."
+    },
+    {
+      "WrongAnswer": "Wir Spielen Fußball.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir spielen Fußball."
+    },
+    {
+      "WrongAnswer": "Er Isst Eine Pizza.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er isst eine Pizza."
+    },
+    {
+      "WrongAnswer": "Der Zug Kommt Pünktlich.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der Zug kommt pünktlich."
+    },
+    {
+      "WrongAnswer": "Sie Lesen Eine Zeitung.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie lesen eine Zeitung."
+    },
+    {
+      "WrongAnswer": "Ich Schreibe Einen Brief.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich schreibe einen Brief."
+    },
+    {
+      "WrongAnswer": "Er Malt Ein Bild.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er malt ein Bild."
+    },
+    {
+      "WrongAnswer": "Sie Geht Zur Schule.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie geht zur Schule."
+    },
+    {
+      "WrongAnswer": "Wir Essen Abendessen.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir essen Abendessen."
+    },
+    {
+      "WrongAnswer": "Er Spielt Klavier.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er spielt Klavier."
+    },
+    {
+      "WrongAnswer": "Sie Lachen Laut.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie lachen laut."
+    },
+    {
+      "WrongAnswer": "Ich Lese Ein Buch.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich lese ein Buch."
+    },
+    {
+      "WrongAnswer": "Der Hund Ist Groß.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der Hund ist groß."
+    },
+    {
+      "WrongAnswer": "Wir Fahren In Den Urlaub.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir fahren in den Urlaub."
+    },
+    {
+      "WrongAnswer": "Sie Tanzt Gut.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie tanzt gut."
+    },
+    {
+      "WrongAnswer": "Er Rennt Schnell.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er rennt schnell."
+    },
+    {
+      "WrongAnswer": "Ich Trinke Einen Kaffee.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich trinke einen Kaffee."
+    },
+    {
+      "WrongAnswer": "Wir Sehen Einen Film.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir sehen einen Film."
+    },
+    {
+      "WrongAnswer": "Er Fährt Ein Auto.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Er fährt ein Auto."
+    },
+    {
+      "WrongAnswer": "Sie Singt Ein Lied.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Sie singt ein Lied."
+    },
+    {
+      "WrongAnswer": "Ich Habe Einen Hund.",
+      "Type": "TextInput",
+      "Text": "Verbessere folgenden Satz:",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich habe einen Hund."
+    },
+
+    {
+      "Answers": [
+        "Haus",
+        "spielen",
+        "das",
+        "fröhlich"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches ist ein Verb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "spielen"
+    },
+    {
+      "Answers": [
+        "Buch",
+        "er",
+        "schön",
+        "dort"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Adverb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "dort"
+    },
+    {
+      "Answers": [
+        "Der Hund bellt.",
+        "Der Hund bellen.",
+        "Der Hund bell.",
+        "Der Hund bellend."
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welcher Satz ist richtig?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der Hund bellt."
+    },
+    {
+      "Answers": [
+        "Mit einem Komma",
+        "Mit einem Semikolon",
+        "Mit einem Punkt",
+        "Mit einem Bindestrich"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Wie trennt man Hauptsätze in einer Satzreihe?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Mit einem Komma"
+    },
+    {
+      "Answers": [
+        "Die Katze spielt.",
+        "Die Katze spielen.",
+        "Die Katze spieltet.",
+        "Die Katze gespielte."
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welcher Satz ist korrekt?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Die Katze spielt."
+    },
+    {
+      "Answers": [
+        "groß",
+        "klein",
+        "grün",
+        "schnell"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Adjektiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "groß"
+    },
+    {
+      "Answers": [
+        "Ein Haus",
+        "Der Hund",
+        "Das Auto",
+        "Die Katzen"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welche Nominalphrase ist im Plural?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Die Katzen"
+    },
+    {
+      "Answers": [
+        "Der",
+        "Ein",
+        "Das",
+        "Diese"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches ist ein bestimmter Artikel?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der"
+    },
+    {
+      "Answers": [
+        "Apfel",
+        "essen",
+        "rot",
+        "schnell"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Substantiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Apfel"
+    },
+    {
+      "Answers": [
+        "laufen",
+        "Haus",
+        "rot",
+        "dort"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Verb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "laufen"
+    },
+    {
+      "Answers": [
+        "Das ist gut",
+        "Das ist nicht gut",
+        "Das ist besser",
+        "Das ist am besten"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welcher Satz ist ein Superlativ?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Das ist am besten"
+    },
+    {
+      "Answers": [
+        "Spiel",
+        "spiele",
+        "spielst",
+        "spielt"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist im Imperativ?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "spiel"
+    },
+    {
+      "Answers": [
+        "Ich bin gegangen",
+        "Ich gehe",
+        "Ich werde gehen",
+        "Ich ging"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welcher Satz ist im Perfekt?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Ich bin gegangen"
+    },
+    {
+      "Answers": [
+        "sie ist",
+        "er war",
+        "ich bin",
+        "du bist"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welcher Satz ist im Präteritum?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "er war"
+    },
+    {
+      "Answers": [
+        "Blume",
+        "laufen",
+        "auf",
+        "bald"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist eine Präposition?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "auf"
+    },
+    {
+      "Answers": [
+        "Der",
+        "Ein",
+        "Mein",
+        "Jeder"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Possessivpronomen?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Mein"
+    },
+    {
+      "Answers": [
+        "Schöne",
+        "Schönheit",
+        "Schöner",
+        "Schönes"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Substantiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Schönheit"
+    },
+    {
+      "Answers": [
+        "Ich",
+        "Du",
+        "Er",
+        "Wir"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Pronomen?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Wir"
+    },
+    {
+      "Answers": [
+        "sehr",
+        "ist",
+        "sind",
+        "bist"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Adverb?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "sehr"
+    },
+    {
+      "Answers": [
+        "lesen",
+        "liest",
+        "lesen",
+        "liest"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welche Form ist korrekt für 'sie' (3. Person Singular)?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "liest"
+    },
+    {
+      "Answers": [
+        "Ein",
+        "Eine",
+        "Das",
+        "Der"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welcher Artikel passt zu 'Tisch'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Der"
+    },
+    {
+      "Answers": [
+        "Haus",
+        "Haus",
+        "Häuser",
+        "Häusern"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welche Form ist der Plural von 'Haus'?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Häuser"
+    },
+    {
+      "Answers": [
+        "Buch",
+        "lesen",
+        "groß",
+        "schnell"
+      ],
+      "Type": "MultipleChoice",
+      "Text": "Welches Wort ist ein Substantiv?",
+      "Subject": "Deutsch",
+      "CorrectAnswer": "Buch"
+    }
+  ]
+}

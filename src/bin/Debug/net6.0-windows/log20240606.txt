@@ -1,0 +1,3 @@
+2024-06-06 21:44:47.115 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json gestartet.
+2024-06-06 21:44:47.344 +02:00 [INF] Deserialisierung der Fragen von der JSON file ../../../JSONFiles/questions.json beendet.
+2024-06-06 21:44:48.428 +02:00 [INF] User Marlon registered.

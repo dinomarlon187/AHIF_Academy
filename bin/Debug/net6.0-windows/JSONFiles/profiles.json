@@ -1,0 +1,79 @@
+[
+  {
+    "filepathvocable": "../../../JSONFiles/kerem1905Vocable.json",
+    "filepathuser": "../../../JSONFiles/kerem1905.json",
+    "Username": "kerem1905",
+    "Password": "22dbbff864c46003a59c99188808b614bb0e5229adcb0b48450f920dc333be34",
+    "Profilpicture": "../pictures/katze.png",
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
+  },
+  {
+    "filepathvocable": "../../../JSONFiles/ensar680Vocable.json",
+    "filepathuser": "../../../JSONFiles/ensar680.json",
+    "Username": "ensar680",
+    "Password": "1f6c079f8b07f8091cb380c6f0ac68b4f3d2144849183b5f4891124428d18353",
+    "Profilpicture": "../pictures/katze.png",
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
+  },
+  {
+    "filepathvocable": "../../../JSONFiles/mahmutVocable.json",
+    "filepathuser": "../../../JSONFiles/mahmut.json",
+    "Username": "mahmut",
+    "Password": "427012b9dcf59697ecba581e988edf16941ad2a06f8fd5b1234faf0084628a7b",
+    "Profilpicture": "../pictures/default.png",
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
+  },
+  {
+    "filepathvocable": "../../../JSONFiles/dave123Vocable.json",
+    "filepathuser": "../../../JSONFiles/dave123.json",
+    "Username": "dave123",
+    "Password": "e8285ad97d86f3626c4cfa3602a38a3c2ece4f0c2ec3f60251430b3dd80c2392",
+    "Profilpicture": "../pictures/default1.png",
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
+  },
+  {
+    "filepathvocable": "JSONFiles/KarlVocable.json",
+    "filepathuser": "JSONFiles/Karl.json",
+    "Username": "Karl",
+    "Password": "182ef80822ad0c0cb45990bd6b9782cefbc029e9572f95f8f7aad2742725eb11",
+    "Profilpicture": "../pictures/tos.png",
+    "QuestionsAnsweredIncorrectDeutsch": 8,
+    "QuestionsAnsweredCorrectDeutsch": 3,
+    "QuestionsAnsweredIncorrectMathe": 5,
+    "QuestionsAnsweredCorrectMathe": 2
+  },
+  {
+    "filepathvocable": "JSONFiles/MarlonVocable.json",
+    "filepathuser": "JSONFiles/Marlon.json",
+    "Username": "Marlon",
+    "Password": "d774fe801c09f593cbebe108e6fcaedc7c4e50e9dacd2e561cd4ec7ba44c0712",
+    "Profilpicture": "pictures/default1.png",
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
+  },
+  {
+    "filepathvocable": "JSONFiles/ahjskdgfasdVocable.json",
+    "filepathuser": "JSONFiles/ahjskdgfasd.json",
+    "Username": "ahjskdgfasd",
+    "Password": "6e9fd02deb4701b07a5543a194007eb29693db27e30b90d5485b706339eb2048",
+    "Profilpicture": "pictures/default1.png",
+    "QuestionsAnsweredIncorrectDeutsch": 0,
+    "QuestionsAnsweredCorrectDeutsch": 0,
+    "QuestionsAnsweredIncorrectMathe": 0,
+    "QuestionsAnsweredCorrectMathe": 0
+  }
+]
