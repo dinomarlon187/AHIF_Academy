@@ -53,22 +53,23 @@ namespace ahif_academy.pages
             else
             {
                 success = UserManager.RegisterUser(username, password);
+                if (success)
+                {
+                    MessageBox.Show("Erfolgreich registriert!");
+                    Log.log.Information("Neuen User registriert");
+                    PageHome pageHome = new PageHome();
+                    MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+                    mainWindow.NavigateToPage(pageHome);
+                }
+                else
+                {
+                    MessageBox.Show("Benutzername existiert schon.");
+                }
             }
 
             
 
-            if (success)
-            {
-                MessageBox.Show("Erfolgreich registriert!");
-                Log.log.Information("Neuen User registriert");
-                PageHome pageHome = new PageHome();
-                MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
-                mainWindow.NavigateToPage(pageHome);
-            }
-            else
-            {
-                MessageBox.Show("Benutzername existiert schon.");
-            }
+            
         }
 
 
