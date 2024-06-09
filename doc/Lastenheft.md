@@ -79,9 +79,9 @@ Eine Lernapp für verschiedene Fächer mit angepassten Fragen und Aufgaben.
 | Marlon                          | Ensar               |
 | ------------------------------- | ------------------- |
 | Klassen                         | GUI                 |
-| User Profiles Statistiken 	  | Login-System        |
+| User Profiles Statistiken 	    | Login-System        |
 | Mathe, Deutsch                  | Karteikarten        |
-| Benutzerdefinierte Fragen       | User Profiles		|
+| Benutzerdefinierte Fragen       | User Profiles		    |
 | Fragen organisieren             | Fragen organisieren |
 
 

@@ -18,8 +18,11 @@
 - TextInput
 - FlashCard
 - User
+- Usermanager
 - QuestionList
 - Question
+- Flashcards
+- FlashcardService
 
 #### 2.1.1 Klassenhierarchie
 
@@ -102,13 +105,12 @@ class TextInput{
 ```
 @startuml
 class Flashcard{
-+ German: string { get; set; }
-+ English: string { get; set; }
-+ FlashCard() { get; set; }
+English: string { get; set; }
+German: { get; set; }
 }
 @enduml
 ```
-![Klassendiagram Flashcard](image5)
+![Klassendiagram Flashcard]((image8.png))
 
 #### 2.1.7 User
 
@@ -149,6 +151,38 @@ class QuestionList{
 @enduml
 ```
 ![Klassendiagram QuestionList](image7)
+```
+@startuml
+class UserManager{
+- filePath: string 
+- filepathquestions: string
++ Questionlist: QuestionList
++ CurrentUser: User
++ UserManager(): void
++ SavedUsers(List<User> users): void
++ LoadUsers() List<User>
++ AuthenticateUser(string username, string password): User
++ RegisterUser(string username, string password): bool
++ logout(): void
++ ChangeProfilpicture(string newProfilepicture): void
++ ChangeUsername(string newUsername): void
+- HashPassword(string password): string
+}
+@enduml
+```
+![Klassendiagram UserManager](image9.png)
+
+```
+@startuml
+class FlashcardService{
+- filePath: string 
++ FlashcardService(): void
++ LoadFlashcards(): List<Flashcard>
++ SaveFlashcards(List<Flashcard> flashcards): void
+}
+@enduml
+```
+![Klassendiagram FlashcardService](image10.png)
 
 #### 2.
 
