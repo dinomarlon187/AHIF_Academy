@@ -76,8 +76,12 @@ namespace ahif_academy.pages
 
         private void Abmelden_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Erfolgreich Abgemeldet");
             UserManager.logout();
+            
             this.NavigationService.Navigate(new PageHome());
         }
+
+        
     }
 }

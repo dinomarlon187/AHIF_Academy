@@ -76,7 +76,7 @@ namespace ahif_academy
             }
             string hashedPassword = HashPassword(password);
 
-            User user = new User { Username = username, Password = hashedPassword, Profilpicture =  "../pictures/katze.png", filepathvocable = "../../../JSONFiles/" + username + "Vocable.json" };
+            User user = new User { Username = username, Password = hashedPassword, Profilpicture =  "../pictures/default1.png", filepathvocable = "../../../JSONFiles/" + username + "Vocable.json" };
             user.filepathuser = "../../../JSONFiles/" + username + ".json";
             
             Log.log.Information($"{user.Username} hat sich registriert");
@@ -94,16 +94,7 @@ namespace ahif_academy
             Log.log.Information($"{CurrentUser.Username} hat sich ausgeloggt");
             CurrentUser = null;
         }
-        public static void deleteAccount()
-        {
-            List<User> users = LoadUsers();
-            users.Remove(CurrentUser);
-            File.Delete(CurrentUser.filepathuser);
-            File.Delete(CurrentUser.filepathvocable);
-            Log.log.Information($"{CurrentUser.Username} hat seinen Account gelöscht");
-            SavedUsers(users);
-            CurrentUser = null;
-        }
+        
         public static void ChangeProfilePicture(string newProfilePicturePath)
         {
             List<User> users = LoadUsers();

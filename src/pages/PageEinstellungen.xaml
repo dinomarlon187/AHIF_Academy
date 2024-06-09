@@ -34,7 +34,7 @@
                     </ToggleButton>
                 </StackPanel>
             </Border>
-            <Border Margin="5,5,5,315" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25" >
+            <Border Margin="77,5,5,315" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25" >
                 <StackPanel Margin="15">
                     <TextBlock Text="Benutzername" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0, 5"/>
                     <TextBox x:Name="changeBenutzername" Width="100" Height="40" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="14"/>
@@ -43,7 +43,7 @@
                     </Button>
                 </StackPanel>
             </Border>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,310">
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="77,0,0,310">
                 <Border Margin="5" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25">
                     <StackPanel Margin="15">
                         <TextBlock Text="Profilbild" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,5"/>
@@ -57,24 +57,16 @@
                     </StackPanel>
                 </Border>
             </StackPanel>
-            <Border Margin="5,5,5,315" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25" >
+            <Border Margin="79,5,5,315" Width="180"  Background="{DynamicResource borderBackground}" CornerRadius="25" >
                 <StackPanel Margin="15">
                     <TextBlock Text="Abmelden" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0, 5"/>
                     
-                    <Button x:Name="Abmelden" Margin="0,80,0,0" Height="50" Width="100" Content="Abmelden" Click="Abmelden_Click" VerticalAlignment="Bottom">
+                    <Button x:Name="Abmelden" Margin="0,70,0,0" Height="60" Width="100" Content="Abmelden" Click="Abmelden_Click" VerticalAlignment="Bottom">
                         
                     </Button>
                 </StackPanel>
             </Border>
-            <Border Margin="5,5,5,315" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25" >
-                <StackPanel Margin="15">
-                    <TextBlock Text="Abmelden" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0, 5"/>
-                    
-                    <Button x:Name="loeschen" Margin="0,80,0,0" Height="50" Width="100" Content="Abmelden" Click="Abmelden_Click" VerticalAlignment="Bottom">
-                        
-                    </Button>
-                </StackPanel>
-            </Border>
+            
         </StackPanel>
        
         
