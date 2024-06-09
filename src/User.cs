@@ -14,6 +14,8 @@ namespace ahif_academy
     public class User
     {
         [JsonProperty]
+        public string filepathvocable = "../../../JSONFiles/vocable.json";
+        [JsonProperty]
         public string filepathuser = "../../../JSONFiles/profiles.json";
         [JsonProperty]
         public string Username { get; set; }
@@ -22,6 +24,8 @@ namespace ahif_academy
         [JsonProperty]
         public string Profilpicture { get; set; }
         public QuestionList Questions { get; set; } = new QuestionList();
+        
+
         SolidColorBrush Blue = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#7AB2B2"));
         SolidColorBrush Red = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FA7070"));
 

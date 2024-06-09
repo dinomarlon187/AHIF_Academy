@@ -14,14 +14,14 @@ namespace ahif_academy
         {
             VerticalAlignment = VerticalAlignment.Stretch,
             HorizontalAlignment = HorizontalAlignment.Stretch,
-            Content = "Yes",
+            Content = "Ja",
             Margin = new Thickness(170, 70, 130, 70)
         };
         Button no = new Button()
         {
             VerticalAlignment = VerticalAlignment.Stretch,
             HorizontalAlignment = HorizontalAlignment.Stretch,
-            Content = "No",
+            Content = "Nein",
             Margin = new Thickness(130, 70, 170, 70)
         };
         public YesNo(string text, string subject, string correctAnswer) 

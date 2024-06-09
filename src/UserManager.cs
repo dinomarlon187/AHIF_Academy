@@ -16,6 +16,7 @@ namespace ahif_academy
     {
         private static string filePath = "../../../JSONFiles/profiles.json";
         private static string filepathquestions = "../../../JSONFiles/questions.json";
+        
         public static QuestionList QuestionList = new QuestionList();
 
         public static User CurrentUser { get; private set; }
@@ -55,8 +56,11 @@ namespace ahif_academy
             if (user != null)
             {
                 user.filepathuser = "../../../JSONFiles/" + username + ".json";
-                CurrentUser = user; // Setzen des aktuellen Benutzers
+                
+
+                CurrentUser = user; 
                 QuestionList.DeserializeFromJSON(user.filepathuser, CurrentUser.Questions);
+                
                 Log.log.Information($"{CurrentUser.Username} hat sich eingeloggt");
             }
             return user;
@@ -72,8 +76,9 @@ namespace ahif_academy
             }
             string hashedPassword = HashPassword(password);
 
-            User user = new User { Username = username, Password = hashedPassword, Profilpicture =  "../pictures/katze.png"};
+            User user = new User { Username = username, Password = hashedPassword, Profilpicture =  "../pictures/katze.png", filepathvocable = "../../../JSONFiles/" + username + "Vocable.json" };
             user.filepathuser = "../../../JSONFiles/" + username + ".json";
+            
             Log.log.Information($"{user.Username} hat sich registriert");
             users.Add(user);
             SavedUsers(users);
@@ -110,6 +115,7 @@ namespace ahif_academy
                     user.Username = newUsername;
                     File.Move(user.filepathuser, "../../../JSONFiles/" + user.Username + ".json");
                     user.filepathuser = "../../../JSONFiles/" + user.Username + ".json";
+                    user.filepathvocable = "../../../JSONFiles/" + user.Username + "Vocable.json";
                     QuestionList.DeserializeFromJSON(user.filepathuser, user.Questions);
                     CurrentUser = user;
                     Log.log.Information("Benutzername geändert.");

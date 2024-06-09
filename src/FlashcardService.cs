@@ -11,7 +11,11 @@ namespace ahif_academy
 {
     class FlashcardService
     {
-        private readonly string filePath = "../../../JSONFiles/vocable.json";
+        private readonly string filePath;
+        public FlashcardService()
+        {
+            filePath = UserManager.CurrentUser.filepathvocable;
+        }
 
         public List<Flashcard> LoadFlashcards()
         {

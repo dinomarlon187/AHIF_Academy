@@ -1,14 +1,10 @@
 [
   {
-    "English": "hello",
-    "German": "hallo"
-  },
-  {
-    "English": "football",
-    "German": "fußball"
-  },
-  {
     "English": "fish",
     "German": "fisch"
+  },
+  {
+    "English": "diamond",
+    "German": "diamant"
   }
 ]
