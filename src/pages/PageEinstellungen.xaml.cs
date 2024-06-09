@@ -73,5 +73,11 @@ namespace ahif_academy.pages
             UserManager.ChangeUsername(newUsername);
             MessageBox.Show("Benutzername wurde geändert");
         }
+
+        private void Abmelden_Click(object sender, RoutedEventArgs e)
+        {
+            UserManager.logout();
+            this.NavigationService.Navigate(new PageHome());
+        }
     }
 }

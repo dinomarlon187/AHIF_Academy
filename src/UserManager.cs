@@ -89,6 +89,21 @@ namespace ahif_academy
 
             return true; 
         }
+        public static void logout()
+        {
+            Log.log.Information($"{CurrentUser.Username} hat sich ausgeloggt");
+            CurrentUser = null;
+        }
+        public static void deleteAccount()
+        {
+            List<User> users = LoadUsers();
+            users.Remove(CurrentUser);
+            File.Delete(CurrentUser.filepathuser);
+            File.Delete(CurrentUser.filepathvocable);
+            Log.log.Information($"{CurrentUser.Username} hat seinen Account gelöscht");
+            SavedUsers(users);
+            CurrentUser = null;
+        }
         public static void ChangeProfilePicture(string newProfilePicturePath)
         {
             List<User> users = LoadUsers();

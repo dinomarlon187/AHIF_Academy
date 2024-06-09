@@ -26,15 +26,15 @@
                 
             </StackPanel>
         </Border>
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <Border Margin="5" Background="{DynamicResource borderBackground}" CornerRadius="25">
+        <StackPanel Grid.Row="1"  Orientation="Horizontal">
+            <Border Width="180" Margin="5,5,5,315" Background="{DynamicResource borderBackground}" CornerRadius="25">
                 <StackPanel Margin="15">
                     <TextBlock Text="Mode" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,5"/>
-                    <ToggleButton x:Name="ThemeToggleButton" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Width="120" Height="60" Cursor="Hand" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked" Style="{DynamicResource ThemeToggleButtonStyle}">
+                    <ToggleButton  x:Name="ThemeToggleButton" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="5" Width="120" Height="60" Cursor="Hand" Checked="ThemeToggleButton_Checked" Unchecked="ThemeToggleButton_Unchecked" Style="{DynamicResource ThemeToggleButtonStyle}">
                     </ToggleButton>
                 </StackPanel>
             </Border>
-            <Border Margin="5" Background="{DynamicResource borderBackground}" CornerRadius="25">
+            <Border Margin="5,5,5,315" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25" >
                 <StackPanel Margin="15">
                     <TextBlock Text="Benutzername" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0, 5"/>
                     <TextBox x:Name="changeBenutzername" Width="100" Height="40" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="14"/>
@@ -43,8 +43,8 @@
                     </Button>
                 </StackPanel>
             </Border>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" >
-                <Border Margin="5" Background="{DynamicResource borderBackground}" CornerRadius="25">
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,310">
+                <Border Margin="5" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25">
                     <StackPanel Margin="15">
                         <TextBlock Text="Profilbild" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,5"/>
                         <ComboBox Width="100" Height="50" Margin="8" x:Name="Profilbild" SelectionChanged="ComboBox_SelectionChanged" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
@@ -57,6 +57,24 @@
                     </StackPanel>
                 </Border>
             </StackPanel>
+            <Border Margin="5,5,5,315" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25" >
+                <StackPanel Margin="15">
+                    <TextBlock Text="Abmelden" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0, 5"/>
+                    
+                    <Button x:Name="Abmelden" Margin="0,80,0,0" Height="50" Width="100" Content="Abmelden" Click="Abmelden_Click" VerticalAlignment="Bottom">
+                        
+                    </Button>
+                </StackPanel>
+            </Border>
+            <Border Margin="5,5,5,315" Width="180" Background="{DynamicResource borderBackground}" CornerRadius="25" >
+                <StackPanel Margin="15">
+                    <TextBlock Text="Abmelden" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0, 5"/>
+                    
+                    <Button x:Name="loeschen" Margin="0,80,0,0" Height="50" Width="100" Content="Abmelden" Click="Abmelden_Click" VerticalAlignment="Bottom">
+                        
+                    </Button>
+                </StackPanel>
+            </Border>
         </StackPanel>
        
         

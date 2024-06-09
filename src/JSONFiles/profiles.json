@@ -1,90 +1,13 @@
 [
   {
-    "filepathvocable": "../../../JSONFiles/vocable.json",
-    "filepathuser": "../../../JSONFiles/enter_button.json",
-    "Username": "enter_button",
-    "Password": "dcbab71c48b27cddc99593951782e61cba46eceee9e8aa9b8c2a96a40043b5ec",
-    "Profilpicture": "../pictures/spiderman.png",
-    "QuestionsAnsweredIncorrectDeutsch": 26,
-    "QuestionsAnsweredCorrectDeutsch": 33,
-    "QuestionsAnsweredIncorrectMathe": 1,
-    "QuestionsAnsweredCorrectMathe": 3
-  },
-  {
-    "filepathvocable": "../../../JSONFiles/vocable.json",
-    "filepathuser": "../../../JSONFiles/buffon680.json",
-    "Username": "buffon680",
-    "Password": "568d5827858534b7b1da7a17232154bb6cd04bc7ecad779ced4eecbfa7019c69",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathvocable": "../../../JSONFiles/vocable.json",
-    "filepathuser": "../../../JSONFiles/MisterFister.json",
-    "Username": "MisterFister",
-    "Password": "36c3ec3dd79d141f6fd8257cff7ef2d03f58f0a2219122c091a0823de558bfb5",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathvocable": "../../../JSONFiles/vocable.json",
-    "filepathuser": "../../../JSONFiles/Mortis.json",
-    "Username": "Mortis",
-    "Password": "1242b843583fee477f5bc4594ff5df10b18584da0ddbed9feb1c6abca107d9a6",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathvocable": "../../../JSONFiles/vocable.json",
-    "filepathuser": "../../../JSONFiles/CimBom.json",
-    "Username": "CimBom",
-    "Password": "b225f83b4f91e9266af1a4d5776f6d0f08772af5a0864e6dc5c434f54b0aad87",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathvocable": "../../../JSONFiles/vocable.json",
-    "filepathuser": "../../../JSONFiles/test123.json",
-    "Username": "test123",
-    "Password": "6fec2a9601d5b3581c94f2150fc07fa3d6e45808079428354b868e412b76e6bb",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathvocable": "../../../JSONFiles/vocable.json",
-    "filepathuser": "../../../JSONFiles/mahmut.json",
-    "Username": "mahmut",
-    "Password": "427012b9dcf59697ecba581e988edf16941ad2a06f8fd5b1234faf0084628a7b",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
-  },
-  {
-    "filepathvocable": "../../../JSONFiles/kerem1905Vocable.json",
-    "filepathuser": "../../../JSONFiles/kerem1905.json",
-    "Username": "kerem1905",
+    "filepathvocable": "../../../JSONFiles/kerem190568Vocable.json",
+    "filepathuser": "../../../JSONFiles/kerem190568.json",
+    "Username": "kerem190568",
     "Password": "fa186c2116994f4ac1b43f7b22e937c2dc67cdf32d9c5a28f71cb510e3dbc433",
-    "Profilpicture": "../pictures/katze.png",
-    "QuestionsAnsweredIncorrectDeutsch": 0,
-    "QuestionsAnsweredCorrectDeutsch": 0,
-    "QuestionsAnsweredIncorrectMathe": 0,
-    "QuestionsAnsweredCorrectMathe": 0
+    "Profilpicture": "../pictures/tos.png",
+    "QuestionsAnsweredIncorrectDeutsch": 1,
+    "QuestionsAnsweredCorrectDeutsch": 7,
+    "QuestionsAnsweredIncorrectMathe": 3,
+    "QuestionsAnsweredCorrectMathe": 19
   }
 ]
