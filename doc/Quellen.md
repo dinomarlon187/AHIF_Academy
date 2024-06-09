@@ -13,3 +13,4 @@ https://www.flaticon.com/de/kostenloses-icon/maximieren_12198041?term=maximieren
 https://www.flaticon.com/de/kostenloses-icon/minimieren_9147772?term=minimieren&page=1&position=2&origin=search&related_id=9147772
 https://www.flaticon.com/de/suche?word=x
 https://iconduck.com/icons/92885/grade-a-plus
+https://at.pinterest.com/pin/576531189826841372/
