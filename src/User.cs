@@ -14,9 +14,9 @@ namespace ahif_academy
     public class User
     {
         [JsonProperty]
-        public string filepathvocable = "../../../JSONFiles/vocable.json";
+        public string filepathvocable { get; set; } = "../../../JSONFiles/vocable.json";
         [JsonProperty]
-        public string filepathuser = "../../../JSONFiles/profiles.json";
+        public string filepathuser { get; set; } = "../../../JSONFiles/profiles.json";
         [JsonProperty]
         public string Username { get; set; }
         [JsonProperty]

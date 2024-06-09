@@ -18,7 +18,7 @@ namespace ahif_academy
         [JsonProperty]
         public string WrongAnswer { get; set; }
 
-        Button submit = new Button()
+        Button submit { get; set; }  = new Button()
         {
             Height = 50,
             Width = 100,
@@ -27,7 +27,7 @@ namespace ahif_academy
             VerticalAlignment = System.Windows.VerticalAlignment.Top
         };
 
-        RichTextBox textBoxAnswer = new RichTextBox()
+        RichTextBox textBoxAnswer { get; set; } = new RichTextBox()
         {
             Width = 400,
             FontSize = 20,

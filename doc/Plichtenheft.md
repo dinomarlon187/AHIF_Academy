@@ -18,7 +18,8 @@
 - TextInput
 - FlashCard
 - User
-- ChangeTheme
+- QuestionList
+- Question
 
 #### 2.1.1 Klassenhierarchie
 
@@ -29,88 +30,105 @@ Alle Frage-Klassen (MultipleChoice, YesNo, TextInput) haben eine Parent-Klasse "
 ```
 @startuml
 class Question{
-  + Answerpressed: bool
-  + btnNextQuestion: Button
-  + textblockQuestion: TextBlock
-  + Subject: string
-  + Text: string
-  + string[3]: subjects
-  + CorrectAnswer: string
-  + LastUsed: DateTime
-  + Counter: int
+  + Type: string { get; set; }
+  + Answerpressed: bool { get; set; }
+  + btnNextQuestion: Button { get; set; }
+  + textblockQuestion: TextBlock { get; set; }
+  - subject: string
+  + Subject: string { get; set; }
+  + Text: string { get; set; }
+  - string[2]: subjects
+  + CorrectAnswer: string { get; set; }
+  + LastUsed: DateTime { get; set; }
+  + Counter: int { get; set; }
   + abstract Draw(Grid grid): void
   + CheckAnswer(string answer): void
   + abstract Copy(): void
-@enduml
 }
+@enduml
 ```
+![Klassendiagram Question](image1)
 
 #### 2.1.3 Multiple Choice
 ```
 @startuml
 class MultipleChoice{
-+ Answers: string[4]
-+ ans1: Button
-+ ans2: Button
-+ ans3: Button
-+ ans4: Button
-+ MultipleChoice()
-+ MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject, int counter, DateTime lastUsed)
++ Answers: string[4] { get; set; }
++ ans1: Button { get; set; }
++ ans2: Button { get; set; }
++ ans3: Button { get; set; }
++ ans4: Button { get; set; }
++ MultipleChoice() 
++ MultipleChoice(string text, string ans1, string ans2, string ans3, string ans4, string correct, string subject)
 + EVENT Click(object sender, RoutedEventArgs e): void
 }
 @enduml
 ```
+![Klassendiagram MultipleChoice](image2)
 
 #### 2.1.4 YesNo
 
 ```
 @startuml
 class YesNo{
-+ yes: Button
-+ no: Button
++ yes: Button { get; set; }
++ no: Button { get; set; }
 + YesNo()
-+YesNo(string text, string subject, string correctAnswer, int counter, DateTime lastUsed)
++YesNo(string text, string subject, string correctAnswer)
++ EVENT Click(object sender, RoutedEventArgs e): void
 }
 @enduml
 ```
+![Klassendiagram YesNo](image3)
 
 #### 2.1.5 TextInput
 
 ```
 @startuml
 class TextInput{
-+ WrongText: string
-+ submit: Button
-+ textBoxAnswer: RichTextBox
++ WrongAnswer: string { get; set; }
++ submit: Button { get; set; }
++ textBoxAnswer: RichTextBox { get; set; }
 + TextInput()
-+ TextInput(string text, string subject, string answer, string falseAnswer, int counter, DateTime lastUsed)
++ TextInput(string text, string subject, string answer, string wrongAnswer)
 + EVENT Submit_Click(object sender, RoutedEventArgs e): void
 }
 @enduml
 ```
+![Klassendiagram TextInput](image4)
 
 #### 2.1.6 FlashCard
 
 ```
-+ German: string
-+ English: string
-+ FlashCard()
+@startuml
+class Flashcard{
++ German: string { get; set; }
++ English: string { get; set; }
++ FlashCard() { get; set; }
+}
+@enduml
 ```
+![Klassendiagram Flashcard](image5)
 
 #### 2.1.7 User
 
 ```
 @startuml
 class User{
-+ Username: string
-+ Password: string
-+ QuestionsAnsweredMath: int
-+ QuestionsAnsweredGerman: int
-+ QuestionsAnsweredCorrectMath: int
-+ QuestionsAnsweredCorrectGerman: int
++ Username: string { get; set; }
++ Password: string { get; set; }
++ filepathvocable: string { get; set; }
++ filepathuser: string { get; set; }
++ Profilpicture: string { get; set; }
++ QuestionsAnsweredMath: int { get; set; }
++ QuestionsAnsweredGerman: int { get; set; }
++ QuestionsAnsweredCorrectMath: int { get; set; }
++ QuestionsAnsweredCorrectGerman: int { get; set; }
 + StatisticsDraw()
 }
+@enduml
 ```
+![Klassendiagram Flashcard](image6)
 
 #### 2.1.8 QuestionList
 
@@ -126,9 +144,13 @@ class QuestionList{
 + DeserializeFromJSON(): void
 + GetRandomQuestion(): Question
 + SerializeToJSON(): void
++ Shuffle(): void
 }
 @enduml
 ```
+![Klassendiagram QuestionList](image7)
+
+#### 2.
 
 ### 2.2 Aufbau der UI
 
@@ -139,7 +161,7 @@ class QuestionList{
 - WindowAddQuestion:
 	- Window, um Fragen zu erstellen/editieren
 - PageHome:
-	- Page, auf welcher der User eine kurze Beschreibung bekommt, was er tun kann/soll
+	- Page, Titelseite, auf welcher der User eine kurze Beschreibung bekommt, was er tun kann/soll
 - PageAufgabe:
 	- Page, um die Aufgaben anzuzeigen und zu beantworten
 - PageEnglisch:
@@ -172,10 +194,7 @@ class QuestionList{
 	- Wir haben Klassen verwendet (siehe Punkt 2.1 für weitere Informationen)
 - Collections:
 	- Wir haben in vielen Klassen/Funktionen mit Listen/Arrays gearbeitet.
-	- Wir haben das JSON-Format verwendet. Dies basiert auf Dictionaries.
-	- Beispiele:
-		- Unsere `QuestionList`-Klasse basiert auf einer großen Liste mit all unseren Fragen. Somit müssen wir durchgehend mit Listen arbheiten.
-		- Unsere Fragen werden als Array in eine JSON Datei gespeichert und aus dieser ausgelesen.
+	- Wir haben das JSON-Format für das Speichern von Daten verwendet. Dies basiert auf Dictionaries.
 - Graphische Darstellung von Objekten:
 	- Wir haben, um unser Programm so intuitiv und effizient wie möglich zu gestalten, in verschiedensten Pages/Windows Objekte graphisch dargestellt.
 - Serialisierung:

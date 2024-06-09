@@ -10,14 +10,14 @@ namespace ahif_academy
 {
     public class YesNo : Question
     {
-        Button yes = new Button()
+        Button yes { get; set; } = new Button()
         {
             VerticalAlignment = VerticalAlignment.Stretch,
             HorizontalAlignment = HorizontalAlignment.Stretch,
             Content = "Ja",
             Margin = new Thickness(170, 70, 130, 70)
         };
-        Button no = new Button()
+        Button no { get; set; } = new Button()
         {
             VerticalAlignment = VerticalAlignment.Stretch,
             HorizontalAlignment = HorizontalAlignment.Stretch,

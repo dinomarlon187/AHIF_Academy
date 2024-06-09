@@ -15,7 +15,7 @@ namespace ahif_academy
     {
         [JsonProperty]
         public string[] Answers { get; set; }
-        Button ans1 = new Button()
+        Button ans1 { get; set; } = new Button() 
         {
             Height = 100,
             Width = 300,
@@ -24,7 +24,7 @@ namespace ahif_academy
             VerticalAlignment = VerticalAlignment.Bottom
 
         };
-        Button ans2 = new Button()
+        Button ans2 { get; set; } = new Button()
         {
             Height = 100,
             Width = 300,
@@ -32,7 +32,7 @@ namespace ahif_academy
             HorizontalAlignment = HorizontalAlignment.Left,
             VerticalAlignment = VerticalAlignment.Bottom
         };
-        Button ans3 = new Button()
+        Button ans3 { get; set; } = new Button()
         {
             Height = 100,
             Width = 300,
@@ -40,7 +40,7 @@ namespace ahif_academy
             HorizontalAlignment = HorizontalAlignment.Right,
             VerticalAlignment = VerticalAlignment.Top
         };
-        Button ans4 = new Button()
+        Button ans4 { get; set; } = new Button()
         {
             Height = 100,
             Width = 300,

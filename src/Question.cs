@@ -13,8 +13,8 @@ namespace ahif_academy
     {
         [JsonProperty]
         public string Type { get; set; }
-        protected bool AnswerPressed = false;
-        public Button btnNextQuestion = new Button()
+        protected bool AnswerPressed { get; set; } = false;
+        public Button btnNextQuestion { get; set; } = new Button()
         {
             Width = 300,
             Height = 100,
@@ -23,7 +23,7 @@ namespace ahif_academy
             VerticalAlignment = System.Windows.VerticalAlignment.Top
 
         };
-        protected TextBlock textblockQuestion = new TextBlock()
+        protected TextBlock textblockQuestion { get; set; } = new TextBlock()
         {
             FontSize = 30,
             Width = 800,
@@ -36,10 +36,10 @@ namespace ahif_academy
             VerticalAlignment = System.Windows.VerticalAlignment.Bottom
             
         };
-        protected string subject;
-        protected string[] subjects = { "mathe", "englisch", "deutsch" };
+        private string subject;
+        private string[] subjects = { "mathe", "deutsch" };
         [JsonProperty]
-        public string Text { get; set; }
+        public string Text { get; set;}
         [JsonProperty]
         public string Subject 
         {
