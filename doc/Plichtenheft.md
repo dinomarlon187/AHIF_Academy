@@ -50,7 +50,7 @@ class Question{
 }
 @enduml
 ```
-![Klassendiagram Question](image1)
+![Klassendiagram Question](images/image1.png)
 
 #### 2.1.3 Multiple Choice
 ```
@@ -67,7 +67,7 @@ class MultipleChoice{
 }
 @enduml
 ```
-![Klassendiagram MultipleChoice](image2)
+![Klassendiagram MultipleChoice](images/image2.png)
 
 #### 2.1.4 YesNo
 
@@ -82,7 +82,7 @@ class YesNo{
 }
 @enduml
 ```
-![Klassendiagram YesNo](image3)
+![Klassendiagram YesNo](images/image3.png)
 
 #### 2.1.5 TextInput
 
@@ -98,7 +98,7 @@ class TextInput{
 }
 @enduml
 ```
-![Klassendiagram TextInput](image4)
+![Klassendiagram TextInput](images/image4.png)
 
 #### 2.1.6 FlashCard
 
@@ -110,7 +110,7 @@ German: { get; set; }
 }
 @enduml
 ```
-![Klassendiagram Flashcard]((image8.png))
+![Klassendiagram Flashcard](images/image.png)
 
 #### 2.1.7 User
 
@@ -130,7 +130,7 @@ class User{
 }
 @enduml
 ```
-![Klassendiagram Flashcard](image6)
+![Klassendiagram User](images/image6.png)
 
 #### 2.1.8 QuestionList
 
@@ -150,7 +150,9 @@ class QuestionList{
 }
 @enduml
 ```
-![Klassendiagram QuestionList](image7)
+![Klassendiagram QuestionList](images/image7.png)
+
+#### 2.1.9 UserManager
 ```
 @startuml
 class UserManager{
@@ -170,8 +172,9 @@ class UserManager{
 }
 @enduml
 ```
-![Klassendiagram UserManager](image9.png)
+![Klassendiagram UserManager](image-1.png)
 
+#### 2.1.10 Flashcardservice
 ```
 @startuml
 class FlashcardService{
@@ -182,9 +185,7 @@ class FlashcardService{
 }
 @enduml
 ```
-![Klassendiagram FlashcardService](image10.png)
-
-#### 2.
+![Klassendiagram FlashcardService](image-2.png)
 
 ### 2.2 Aufbau der UI
 
